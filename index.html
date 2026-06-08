@@ -14,7 +14,7 @@
 :root{--bg:#f7fbff;--ink:#07111f;--muted:#617086;--line:rgba(15,23,42,.12);--blue:#2563eb;--cyan:#06b6d4;--violet:#7c3aed;--emerald:#10b981;--amber:#f59e0b;--dark:#020617;--shadow:0 28px 90px rgba(15,23,42,.13);--radius:30px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 8%,rgba(37,99,235,.20),transparent 34rem),radial-gradient(circle at 88% 12%,rgba(6,182,212,.18),transparent 34rem),radial-gradient(circle at 50% 62%,rgba(16,185,129,.12),transparent 42rem),linear-gradient(180deg,#fff 0%,#f7fbff 54%,#eef7ff 100%);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:linear-gradient(rgba(15,23,42,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.035) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 78%)}a{color:inherit;text-decoration:none}.container{width:min(1200px,calc(100% - 40px));margin:0 auto}
 header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.78);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:-.05em;font-size:1.22rem}.brand-mark{width:44px;height:44px;border-radius:16px;background:conic-gradient(from 180deg,var(--blue),var(--cyan),var(--emerald),var(--violet),var(--blue));box-shadow:0 16px 42px rgba(37,99,235,.25);position:relative}.brand-mark:before{content:"";position:absolute;inset:9px;border-radius:999px;border:2px solid rgba(255,255,255,.92)}.brand-mark:after{content:"";position:absolute;left:50%;top:50%;width:18px;height:18px;transform:translate(-50%,-50%);border-radius:999px;background:white;box-shadow:0 -12px 0 -6px white,0 12px 0 -6px white,-12px 0 0 -6px white,12px 0 0 -6px white}
-.nav-links{display:flex;align-items:center;gap:18px;color:var(--muted);font-weight:750;font-size:.92rem}.nav-links a:hover{color:var(--ink)}.nav-cta{color:#fff!important;background:var(--dark);padding:12px 18px;border-radius:999px;font-weight:900;box-shadow:0 14px 34px rgba(2,6,23,.17)}.language-wrap{position:relative;display:inline-flex;align-items:center}.language-select{appearance:none;-webkit-appearance:none;min-height:42px;max-width:150px;padding:0 38px 0 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.88);color:var(--ink);font-weight:850;cursor:pointer;outline:none}.language-wrap:after{content:"⌄";position:absolute;right:14px;top:50%;transform:translateY(-55%);color:var(--muted);pointer-events:none;font-weight:950}
+.nav-links{display:flex;align-items:center;gap:18px;color:var(--muted);font-weight:750;font-size:.92rem}.nav-links a:hover{color:var(--ink)}.nav-cta{color:#fff!important;background:var(--dark);padding:12px 18px;border-radius:999px;font-weight:900;box-shadow:0 14px 34px rgba(2,6,23,.17)}.language-wrap{position:relative;display:inline-flex;align-items:center}.language-select{appearance:none;-webkit-appearance:none;min-height:42px;max-width:150px;padding:0 38px 0 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.88);color:var(--ink);font-weight:850;cursor:pointer;outline:none}.language-wrap:after{content:"⌄";position:absolute;right:14px;top:50%;transform:translateY(-55%);color:var(--muted);pointer-events:none;font-weight:950}#google_translate_element,.goog-te-banner-frame,.skiptranslate iframe{display:none!important}body{top:0!important}body>.skiptranslate{display:none!important}
 .mobile-toggle{display:none;width:46px;height:46px;border:1px solid var(--line);border-radius:16px;background:white;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}.mobile-toggle span{width:20px;height:2px;background:var(--ink);border-radius:999px;transition:.18s}.mobile-menu{display:none;border-top:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(18px)}.mobile-menu-inner{width:min(1200px,calc(100% - 40px));margin:0 auto;display:grid;gap:10px;padding:16px 0 22px}.mobile-menu a,.mobile-menu label{padding:14px 16px;border-radius:18px;border:1px solid var(--line);background:white;font-weight:850}.mobile-menu label{display:grid;gap:8px;color:var(--muted);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}.mobile-menu .language-select{max-width:none;width:100%;border-radius:14px;background:var(--bg)}body.menu-open .mobile-menu{display:block}body.menu-open .mobile-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}body.menu-open .mobile-toggle span:nth-child(2){opacity:0}body.menu-open .mobile-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 .hero{padding:96px 0 76px}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);color:var(--muted);font-size:.86rem;font-weight:900;box-shadow:0 10px 34px rgba(15,23,42,.07)}.pulse{width:9px;height:9px;border-radius:999px;background:var(--emerald);box-shadow:0 0 0 7px rgba(16,185,129,.14)}h1{margin:24px 0 18px;font-size:clamp(3.1rem,8.8vw,7.6rem);line-height:.86;letter-spacing:-.095em;font-weight:950}.gradient-text{background:linear-gradient(135deg,#020617 4%,var(--blue),var(--cyan),var(--emerald));-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{margin:0 0 22px;max-width:880px;font-size:clamp(1.36rem,3vw,2.45rem);line-height:1.06;letter-spacing:-.06em;font-weight:920}.lead{max-width:760px;margin:0;color:var(--muted);font-size:1.08rem;line-height:1.78}.disclosure{margin-top:20px;max-width:760px;padding:14px 16px;border:1px solid rgba(37,99,235,.22);border-radius:20px;background:rgba(255,255,255,.72);color:#33516d;font-size:.92rem;line-height:1.55;font-weight:650}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.btn{min-height:52px;display:inline-flex;align-items:center;justify-content:center;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.86);font-weight:900;transition:.18s}.btn:hover{transform:translateY(-2px)}.btn.primary{color:white;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 20px 52px rgba(37,99,235,.25)}
 .scan-card{min-height:540px;border-radius:42px;border:1px solid var(--line);background:radial-gradient(circle at 50% 42%,rgba(37,99,235,.24),transparent 15rem),radial-gradient(circle at 76% 18%,rgba(6,182,212,.22),transparent 16rem),radial-gradient(circle at 30% 72%,rgba(16,185,129,.13),transparent 16rem),linear-gradient(180deg,rgba(255,255,255,.86),rgba(238,247,255,.82));box-shadow:var(--shadow);position:relative;overflow:hidden;padding:26px}.scan-card:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.045) 1px,transparent 1px);background-size:34px 34px;mask-image:radial-gradient(circle at center,#000,transparent 76%)}
@@ -35,7 +35,7 @@ section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{
 .transfer-panel{margin-top:18px;overflow:hidden;border-radius:34px;background:rgba(2,6,23,.94);color:white;border:1px solid rgba(255,255,255,.12);box-shadow:0 28px 90px rgba(2,6,23,.26)}.transfer-head{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:22px 24px;border-bottom:1px solid rgba(255,255,255,.10);background:radial-gradient(circle at top left,rgba(37,99,235,.34),transparent 24rem)}.transfer-head h3{margin:0;font-size:1.45rem;letter-spacing:-.045em}.transfer-head p{margin:6px 0 0;color:#bfdbfe;line-height:1.55}.transfer-table{display:grid}.transfer-row{display:grid;grid-template-columns:1.15fr 1.7fr .8fr .7fr;gap:14px;padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.08);align-items:center}.transfer-row:hover{background:rgba(255,255,255,.045)}.transfer-row.header{color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:950;background:rgba(255,255,255,.035)}.transfer-row span,.transfer-row a{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.transfer-row a{color:#a7f3d0;font-weight:900}.amount-pill{justify-self:start;padding:8px 10px;border-radius:999px;background:rgba(16,185,129,.12);color:#bbf7d0;border:1px solid rgba(16,185,129,.20);font-weight:950}.loading-line{padding:26px;color:#bfdbfe}.explorer-note{margin-top:16px;padding:14px 16px;border-radius:20px;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.14);color:#33516d;font-size:.9rem;line-height:1.6;font-weight:650}
 
 #enkSupply{font-size:clamp(1.35rem,2.2vw,1.9rem);line-height:1.02;font-weight:950;letter-spacing:-.055em;white-space:nowrap;word-break:normal;overflow-wrap:normal}
-.command-center{margin-top:24px;display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.search-deck{position:relative;overflow:hidden;padding:22px;border-radius:30px;background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(236,254,255,.86));border:1px solid rgba(37,99,235,.16);box-shadow:0 18px 54px rgba(15,23,42,.08)}.search-deck:before{content:"";position:absolute;right:-70px;top:-70px;width:190px;height:190px;border-radius:999px;background:radial-gradient(circle,rgba(6,182,212,.24),transparent 64%)}.search-title{position:relative;margin:0 0 8px;font-size:1.28rem;letter-spacing:-.045em}.search-copy{position:relative;margin:0 0 16px;color:var(--muted);line-height:1.6;font-size:.95rem}.search-bar{position:relative;display:flex;gap:10px;padding:8px;border-radius:999px;background:#fff;border:1px solid rgba(15,23,42,.12);box-shadow:0 16px 40px rgba(15,23,42,.07)}.search-bar input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0 12px;font-size:.98rem;font-weight:750;color:var(--ink)}.search-bar button{border:0;min-height:44px;padding:0 18px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:950;cursor:pointer}.search-result{position:relative;margin-top:12px;font-size:.88rem;color:#33516d;font-weight:750;line-height:1.5}.intel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.intel-tile{position:relative;overflow:hidden;min-height:118px;padding:18px;border-radius:26px;color:#fff;background:radial-gradient(circle at top right,rgba(6,182,212,.32),transparent 9rem),linear-gradient(135deg,#020617,#172554 58%,#155e75);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 50px rgba(2,6,23,.18)}.intel-tile span{display:block;color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.68rem;font-weight:950;margin-bottom:9px}.intel-tile strong{display:block;font-size:clamp(1.45rem,2.3vw,2.1rem);letter-spacing:-.055em}.intel-tile small{display:block;margin-top:7px;color:#dbeafe;line-height:1.45}.token-constellation{margin-top:24px;padding:24px;border-radius:34px;background:rgba(255,255,255,.72);border:1px solid rgba(15,23,42,.10);box-shadow:0 20px 70px rgba(15,23,42,.08)}.token-constellation h3{margin:0 0 8px;font-size:1.45rem;letter-spacing:-.05em}.token-constellation p{margin:0 0 18px;color:var(--muted);line-height:1.6}.token-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.token-chip{position:relative;overflow:hidden;min-height:104px;padding:16px;border-radius:24px;background:linear-gradient(180deg,#fff,rgba(239,246,255,.86));border:1px solid rgba(15,23,42,.10);box-shadow:0 14px 38px rgba(15,23,42,.06)}.token-chip:after{content:"";position:absolute;right:-24px;top:-24px;width:70px;height:70px;border-radius:999px;background:linear-gradient(135deg,rgba(37,99,235,.13),rgba(6,182,212,.13))}.token-chip strong{display:block;position:relative;font-size:1.08rem;letter-spacing:-.04em}.token-chip span{display:block;position:relative;margin-top:7px;color:var(--muted);font-size:.82rem;line-height:1.45}.future-badge{display:inline-flex;margin-top:10px;position:relative;padding:6px 9px;border-radius:999px;background:rgba(37,99,235,.08);color:#1d4ed8;font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.08em}.mission-control{margin-top:24px;padding:28px;border-radius:34px;color:#fff;background:radial-gradient(circle at 10% 0%,rgba(37,99,235,.36),transparent 22rem),radial-gradient(circle at 90% 30%,rgba(16,185,129,.26),transparent 22rem),linear-gradient(135deg,#020617,#0f172a 52%,#083344);border:1px solid rgba(255,255,255,.12);box-shadow:0 30px 90px rgba(2,6,23,.22)}.mission-control h3{margin:0 0 8px;font-size:1.6rem;letter-spacing:-.055em}.mission-control p{margin:0 0 18px;color:#bfdbfe;line-height:1.65}.mission-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.mission-item{padding:16px;border-radius:22px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}.mission-item span{display:block;color:#93c5fd;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:950}.mission-item strong{display:block;margin-top:8px;font-size:1.35rem;letter-spacing:-.045em}.mission-item small{display:block;margin-top:6px;color:#dbeafe;line-height:1.45}
+.command-center{margin-top:24px;display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.search-deck{position:relative;overflow:hidden;padding:22px;border-radius:30px;background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(236,254,255,.86));border:1px solid rgba(37,99,235,.16);box-shadow:0 18px 54px rgba(15,23,42,.08)}.search-deck:before{content:"";position:absolute;right:-70px;top:-70px;width:190px;height:190px;border-radius:999px;background:radial-gradient(circle,rgba(6,182,212,.24),transparent 64%)}.search-title{position:relative;margin:0 0 8px;font-size:1.28rem;letter-spacing:-.045em}.search-copy{position:relative;margin:0 0 16px;color:var(--muted);line-height:1.6;font-size:.95rem}.search-bar{position:relative;display:flex;gap:10px;padding:8px;border-radius:999px;background:#fff;border:1px solid rgba(15,23,42,.12);box-shadow:0 16px 40px rgba(15,23,42,.07)}.search-bar input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0 12px;font-size:.98rem;font-weight:750;color:var(--ink)}.search-bar button{border:0;min-height:44px;padding:0 18px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:950;cursor:pointer}.search-result{position:relative;margin-top:12px;font-size:.88rem;color:#33516d;font-weight:750;line-height:1.5}.search-result-card{position:relative;margin-top:14px;padding:16px;border-radius:22px;background:rgba(255,255,255,.84);border:1px solid rgba(37,99,235,.16);box-shadow:0 14px 38px rgba(15,23,42,.07)}.search-result-card span{display:inline-flex;margin-bottom:8px;padding:6px 9px;border-radius:999px;background:rgba(37,99,235,.09);color:#1d4ed8;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:950}.search-result-card strong{display:block;color:#07111f;font-size:1.08rem;letter-spacing:-.035em;word-break:break-word}.search-result-card p{margin:8px 0;color:#33516d;line-height:1.55}.search-result-card a{display:inline-flex;margin-top:4px;color:#1d4ed8;font-weight:950}.intel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.intel-tile{position:relative;overflow:hidden;min-height:118px;padding:18px;border-radius:26px;color:#fff;background:radial-gradient(circle at top right,rgba(6,182,212,.32),transparent 9rem),linear-gradient(135deg,#020617,#172554 58%,#155e75);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 50px rgba(2,6,23,.18)}.intel-tile span{display:block;color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.68rem;font-weight:950;margin-bottom:9px}.intel-tile strong{display:block;font-size:clamp(1.45rem,2.3vw,2.1rem);letter-spacing:-.055em}.intel-tile small{display:block;margin-top:7px;color:#dbeafe;line-height:1.45}.token-constellation{margin-top:24px;padding:24px;border-radius:34px;background:rgba(255,255,255,.72);border:1px solid rgba(15,23,42,.10);box-shadow:0 20px 70px rgba(15,23,42,.08)}.token-constellation h3{margin:0 0 8px;font-size:1.45rem;letter-spacing:-.05em}.token-constellation p{margin:0 0 18px;color:var(--muted);line-height:1.6}.token-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.token-chip{position:relative;overflow:hidden;min-height:104px;padding:16px;border-radius:24px;background:linear-gradient(180deg,#fff,rgba(239,246,255,.86));border:1px solid rgba(15,23,42,.10);box-shadow:0 14px 38px rgba(15,23,42,.06)}.token-chip:after{content:"";position:absolute;right:-24px;top:-24px;width:70px;height:70px;border-radius:999px;background:linear-gradient(135deg,rgba(37,99,235,.13),rgba(6,182,212,.13))}.token-chip strong{display:block;position:relative;font-size:1.08rem;letter-spacing:-.04em}.token-chip span{display:block;position:relative;margin-top:7px;color:var(--muted);font-size:.82rem;line-height:1.45}.future-badge{display:inline-flex;margin-top:10px;position:relative;padding:6px 9px;border-radius:999px;background:rgba(37,99,235,.08);color:#1d4ed8;font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.08em}.mission-control{margin-top:24px;padding:28px;border-radius:34px;color:#fff;background:radial-gradient(circle at 10% 0%,rgba(37,99,235,.36),transparent 22rem),radial-gradient(circle at 90% 30%,rgba(16,185,129,.26),transparent 22rem),linear-gradient(135deg,#020617,#0f172a 52%,#083344);border:1px solid rgba(255,255,255,.12);box-shadow:0 30px 90px rgba(2,6,23,.22)}.mission-control h3{margin:0 0 8px;font-size:1.6rem;letter-spacing:-.055em}.mission-control p{margin:0 0 18px;color:#bfdbfe;line-height:1.65}.mission-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.mission-item{padding:16px;border-radius:22px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}.mission-item span{display:block;color:#93c5fd;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:950}.mission-item strong{display:block;margin-top:8px;font-size:1.35rem;letter-spacing:-.045em}.mission-item small{display:block;margin-top:6px;color:#dbeafe;line-height:1.45}
 @media(max-width:980px){.command-center{grid-template-columns:1fr}.token-grid{grid-template-columns:repeat(2,1fr)}.mission-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){#enkSupply{white-space:normal}.search-bar{border-radius:24px;flex-direction:column}.search-bar input{min-height:44px}.search-bar button{width:100%}.intel-grid,.token-grid,.mission-grid{grid-template-columns:1fr}.command-center,.token-constellation,.mission-control{margin-top:18px}.mission-control,.token-constellation,.search-deck{padding:20px;border-radius:28px}}
 
@@ -51,14 +51,14 @@ section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{
 <a href="/" class="brand" aria-label="EnteleSCAN home"><span class="brand-mark"></span><span>EnteleSCAN</span></a>
 <nav class="nav-links" aria-label="Primary navigation">
 <a href="#live-explorer">Live Explorer</a><a href="#protocol">Protocol</a><a href="#features">Features</a><a href="#process">How It Works</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a>
-<span class="language-wrap"><select class="language-select" aria-label="Select language" data-language-select><option value="/" selected>🇬🇧 English</option><option value="/de/">🇩🇪 Deutsch</option><option value="/tr/">🇹🇷 Türkçe</option><option value="/fr/">🇫🇷 Français</option><option value="/es/">🇪🇸 Español</option><option value="/it/">🇮🇹 Italiano</option><option value="/ru/">🇷🇺 Русский</option></select></span>
+<span class="language-wrap"><select class="language-select" aria-label="Select language" data-language-select><option value="en" selected>🇬🇧 English</option><option value="de">🇩🇪 Deutsch</option><option value="tr">🇹🇷 Türkçe</option><option value="fr">🇫🇷 Français</option><option value="es">🇪🇸 Español</option><option value="it">🇮🇹 Italiano</option><option value="ru">🇷🇺 Русский</option><option value="pt">🇵🇹 Português</option><option value="nl">🇳🇱 Nederlands</option><option value="pl">🇵🇱 Polski</option><option value="ar">🇸🇦 العربية</option><option value="zh-CN">🇨🇳 简体中文</option><option value="ja">🇯🇵 日本語</option><option value="ko">🇰🇷 한국어</option><option value="hi">🇮🇳 हिन्दी</option><option value="id">🇮🇩 Indonesia</option><option value="vi">🇻🇳 Tiếng Việt</option><option value="th">🇹🇭 ไทย</option><option value="uk">🇺🇦 Українська</option><option value="ro">🇷🇴 Română</option><option value="el">🇬🇷 Ελληνικά</option><option value="sv">🇸🇪 Svenska</option><option value="no">🇳🇴 Norsk</option><option value="da">🇩🇰 Dansk</option><option value="fi">🇫🇮 Suomi</option></select></span>
 <a href="#contact" class="nav-cta">Contact</a>
 </nav>
 <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-mobile-toggle><span></span><span></span><span></span></button>
 </div>
 <div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner">
 <a href="#live-explorer">Live Explorer</a><a href="#protocol">Protocol</a><a href="#features">Features</a><a href="#process">How It Works</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a>
-<label>Language<select class="language-select" aria-label="Select language" data-language-select><option value="/" selected>🇬🇧 English</option><option value="/de/">🇩🇪 Deutsch</option><option value="/tr/">🇹🇷 Türkçe</option><option value="/fr/">🇫🇷 Français</option><option value="/es/">🇪🇸 Español</option><option value="/it/">🇮🇹 Italiano</option><option value="/ru/">🇷🇺 Русский</option></select></label>
+<label>Language<select class="language-select" aria-label="Select language" data-language-select><option value="en" selected>🇬🇧 English</option><option value="de">🇩🇪 Deutsch</option><option value="tr">🇹🇷 Türkçe</option><option value="fr">🇫🇷 Français</option><option value="es">🇪🇸 Español</option><option value="it">🇮🇹 Italiano</option><option value="ru">🇷🇺 Русский</option><option value="pt">🇵🇹 Português</option><option value="nl">🇳🇱 Nederlands</option><option value="pl">🇵🇱 Polski</option><option value="ar">🇸🇦 العربية</option><option value="zh-CN">🇨🇳 简体中文</option><option value="ja">🇯🇵 日本語</option><option value="ko">🇰🇷 한국어</option><option value="hi">🇮🇳 हिन्दी</option><option value="id">🇮🇩 Indonesia</option><option value="vi">🇻🇳 Tiếng Việt</option><option value="th">🇹🇭 ไทย</option><option value="uk">🇺🇦 Українська</option><option value="ro">🇷🇴 Română</option><option value="el">🇬🇷 Ελληνικά</option><option value="sv">🇸🇪 Svenska</option><option value="no">🇳🇴 Norsk</option><option value="da">🇩🇰 Dansk</option><option value="fi">🇫🇮 Suomi</option></select></label>
 <a href="#contact" class="nav-cta">Contact</a>
 </div></div>
 </header>
@@ -86,7 +86,7 @@ section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{
 <div>
 <div class="live-badge"><span class="live-dot"></span> Live Ethereum Data · ENK Online</div>
 <h2 class="explorer-title"><span>EnteleSCAN Live Console</span></h2>
-<p class="explorer-lead">A premium real-time observability layer for EnteleKRON. This console reads live ENK ERC-20 data through the secure EnteleSCAN API and transforms raw blockchain activity into clean intelligence.</p>
+<p class="explorer-lead">A premium real-time observability layer for EnteleKRON. This v3 console reads live ENK ERC-20 data, recognizes wallets, contracts, and transactions, and transforms raw blockchain activity into clean intelligence.</p>
 <div class="explorer-actions">
 <a class="mini-btn primary" href="https://etherscan.io/token/0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6" target="_blank" rel="noopener">View ENK on Etherscan</a>
 <button class="mini-btn" type="button" data-refresh-explorer>Refresh Data</button>
@@ -142,35 +142,35 @@ section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{
 <div class="command-center">
   <div class="search-deck">
     <h3 class="search-title">Universal Intelligence Search</h3>
-    <p class="search-copy">Paste an Ethereum wallet, ENK transaction hash, or contract address. EnteleSCAN v2 routes verified public-chain objects to the correct Etherscan intelligence view while native EnteleKRON indexing is prepared.</p>
+    <p class="search-copy">Paste an Ethereum wallet, ENK transaction hash, or contract address. EnteleSCAN v3 recognizes the object, resolves live metadata when available, and routes verified public-chain intelligence while native EnteleKRON indexing is prepared.</p>
     <div class="search-bar">
       <input id="entelescanSearch" type="text" placeholder="Search wallet, transaction hash, or contract address..." autocomplete="off" />
       <button type="button" data-entelescan-search>Scan</button>
     </div>
-    <div class="search-result" id="entelescanSearchResult">Ready for address, transaction, or contract intelligence.</div>
+    <div class="search-result" id="entelescanSearchResult">Ready for wallet, contract, or transaction intelligence.</div>
   </div>
 
   <div class="intel-grid">
-    <div class="intel-tile"><span>API Status</span><strong id="apiStatus">Online</strong><small>Secure Vercel API reading Etherscan v2.</small></div>
-    <div class="intel-tile"><span>Data Source</span><strong>Ethereum</strong><small>ENK ERC-20 live network data.</small></div>
-    <div class="intel-tile"><span>Refresh State</span><strong id="refreshState">Synced</strong><small>Manual refresh and automatic page-load update.</small></div>
-    <div class="intel-tile"><span>Console Mode</span><strong>v2</strong><small>Explorer interface + intelligence layer.</small></div>
+    <div class="intel-tile"><span>API Status</span><strong id="apiStatus">Online</strong><small>Secure Vercel APIs reading Etherscan v2.</small></div>
+    <div class="intel-tile"><span>Data Source</span><strong id="networkSource">Ethereum</strong><small>ENK ERC-20 live network data.</small></div>
+    <div class="intel-tile"><span>Refresh State</span><strong id="refreshState">Synced</strong><small>Manual refresh, search stats, and automatic page-load update.</small></div>
+    <div class="intel-tile"><span>Console Mode</span><strong>v3</strong><small>Universal search + intelligence dashboard.</small></div>
   </div>
 </div>
 
 <div class="mission-control">
-  <h3>Network Intelligence Center</h3>
-  <p>The first operational layer of EnteleSCAN: token observability, secure API routing, wallet/transaction lookup, and the future control surface for validators, ChronoSeal, EnteleLINK, GraphVAULT, and SOVRA diagnostics.</p>
+  <h3>Network Statistics Dashboard</h3>
+  <p>The v3 operational layer of EnteleSCAN: token observability, secure API routing, wallet/contract/transaction recognition, gas context, latest block visibility, and the future control surface for validators, ChronoSeal, EnteleLINK, GraphVAULT, and SOVRA diagnostics.</p>
   <div class="mission-grid">
-    <div class="mission-item"><span>ENK Feed</span><strong>Live</strong><small>Supply and transfer stream active.</small></div>
-    <div class="mission-item"><span>Wallet Search</span><strong>Ready</strong><small>Public address routing enabled.</small></div>
-    <div class="mission-item"><span>Tx Search</span><strong>Ready</strong><small>Transaction hash routing enabled.</small></div>
-    <div class="mission-item"><span>Mainnet</span><strong>Planned</strong><small>Native EnteleKRON explorer layer later.</small></div>
+    <div class="mission-item"><span>ENK Feed</span><strong id="statEnkFeed">Live</strong><small>Supply and transfer stream active.</small></div>
+    <div class="mission-item"><span>Latest Block</span><strong id="statLatestBlock">Loading</strong><small>Ethereum block height from the search API.</small></div>
+    <div class="mission-item"><span>Gas Context</span><strong id="statGas">Loading</strong><small>Safe / proposed / fast gas view.</small></div>
+    <div class="mission-item"><span>Recognition</span><strong id="statRecognition">3 Modes</strong><small>Wallet, contract, and transaction detection.</small></div>
   </div>
 </div>
 
 <div class="token-constellation">
-  <h3>TVK Ecosystem Token Constellation</h3>
+  <h3>Ecosystem Token Cards</h3>
   <p>EnteleSCAN begins with ENK and is designed to expand into the full TVK / SOVRA / KRON asset universe as contracts and data sources are connected.</p>
   <div class="token-grid">
     <div class="token-chip"><strong>ENK</strong><span>EnteleKRON genesis token, live now.</span><div class="future-badge">Connected</div></div>
@@ -184,7 +184,7 @@ section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{
   </div>
 </div>
 
-<div class="explorer-note">EnteleSCAN v2 reads live ENK data from Ethereum, provides universal public-chain lookup, and prepares the structure for wallet analytics, holder intelligence, multi-token scanning, ChronoSeal proofs, EnteleLINK bridge activity, validator intelligence, and native EnteleKRON mainnet observability.</div>
+<div class="explorer-note">EnteleSCAN v3 reads live ENK data from Ethereum, recognizes wallets, contracts, and transactions, displays ecosystem token cards and network statistics, and prepares the structure for wallet analytics, holder intelligence, multi-token scanning, ChronoSeal proofs, EnteleLINK bridge activity, validator intelligence, and native EnteleKRON mainnet observability.</div>
 
 </div>
 </div>
@@ -225,10 +225,57 @@ section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{
 <section id="contact"><div class="container"><div class="cta"><div><div class="kicker">EnteleSCAN Network</div><h2>Build the visibility layer for sovereign blockchain intelligence.</h2><p>For validator operators, blockchain teams, explorer developers, security partners, enterprise monitoring providers, and SOVRA / Entelekron ecosystem collaborators.</p></div><div class="actions"><a class="btn primary" href="mailto:team@entelescan.com">Contact EnteleSCAN</a><a class="btn" href="https://www.sovra.network/">SOVRA Network</a></div></div></div></section>
 </main>
 <footer><div class="container footer-row"><div>© 2026 EnteleSCAN | A SOVRA / Entelekron Network Intelligence Module.</div><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a><a href="https://www.sovra.network/">SOVRA</a></div></div></footer>
+<div id="google_translate_element" aria-hidden="true"></div>
 <script>
 const mobileToggle=document.querySelector('[data-mobile-toggle]');const mobileMenu=document.querySelector('[data-mobile-menu]');const languageSelects=document.querySelectorAll('[data-language-select]');
 if(mobileToggle&&mobileMenu){mobileToggle.addEventListener('click',()=>{const isOpen=document.body.classList.toggle('menu-open');mobileToggle.setAttribute('aria-expanded',String(isOpen));});mobileMenu.querySelectorAll('a').forEach((link)=>{link.addEventListener('click',()=>{document.body.classList.remove('menu-open');mobileToggle.setAttribute('aria-expanded','false');});});}
-languageSelects.forEach((select)=>{select.addEventListener('change',(event)=>{const target=event.target.value;if(target)window.location.href=target;});});
+const ENTELESCAN_LANGUAGES="en,de,tr,fr,es,it,ru,pt,nl,pl,ar,zh-CN,ja,ko,hi,id,vi,th,uk,ro,el,sv,no,da,fi";
+const ENTELESCAN_LANGUAGE_KEY="entelescan-language";
+
+function setTranslateCookie(language){
+  const value=language==="en"?"/en/en":`/en/${language}`;
+  document.cookie=`googtrans=${value};path=/;SameSite=Lax`;
+  if(location.hostname&&location.hostname.includes(".")){
+    document.cookie=`googtrans=${value};domain=.${location.hostname};path=/;SameSite=Lax`;
+  }
+}
+
+function syncLanguageSelects(language){
+  languageSelects.forEach((select)=>{select.value=language;});
+  document.documentElement.lang=language;
+  document.documentElement.dir=language==="ar"?"rtl":"ltr";
+}
+
+function applyEnteleScanLanguage(language,persist=true,attempt=0){
+  const selected=ENTELESCAN_LANGUAGES.split(",").includes(language)?language:"en";
+  syncLanguageSelects(selected);
+  setTranslateCookie(selected);
+  if(persist) localStorage.setItem(ENTELESCAN_LANGUAGE_KEY,selected);
+  const combo=document.querySelector(".goog-te-combo");
+  if(combo){
+    combo.value=selected==="en"?"":selected;
+    combo.dispatchEvent(new Event("change"));
+    return;
+  }
+  if(attempt<20){
+    window.setTimeout(()=>applyEnteleScanLanguage(selected,false,attempt+1),250);
+  }
+}
+
+window.initEnteleScanTranslate=function(){
+  if(window.google&&window.google.translate){
+    new window.google.translate.TranslateElement({
+      pageLanguage:"en",
+      includedLanguages:ENTELESCAN_LANGUAGES,
+      autoDisplay:false,
+    },"google_translate_element");
+    const saved=localStorage.getItem(ENTELESCAN_LANGUAGE_KEY)||"en";
+    window.setTimeout(()=>applyEnteleScanLanguage(saved,false),350);
+  }
+};
+
+languageSelects.forEach((select)=>{select.addEventListener('change',(event)=>{applyEnteleScanLanguage(event.target.value);});});
+syncLanguageSelects(localStorage.getItem(ENTELESCAN_LANGUAGE_KEY)||"en");
 
 function enteleShort(value){
   if(!value) return "";
@@ -257,6 +304,45 @@ function enteleTime(timestamp){
   if(!timestamp) return "—";
   const d=new Date(Number(timestamp)*1000);
   return d.toLocaleString();
+}
+
+function enteleEscape(value){
+  return String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[char]));
+}
+
+function enteleFormatWei(value,maximum=4){
+  if(!value) return "—";
+  return enteleFormatAmount(value,18,maximum)+" ETH";
+}
+
+function enteleSearchTypeLabel(type){
+  if(type==="contract") return "Contract recognized";
+  if(type==="transaction") return "Transaction recognized";
+  return "Wallet recognized";
+}
+
+function enteleRenderSearchResult(data){
+  const type=enteleEscape(enteleSearchTypeLabel(data.type));
+  const query=enteleEscape(data.query);
+  const message=enteleEscape(data.message||"Search object recognized by EnteleSCAN.");
+  const details=[];
+  if(data.type==="transaction"){
+    if(data.blockNumber) details.push(`Block #${enteleEscape(data.blockNumber)}`);
+    if(data.from) details.push(`From ${enteleEscape(enteleShort(data.from))}`);
+    if(data.to) details.push(`To ${enteleEscape(enteleShort(data.to))}`);
+    if(data.success!==null&&data.success!==undefined) details.push(data.success?"Successful":"Failed");
+  }else{
+    if(data.balanceWei) details.push(`Balance ${enteleEscape(enteleFormatWei(data.balanceWei,5))}`);
+    if(Array.isArray(data.recentTransactions)) details.push(`${data.recentTransactions.length} recent transactions indexed`);
+  }
+  return `
+    <div class="search-result-card">
+      <span>${type}</span>
+      <strong>${query}</strong>
+      <p>${message}${details.length?` ${details.join(" · ")}.`:""}</p>
+      <a href="${enteleEscape(data.explorerUrl)}" target="_blank" rel="noopener">Open verified Etherscan view ↗</a>
+    </div>
+  `;
 }
 
 async function loadEnteleScanExplorer(){
@@ -324,8 +410,46 @@ async function loadEnteleScanExplorer(){
   }
 }
 
+async function loadEnteleScanStats(){
+  const apiStatusEl=document.getElementById("apiStatus");
+  const refreshStateEl=document.getElementById("refreshState");
+  const networkSourceEl=document.getElementById("networkSource");
+  const statEnkFeedEl=document.getElementById("statEnkFeed");
+  const statLatestBlockEl=document.getElementById("statLatestBlock");
+  const statGasEl=document.getElementById("statGas");
+  const statRecognitionEl=document.getElementById("statRecognition");
 
-function runEnteleScanSearch(){
+  try{
+    const response=await fetch("/api/search?action=stats");
+    const stats=await response.json();
+    if(!response.ok) throw new Error(stats.error||"Unable to load network statistics");
+
+    if(apiStatusEl) apiStatusEl.textContent=stats.status==="live"?"Online":"Limited";
+    if(networkSourceEl) networkSourceEl.textContent=stats.chain||"Ethereum";
+    if(refreshStateEl) refreshStateEl.textContent=stats.status==="live"?"Synced":"Limited";
+    if(statEnkFeedEl) statEnkFeedEl.textContent=stats.status==="live"?"Live":"Ready";
+    if(statLatestBlockEl) statLatestBlockEl.textContent=stats.latestBlock?`#${Number(stats.latestBlock).toLocaleString("en-US")}`:"API Key";
+    if(statGasEl){
+      statGasEl.textContent=stats.safeGasGwei&&stats.proposedGasGwei&&stats.fastGasGwei
+        ? `${stats.safeGasGwei}/${stats.proposedGasGwei}/${stats.fastGasGwei} gwei`
+        : "API Key";
+    }
+    if(statRecognitionEl) statRecognitionEl.textContent=Array.isArray(stats.searchModes)?`${stats.searchModes.length} Modes`:"3 Modes";
+  }catch(error){
+    console.error("EnteleSCAN stats error:",error);
+    if(apiStatusEl) apiStatusEl.textContent="Limited";
+    if(statLatestBlockEl) statLatestBlockEl.textContent="Retry";
+    if(statGasEl) statGasEl.textContent="Retry";
+  }
+}
+
+function refreshEnteleScanData(){
+  loadEnteleScanExplorer();
+  loadEnteleScanStats();
+}
+
+
+async function runEnteleScanSearch(){
   const input=document.getElementById("entelescanSearch");
   const result=document.getElementById("entelescanSearchResult");
   if(!input) return;
@@ -334,21 +458,17 @@ function runEnteleScanSearch(){
     if(result) result.textContent="Paste a wallet address, contract address, or transaction hash first.";
     return;
   }
-  const isHex=/^0x[a-fA-F0-9]+$/.test(value);
-  let url="";
-  let label="";
-  if(isHex&&value.length===66){
-    url=`https://etherscan.io/tx/${value}`;
-    label="Transaction hash detected. Opening Etherscan transaction intelligence...";
-  }else if(isHex&&value.length===42){
-    url=`https://etherscan.io/address/${value}`;
-    label="Ethereum address detected. Opening public address intelligence...";
-  }else{
-    if(result) result.textContent="Unsupported format. Use a 0x wallet/contract address or 0x transaction hash.";
-    return;
+  if(result) result.textContent="Scanning EnteleSCAN v3 recognition API...";
+  try{
+    const response=await fetch(`/api/search?q=${encodeURIComponent(value)}`);
+    const data=await response.json();
+    if(!response.ok){
+      throw new Error(data.error||"Unsupported search format");
+    }
+    if(result) result.innerHTML=enteleRenderSearchResult(data);
+  }catch(error){
+    if(result) result.textContent=`${error.message}. Use a 0x wallet address, 0x contract address, or 0x transaction hash.`;
   }
-  if(result) result.textContent=label;
-  window.open(url,"_blank","noopener");
 }
 
 const entelescanSearchButton=document.querySelector("[data-entelescan-search]");
@@ -358,11 +478,12 @@ if(entelescanSearchInput){entelescanSearchInput.addEventListener("keydown",(even
 
 const refreshExplorerButton=document.querySelector("[data-refresh-explorer]");
 if(refreshExplorerButton){
-  refreshExplorerButton.addEventListener("click",loadEnteleScanExplorer);
+  refreshExplorerButton.addEventListener("click",refreshEnteleScanData);
 }
 
-loadEnteleScanExplorer();
+refreshEnteleScanData();
 
 </script>
+<script src="https://translate.google.com/translate_a/element.js?cb=initEnteleScanTranslate" async></script>
 </body>
 </html>
