@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EnteleSCAN — AI Network Explorer, Validator Intelligence & Protocol Observatory</title>
+<meta name="description" content="EnteleSCAN is the AI-powered network explorer, validator intelligence, monitoring, diagnostics, and observability layer of the SOVRA / Entelekron ecosystem." />
+<meta property="og:title" content="EnteleSCAN — AI Network Explorer & Protocol Observatory" />
+<meta property="og:description" content="Real-time network intelligence, validator monitoring, protocol analytics, AI diagnostics, and ecosystem observability for Entelekron and SOVRA." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#f7fbff" />
+<link rel="canonical" href="https://www.entelescan.com/" />
+<style>
+:root{--bg:#f7fbff;--ink:#07111f;--muted:#617086;--line:rgba(15,23,42,.12);--blue:#2563eb;--cyan:#06b6d4;--violet:#7c3aed;--emerald:#10b981;--amber:#f59e0b;--dark:#020617;--shadow:0 28px 90px rgba(15,23,42,.13);--radius:30px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 8%,rgba(37,99,235,.20),transparent 34rem),radial-gradient(circle at 88% 12%,rgba(6,182,212,.18),transparent 34rem),radial-gradient(circle at 50% 62%,rgba(16,185,129,.12),transparent 42rem),linear-gradient(180deg,#fff 0%,#f7fbff 54%,#eef7ff 100%);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:linear-gradient(rgba(15,23,42,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.035) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 78%)}a{color:inherit;text-decoration:none}.container{width:min(1200px,calc(100% - 40px));margin:0 auto}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.78);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:-.05em;font-size:1.22rem}.brand-mark{width:44px;height:44px;border-radius:16px;background:conic-gradient(from 180deg,var(--blue),var(--cyan),var(--emerald),var(--violet),var(--blue));box-shadow:0 16px 42px rgba(37,99,235,.25);position:relative}.brand-mark:before{content:"";position:absolute;inset:9px;border-radius:999px;border:2px solid rgba(255,255,255,.92)}.brand-mark:after{content:"";position:absolute;left:50%;top:50%;width:18px;height:18px;transform:translate(-50%,-50%);border-radius:999px;background:white;box-shadow:0 -12px 0 -6px white,0 12px 0 -6px white,-12px 0 0 -6px white,12px 0 0 -6px white}
+.nav-links{display:flex;align-items:center;gap:18px;color:var(--muted);font-weight:750;font-size:.92rem}.nav-links a:hover{color:var(--ink)}.nav-cta{color:#fff!important;background:var(--dark);padding:12px 18px;border-radius:999px;font-weight:900;box-shadow:0 14px 34px rgba(2,6,23,.17)}.language-wrap{position:relative;display:inline-flex;align-items:center}.language-select{appearance:none;-webkit-appearance:none;min-height:42px;max-width:150px;padding:0 38px 0 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.88);color:var(--ink);font-weight:850;cursor:pointer;outline:none}.language-wrap:after{content:"⌄";position:absolute;right:14px;top:50%;transform:translateY(-55%);color:var(--muted);pointer-events:none;font-weight:950}
+.mobile-toggle{display:none;width:46px;height:46px;border:1px solid var(--line);border-radius:16px;background:white;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}.mobile-toggle span{width:20px;height:2px;background:var(--ink);border-radius:999px;transition:.18s}.mobile-menu{display:none;border-top:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(18px)}.mobile-menu-inner{width:min(1200px,calc(100% - 40px));margin:0 auto;display:grid;gap:10px;padding:16px 0 22px}.mobile-menu a,.mobile-menu label{padding:14px 16px;border-radius:18px;border:1px solid var(--line);background:white;font-weight:850}.mobile-menu label{display:grid;gap:8px;color:var(--muted);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}.mobile-menu .language-select{max-width:none;width:100%;border-radius:14px;background:var(--bg)}body.menu-open .mobile-menu{display:block}body.menu-open .mobile-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}body.menu-open .mobile-toggle span:nth-child(2){opacity:0}body.menu-open .mobile-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.hero{padding:96px 0 76px}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);color:var(--muted);font-size:.86rem;font-weight:900;box-shadow:0 10px 34px rgba(15,23,42,.07)}.pulse{width:9px;height:9px;border-radius:999px;background:var(--emerald);box-shadow:0 0 0 7px rgba(16,185,129,.14)}h1{margin:24px 0 18px;font-size:clamp(3.1rem,8.8vw,7.6rem);line-height:.86;letter-spacing:-.095em;font-weight:950}.gradient-text{background:linear-gradient(135deg,#020617 4%,var(--blue),var(--cyan),var(--emerald));-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{margin:0 0 22px;max-width:880px;font-size:clamp(1.36rem,3vw,2.45rem);line-height:1.06;letter-spacing:-.06em;font-weight:920}.lead{max-width:760px;margin:0;color:var(--muted);font-size:1.08rem;line-height:1.78}.disclosure{margin-top:20px;max-width:760px;padding:14px 16px;border:1px solid rgba(37,99,235,.22);border-radius:20px;background:rgba(255,255,255,.72);color:#33516d;font-size:.92rem;line-height:1.55;font-weight:650}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.btn{min-height:52px;display:inline-flex;align-items:center;justify-content:center;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.86);font-weight:900;transition:.18s}.btn:hover{transform:translateY(-2px)}.btn.primary{color:white;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 20px 52px rgba(37,99,235,.25)}
+.scan-card{min-height:540px;border-radius:42px;border:1px solid var(--line);background:radial-gradient(circle at 50% 42%,rgba(37,99,235,.24),transparent 15rem),radial-gradient(circle at 76% 18%,rgba(6,182,212,.22),transparent 16rem),radial-gradient(circle at 30% 72%,rgba(16,185,129,.13),transparent 16rem),linear-gradient(180deg,rgba(255,255,255,.86),rgba(238,247,255,.82));box-shadow:var(--shadow);position:relative;overflow:hidden;padding:26px}.scan-card:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.045) 1px,transparent 1px);background-size:34px 34px;mask-image:radial-gradient(circle at center,#000,transparent 76%)}
+.radar{position:absolute;left:50%;top:42%;width:310px;height:310px;transform:translate(-50%,-50%);border-radius:999px;background:radial-gradient(circle,rgba(255,255,255,.96) 0 15%,transparent 16%),repeating-radial-gradient(circle,rgba(37,99,235,.24) 0 1px,transparent 2px 44px),conic-gradient(from 0deg,rgba(6,182,212,.35),transparent 28%,rgba(16,185,129,.15),transparent 58%,rgba(37,99,235,.22),transparent);box-shadow:0 28px 70px rgba(15,23,42,.12);z-index:1;overflow:hidden}.radar:before{content:"";position:absolute;inset:0;border-radius:inherit;background:conic-gradient(from 0deg,rgba(6,182,212,.55),transparent 22%);animation:sweep 3.8s linear infinite;mix-blend-mode:multiply}@keyframes sweep{to{transform:rotate(360deg)}}
+.scan-node{position:absolute;z-index:4;width:18px;height:18px;border-radius:999px;background:white;border:4px solid var(--emerald);box-shadow:0 0 38px rgba(16,185,129,.45)}.scan-node.big{width:92px;height:92px;display:grid;place-items:center;color:white;font-weight:950;font-size:1rem;background:linear-gradient(135deg,var(--blue),var(--cyan));border:0;border-radius:30px;box-shadow:0 24px 60px rgba(37,99,235,.28)}.n0{left:50%;top:42%;transform:translate(-50%,-50%)}.n1{left:22%;top:24%}.n2{right:24%;top:20%;border-color:var(--cyan)}.n3{left:20%;bottom:33%;border-color:var(--amber)}.n4{right:20%;bottom:34%;border-color:var(--violet)}.n5{right:13%;top:46%;border-color:var(--emerald)}.float-chip{position:absolute;z-index:5;padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid var(--line);color:var(--muted);font-size:.82rem;font-weight:850;box-shadow:0 16px 38px rgba(15,23,42,.10)}.chip1{top:34px;left:34px}.chip2{top:74px;right:34px}.chip3{bottom:138px;left:46px}.status-card{position:absolute;left:28px;right:28px;bottom:28px;z-index:6;padding:22px;border-radius:26px;color:white;background:rgba(2,6,23,.93);border:1px solid rgba(255,255,255,.16);box-shadow:0 22px 60px rgba(2,6,23,.28)}.status-card strong{display:block;margin-bottom:8px;font-size:1.14rem;letter-spacing:-.04em}.status-card p{margin:0;color:#dbeafe;line-height:1.65}
+section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{margin-bottom:12px;color:var(--blue);text-transform:uppercase;letter-spacing:.15em;font-size:.8rem;font-weight:950}h2{margin:0;font-size:clamp(2rem,4.4vw,4rem);line-height:.98;letter-spacing:-.07em;font-weight:950}.section-text{margin-top:18px;color:var(--muted);font-size:1.02rem;line-height:1.75}.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}.statement{padding:38px;border-radius:32px;background:white;border:1px solid var(--line);box-shadow:var(--shadow)}.statement.big{color:white;background:linear-gradient(135deg,var(--blue),var(--cyan))}.statement h3{margin:0 0 16px;font-size:1.7rem;line-height:1.08;letter-spacing:-.05em}.statement p{margin:0;color:var(--muted);line-height:1.75}.statement.big p{color:rgba(255,255,255,.88)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{min-height:232px;padding:26px;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.84);box-shadow:0 16px 50px rgba(15,23,42,.08)}.icon{width:48px;height:48px;margin-bottom:18px;display:grid;place-items:center;border-radius:17px;color:var(--blue);font-weight:950;background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(6,182,212,.12))}.card h3{margin:0 0 12px;font-size:1.13rem;letter-spacing:-.035em}.card p{margin:0;color:var(--muted);line-height:1.66;font-size:.96rem}.dark-band{padding:58px;border-radius:46px;color:white;background:radial-gradient(circle at top left,rgba(37,99,235,.28),transparent 34rem),radial-gradient(circle at bottom right,rgba(6,182,212,.24),transparent 34rem),#020617;box-shadow:var(--shadow)}.dark-band p,.dark-band .section-text{color:#dbeafe;opacity:.88}.stack{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}.layers{display:grid;gap:12px}.layer{display:flex;justify-content:space-between;gap:18px;padding:18px 20px;border-radius:20px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07)}.layer span:first-child{font-weight:900}.layer span:last-child{color:#93c5fd;font-size:.86rem;font-weight:850;text-align:right}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.process-step{padding:24px;border-radius:26px;background:white;border:1px solid var(--line);box-shadow:0 14px 42px rgba(15,23,42,.07)}.process-step strong{display:block;color:var(--blue);margin-bottom:12px;font-size:.9rem}.process-step h3{margin:0 0 10px;letter-spacing:-.04em}.process-step p{margin:0;color:var(--muted);line-height:1.65}.timeline{display:grid;gap:16px}.step{display:grid;grid-template-columns:94px 1fr;gap:18px;padding:24px;border:1px solid var(--line);border-radius:26px;background:white;box-shadow:0 14px 42px rgba(15,23,42,.07)}.step strong{color:var(--blue)}.step h3{margin:0 0 8px;letter-spacing:-.035em}.step p{margin:0;color:var(--muted);line-height:1.68}.cta{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:28px;padding:58px;border-radius:44px;color:white;background:radial-gradient(circle at top,rgba(255,255,255,.24),transparent 25rem),linear-gradient(135deg,#020617,#1e3a8a 58%,#155e75);box-shadow:var(--shadow)}.cta p{color:#dbeafe;line-height:1.75;opacity:.88}.cta .btn{color:white;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.18)}.cta .btn.primary{background:linear-gradient(135deg,var(--blue),var(--cyan))}footer{padding:40px 0 56px;color:var(--muted);font-size:.92rem}.footer-row{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:24px}.footer-links{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ===== EnteleSCAN Live Explorer Console ===== */
+.explorer-shell{position:relative;overflow:hidden;border-radius:52px;padding:2px;background:linear-gradient(135deg,rgba(37,99,235,.85),rgba(6,182,212,.85),rgba(16,185,129,.65),rgba(124,58,237,.7));box-shadow:0 34px 110px rgba(37,99,235,.22),0 18px 70px rgba(6,182,212,.16)}
+.explorer-shell:before{content:"";position:absolute;inset:-30%;background:conic-gradient(from 0deg,transparent,rgba(255,255,255,.55),transparent 18%,transparent 100%);animation:orbitGlow 7s linear infinite;opacity:.45}
+@keyframes orbitGlow{to{transform:rotate(360deg)}}
+.explorer-console{position:relative;z-index:1;border-radius:50px;padding:34px;background:radial-gradient(circle at 18% 10%,rgba(37,99,235,.26),transparent 22rem),radial-gradient(circle at 82% 8%,rgba(6,182,212,.24),transparent 24rem),radial-gradient(circle at 50% 88%,rgba(16,185,129,.18),transparent 28rem),linear-gradient(180deg,rgba(255,255,255,.96),rgba(247,251,255,.94));border:1px solid rgba(255,255,255,.72);box-shadow:inset 0 1px 0 rgba(255,255,255,.82)}
+.explorer-top{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;margin-bottom:26px}.live-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:rgba(16,185,129,.10);border:1px solid rgba(16,185,129,.24);font-weight:950;color:#047857;font-size:.82rem;letter-spacing:.11em;text-transform:uppercase}.live-dot{width:10px;height:10px;border-radius:50%;background:#10b981;box-shadow:0 0 0 8px rgba(16,185,129,.13),0 0 30px rgba(16,185,129,.55);animation:livePulse 1.8s ease-in-out infinite}@keyframes livePulse{50%{transform:scale(.72);opacity:.72}}
+.explorer-title{margin:16px 0 10px;font-size:clamp(2.4rem,5vw,5rem);line-height:.9;letter-spacing:-.085em;font-weight:950}.explorer-title span{background:linear-gradient(135deg,#020617 5%,#2563eb 40%,#06b6d4 70%,#10b981);-webkit-background-clip:text;background-clip:text;color:transparent}.explorer-lead{max-width:780px;margin:0;color:var(--muted);line-height:1.75;font-weight:650}
+.orbital-chip{min-width:240px;padding:18px;border-radius:28px;background:rgba(2,6,23,.92);color:white;border:1px solid rgba(255,255,255,.12);box-shadow:0 22px 70px rgba(2,6,23,.28)}.orbital-chip small{display:block;color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-weight:950;margin-bottom:8px}.orbital-chip strong{display:block;font-size:1.1rem;letter-spacing:-.035em}.orbital-chip a{display:inline-block;margin-top:12px;color:#a7f3d0;font-weight:900}
+.explorer-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}.metric{position:relative;overflow:hidden;min-height:150px;border-radius:28px;padding:22px;background:rgba(255,255,255,.78);border:1px solid rgba(15,23,42,.10);box-shadow:0 16px 48px rgba(15,23,42,.08)}.metric:before{content:"";position:absolute;right:-35px;top:-35px;width:96px;height:96px;border-radius:999px;background:linear-gradient(135deg,rgba(37,99,235,.18),rgba(6,182,212,.15));filter:blur(2px)}.metric label{display:block;color:var(--muted);font-size:.78rem;font-weight:950;text-transform:uppercase;letter-spacing:.13em;margin-bottom:12px}.metric strong{display:block;font-size:clamp(1.25rem,2vw,2.1rem);line-height:1.02;letter-spacing:-.06em;word-break:break-word}.metric p{margin:9px 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}.metric code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.95rem}
+.explorer-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.mini-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(15,23,42,.12);background:white;font-weight:950;color:#0f172a;box-shadow:0 12px 26px rgba(15,23,42,.07);cursor:pointer}.mini-btn.primary{background:linear-gradient(135deg,#2563eb,#06b6d4);color:white;border:none}
+.transfer-panel{margin-top:18px;overflow:hidden;border-radius:34px;background:rgba(2,6,23,.94);color:white;border:1px solid rgba(255,255,255,.12);box-shadow:0 28px 90px rgba(2,6,23,.26)}.transfer-head{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:22px 24px;border-bottom:1px solid rgba(255,255,255,.10);background:radial-gradient(circle at top left,rgba(37,99,235,.34),transparent 24rem)}.transfer-head h3{margin:0;font-size:1.45rem;letter-spacing:-.045em}.transfer-head p{margin:6px 0 0;color:#bfdbfe;line-height:1.55}.transfer-table{display:grid}.transfer-row{display:grid;grid-template-columns:1.15fr 1.7fr .8fr .7fr;gap:14px;padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.08);align-items:center}.transfer-row:hover{background:rgba(255,255,255,.045)}.transfer-row.header{color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:950;background:rgba(255,255,255,.035)}.transfer-row span,.transfer-row a{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.transfer-row a{color:#a7f3d0;font-weight:900}.amount-pill{justify-self:start;padding:8px 10px;border-radius:999px;background:rgba(16,185,129,.12);color:#bbf7d0;border:1px solid rgba(16,185,129,.20);font-weight:950}.loading-line{padding:26px;color:#bfdbfe}.explorer-note{margin-top:16px;padding:14px 16px;border-radius:20px;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.14);color:#33516d;font-size:.9rem;line-height:1.6;font-weight:650}
+@media(max-width:980px){.explorer-top{grid-template-columns:1fr}.explorer-metrics{grid-template-columns:1fr 1fr}.transfer-row{grid-template-columns:1fr;gap:6px}.transfer-row.header{display:none}.transfer-head{grid-template-columns:1fr}.orbital-chip{min-width:0}}
+@media(max-width:640px){.explorer-console{padding:22px;border-radius:34px}.explorer-shell{border-radius:36px}.explorer-metrics{grid-template-columns:1fr}.metric{min-height:132px}.transfer-row{padding:16px}.transfer-head{padding:20px}.explorer-actions{flex-direction:column}.mini-btn{width:100%}}
+
+@media(max-width:980px){.hero-grid,.split,.stack,.cta{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.nav-links{display:none}.mobile-toggle{display:inline-flex}.dark-band,.cta{padding:34px;border-radius:32px}}@media(max-width:640px){.container{width:min(100% - 28px,1200px)}.hero{padding-top:56px}h1{font-size:clamp(3rem,17vw,5rem)}.cards,.process{grid-template-columns:1fr}.actions{flex-direction:column}.btn{width:100%}.step{grid-template-columns:1fr}.footer-row{flex-direction:column}.radar{width:235px;height:235px}.scan-node.big{width:74px;height:74px;border-radius:24px}.chip2{top:82px;right:22px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a href="/" class="brand" aria-label="EnteleSCAN home"><span class="brand-mark"></span><span>EnteleSCAN</span></a>
+<nav class="nav-links" aria-label="Primary navigation">
+<a href="#live-explorer">Live Explorer</a><a href="#protocol">Protocol</a><a href="#features">Features</a><a href="#process">How It Works</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a>
+<span class="language-wrap"><select class="language-select" aria-label="Select language" data-language-select><option value="/" selected>🇬🇧 English</option><option value="/de/">🇩🇪 Deutsch</option><option value="/tr/">🇹🇷 Türkçe</option><option value="/fr/">🇫🇷 Français</option><option value="/es/">🇪🇸 Español</option><option value="/it/">🇮🇹 Italiano</option><option value="/ru/">🇷🇺 Русский</option></select></span>
+<a href="#contact" class="nav-cta">Contact</a>
+</nav>
+<button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-mobile-toggle><span></span><span></span><span></span></button>
+</div>
+<div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner">
+<a href="#live-explorer">Live Explorer</a><a href="#protocol">Protocol</a><a href="#features">Features</a><a href="#process">How It Works</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a>
+<label>Language<select class="language-select" aria-label="Select language" data-language-select><option value="/" selected>🇬🇧 English</option><option value="/de/">🇩🇪 Deutsch</option><option value="/tr/">🇹🇷 Türkçe</option><option value="/fr/">🇫🇷 Français</option><option value="/es/">🇪🇸 Español</option><option value="/it/">🇮🇹 Italiano</option><option value="/ru/">🇷🇺 Русский</option></select></label>
+<a href="#contact" class="nav-cta">Contact</a>
+</div></div>
+</header>
+<main>
+<section class="hero"><div class="container hero-grid"><div>
+<div class="eyebrow"><span class="pulse"></span> AI Explorer · Validator Intelligence · Network Observatory</div>
+<h1 class="gradient-text">EnteleSCAN</h1>
+<p class="subtitle">The intelligent explorer and observability layer for sovereign blockchain infrastructure.</p>
+<p class="lead">EnteleSCAN is the AI-powered network explorer, validator intelligence, diagnostics, and monitoring layer of the SOVRA / Entelekron ecosystem. It is designed to make chains, validators, wallets, governance events, bridge activity, proofs, and system health visible in one intelligent interface.</p>
+<div class="disclosure">EnteleSCAN is an observability and intelligence concept for network visibility, diagnostics, and analytics. Production explorer, validator, and compliance integrations require verified data sources, security review, and staged deployment.</div>
+<div class="actions"><a class="btn primary" href="#protocol">Explore EnteleSCAN →</a><a class="btn" href="#features">Core Features</a><a class="btn" href="#contact">Partner Access</a></div>
+</div><aside class="scan-card" aria-label="EnteleSCAN network radar visual">
+<span class="float-chip chip1">Validator Health</span><span class="float-chip chip2">Live Network Signals</span><span class="float-chip chip3">AI Diagnostics</span>
+<div class="radar"></div><span class="scan-node big n0">SCAN</span><span class="scan-node n1"></span><span class="scan-node n2"></span><span class="scan-node n3"></span><span class="scan-node n4"></span><span class="scan-node n5"></span>
+<div class="status-card"><strong>EnteleSCAN / Observatory Runtime</strong><p>Watching blocks, validators, bridges, wallets, proofs, governance events, performance, anomalies, and ecosystem health.</p></div>
+</aside></div></section>
+<section id="protocol"><div class="container split"><div class="statement big"><h3>EnteleSCAN turns network complexity into visible intelligence.</h3><p>It is designed to help users, validators, builders, and AI agents understand what is happening across the Entelekron ecosystem in real time.</p></div><div class="statement"><h3>Built as the protocol observatory</h3><p>EnteleSCAN connects chain data, validator signals, bridge events, wallet activity, ChronoSeal proofs, GraphVAULT context, MindDAO governance, and SOVRA diagnostics into one explorer interface.</p></div></div></section>
+
+<section id="live-explorer">
+<div class="container">
+<div class="explorer-shell">
+<div class="explorer-console">
+
+<div class="explorer-top">
+<div>
+<div class="live-badge"><span class="live-dot"></span> Live Ethereum Data · ENK Online</div>
+<h2 class="explorer-title"><span>EnteleSCAN Live Console</span></h2>
+<p class="explorer-lead">A premium real-time observability layer for EnteleKRON. This console reads live ENK ERC-20 data through the secure EnteleSCAN API and transforms raw blockchain activity into clean intelligence.</p>
+<div class="explorer-actions">
+<a class="mini-btn primary" href="https://etherscan.io/token/0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6" target="_blank" rel="noopener">View ENK on Etherscan</a>
+<button class="mini-btn" type="button" data-refresh-explorer>Refresh Data</button>
+<a class="mini-btn" href="#roadmap">Mainnet Roadmap</a>
+</div>
+</div>
+
+<div class="orbital-chip">
+<small>Genesis Asset</small>
+<strong>EnteleKRON Token</strong>
+<a href="https://etherscan.io/token/0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6" target="_blank" rel="noopener">0xC953...28F6 ↗</a>
+</div>
+</div>
+
+<div class="explorer-metrics">
+<div class="metric">
+<label>Token</label>
+<strong>ENK</strong>
+<p>EnteleKRON · Ethereum ERC-20</p>
+</div>
+<div class="metric">
+<label>Total Supply</label>
+<strong id="enkSupply">Loading...</strong>
+<p>Live result from EnteleSCAN API</p>
+</div>
+<div class="metric">
+<label>Latest Block</label>
+<strong id="enkLatestBlock">Loading...</strong>
+<p>Most recent ENK transfer block</p>
+</div>
+<div class="metric">
+<label>Contract</label>
+<strong><code>0xC953...28F6</code></strong>
+<p>Verified Ethereum contract reference</p>
+</div>
+</div>
+
+<div class="transfer-panel">
+<div class="transfer-head">
+<div>
+<h3>Latest ENK Transfers</h3>
+<p>Live token movement, wallet routing, transaction hash, amount, and block intelligence.</p>
+</div>
+<div class="live-badge"><span class="live-dot"></span> Streaming</div>
+</div>
+
+<div class="transfer-table" id="enkTransfers">
+<div class="loading-line">Loading latest ENK transfers...</div>
+</div>
+</div>
+
+<div class="explorer-note">EnteleSCAN v1 currently reads ENK data from Ethereum. Future versions will add wallet search, transaction search, multi-token ecosystem scanning, ChronoSeal proofs, EnteleLINK bridge activity, validator intelligence, and native EnteleKRON mainnet observability.</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="features"><div class="container"><div class="section-head"><div class="kicker">Core Features</div><h2>An intelligent scanner for chains, validators, wallets, proofs, and AI-chain operations.</h2><p class="section-text">EnteleSCAN is designed to go beyond a traditional block explorer by adding AI diagnostics, risk signals, validator intelligence, and ecosystem-level observability.</p></div><div class="cards">
+<article class="card"><div class="icon">01</div><h3>Network Explorer</h3><p>View blocks, transactions, wallets, contracts, tokens, validators, bridge events, and ecosystem activity.</p></article>
+<article class="card"><div class="icon">02</div><h3>Validator Intelligence</h3><p>Monitor validator health, uptime, rewards, performance, slashing risk, node behavior, and governance activity.</p></article>
+<article class="card"><div class="icon">03</div><h3>AI Diagnostics</h3><p>SOVRA-powered anomaly detection, risk summaries, health explanations, and operational recommendations.</p></article>
+<article class="card"><div class="icon">04</div><h3>Bridge Visibility</h3><p>Track EnteleLINK routes, cross-chain messages, liquidity movement, status, confirmations, and proof events.</p></article>
+<article class="card"><div class="icon">05</div><h3>Proof & Audit View</h3><p>Display ChronoSeal records, GraphVAULT links, document proofs, governance decisions, and event histories.</p></article>
+<article class="card"><div class="icon">06</div><h3>Compliance-Ready Signals</h3><p>Future hooks for ISO 20022-style messaging, wallet risk metadata, audit exports, and enterprise reporting.</p></article>
+</div></div></section>
+<section id="process"><div class="container"><div class="section-head"><div class="kicker">How It Works</div><h2>Observe, analyze, explain, and verify.</h2><p class="section-text">EnteleSCAN follows a four-layer intelligence flow for turning raw network data into actionable insight.</p></div><div class="process">
+<div class="process-step"><strong>Step 01</strong><h3>Ingest</h3><p>Collect chain data, validator metrics, wallet events, bridge messages, governance records, and proof anchors.</p></div>
+<div class="process-step"><strong>Step 02</strong><h3>Index</h3><p>Organize raw network information into searchable records, timelines, dashboards, and explorer views.</p></div>
+<div class="process-step"><strong>Step 03</strong><h3>Analyze</h3><p>Apply AI diagnostics, anomaly detection, validator scoring, risk patterns, and ecosystem health logic.</p></div>
+<div class="process-step"><strong>Step 04</strong><h3>Explain</h3><p>Provide human-readable insights, summaries, alerts, proof links, and operational recommendations.</p></div>
+</div></div></section>
+<section id="ecosystem"><div class="container"><div class="dark-band stack"><div><div class="kicker">SOVRA / Entelekron Ecosystem</div><h2>The visibility layer for every sovereign module.</h2><p class="section-text">EnteleSCAN gives the ecosystem a shared observability layer across Entelekron, EnteleLINK, ChronoSeal, GraphVAULT, Q-Presence, EnteleWallet, MindDAO, validator systems, and SOVRA AI operations.</p></div><div class="layers">
+<div class="layer"><span>Entelekron Chain</span><span>Blocks · Transactions · State</span></div><div class="layer"><span>Validators</span><span>Health · Rewards · Governance</span></div><div class="layer"><span>EnteleLINK</span><span>Bridge Routes · Cross-Chain Events</span></div><div class="layer"><span>ChronoSeal</span><span>Timestamped Proof Records</span></div><div class="layer"><span>GraphVAULT</span><span>Semantic Context · Event Links</span></div><div class="layer"><span>Q-Presence</span><span>Identity · Access · Presence Events</span></div><div class="layer"><span>SOVRA Core</span><span>AI Diagnostics · Alerts</span></div>
+</div></div></div></section>
+<section id="usecases"><div class="container"><div class="section-head"><div class="kicker">Use Cases</div><h2>Designed for users, validators, builders, enterprises, and AI agents.</h2><p class="section-text">EnteleSCAN can support transparency, monitoring, governance, security, developer workflows, validator operations, and enterprise-grade reporting.</p></div><div class="cards">
+<article class="card"><div class="icon">EXP</div><h3>Block Explorer</h3><p>Search transactions, wallets, blocks, contracts, token activity, and protocol events.</p></article>
+<article class="card"><div class="icon">VAL</div><h3>Validator Dashboard</h3><p>Track uptime, staking, rewards, slashing risks, governance participation, and performance.</p></article>
+<article class="card"><div class="icon">AI</div><h3>AI Operations Center</h3><p>Use SOVRA diagnostics to summarize risk, anomalies, health, performance, and recommended actions.</p></article>
+<article class="card"><div class="icon">SEC</div><h3>Security Monitoring</h3><p>Detect suspicious wallet patterns, bridge anomalies, abnormal validator behavior, and incident signals.</p></article>
+<article class="card"><div class="icon">DAO</div><h3>Governance Visibility</h3><p>Monitor proposals, votes, participants, proof events, DAO activity, and decision timelines.</p></article>
+<article class="card"><div class="icon">BIZ</div><h3>Enterprise Reporting</h3><p>Produce audit-friendly exports, compliance records, usage dashboards, and ecosystem analytics.</p></article>
+</div></div></section>
+<section id="roadmap"><div class="container"><div class="section-head"><div class="kicker">Roadmap</div><h2>From explorer concept to AI-powered observability infrastructure.</h2></div><div class="timeline">
+<div class="step"><strong>Phase 01</strong><div><h3>Explorer Foundation</h3><p>Define data models for blocks, wallets, validators, bridge events, proofs, and governance activity.</p></div></div>
+<div class="step"><strong>Phase 02</strong><div><h3>Validator & Bridge Views</h3><p>Build dashboards for validator intelligence, EnteleLINK activity, ChronoSeal proofs, and network health.</p></div></div>
+<div class="step"><strong>Phase 03</strong><div><h3>SOVRA Diagnostics</h3><p>Add AI summaries, alerts, anomaly detection, risk explanations, and operational recommendations.</p></div></div>
+<div class="step"><strong>Phase 04</strong><div><h3>Public Observatory</h3><p>Launch a public explorer, developer APIs, enterprise reports, and cross-module ecosystem analytics.</p></div></div>
+</div></div></section>
+<section id="contact"><div class="container"><div class="cta"><div><div class="kicker">EnteleSCAN Network</div><h2>Build the visibility layer for sovereign blockchain intelligence.</h2><p>For validator operators, blockchain teams, explorer developers, security partners, enterprise monitoring providers, and SOVRA / Entelekron ecosystem collaborators.</p></div><div class="actions"><a class="btn primary" href="mailto:team@entelescan.com">Contact EnteleSCAN</a><a class="btn" href="https://www.sovra.network/">SOVRA Network</a></div></div></div></section>
+</main>
+<footer><div class="container footer-row"><div>© 2026 EnteleSCAN | A SOVRA / Entelekron Network Intelligence Module.</div><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a><a href="https://www.sovra.network/">SOVRA</a></div></div></footer>
+<script>
+const mobileToggle=document.querySelector('[data-mobile-toggle]');const mobileMenu=document.querySelector('[data-mobile-menu]');const languageSelects=document.querySelectorAll('[data-language-select]');
+if(mobileToggle&&mobileMenu){mobileToggle.addEventListener('click',()=>{const isOpen=document.body.classList.toggle('menu-open');mobileToggle.setAttribute('aria-expanded',String(isOpen));});mobileMenu.querySelectorAll('a').forEach((link)=>{link.addEventListener('click',()=>{document.body.classList.remove('menu-open');mobileToggle.setAttribute('aria-expanded','false');});});}
+languageSelects.forEach((select)=>{select.addEventListener('change',(event)=>{const target=event.target.value;if(target)window.location.href=target;});});
+
+function enteleShort(value){
+  if(!value) return "";
+  return value.slice(0,6)+"..."+value.slice(-4);
+}
+
+function enteleFormatAmount(value,decimals=18,maximum=4){
+  try{
+    const amount=Number(value)/Math.pow(10,Number(decimals));
+    return amount.toLocaleString(undefined,{maximumFractionDigits:maximum});
+  }catch(error){
+    return value;
+  }
+}
+
+function enteleTime(timestamp){
+  if(!timestamp) return "—";
+  const d=new Date(Number(timestamp)*1000);
+  return d.toLocaleString();
+}
+
+async function loadEnteleScanExplorer(){
+  const supplyEl=document.getElementById("enkSupply");
+  const transfersEl=document.getElementById("enkTransfers");
+  const blockEl=document.getElementById("enkLatestBlock");
+
+  if(!supplyEl||!transfersEl) return;
+
+  supplyEl.textContent="Loading...";
+  transfersEl.innerHTML='<div class="loading-line">Loading latest ENK transfers...</div>';
+
+  try{
+    const supplyResponse=await fetch("/api/enk?action=supply");
+    const supplyData=await supplyResponse.json();
+
+    if(supplyData&&supplyData.status==="1"&&supplyData.result){
+      supplyEl.textContent=enteleFormatAmount(supplyData.result,18,0)+" ENK";
+    }else{
+      supplyEl.textContent="Unavailable";
+    }
+
+    const transfersResponse=await fetch("/api/enk?action=transfers");
+    const transfersData=await transfersResponse.json();
+
+    if(!transfersData||!Array.isArray(transfersData.result)||transfersData.result.length===0){
+      transfersEl.innerHTML='<div class="loading-line">No recent ENK transfers found.</div>';
+      if(blockEl) blockEl.textContent="—";
+      return;
+    }
+
+    const latest=transfersData.result[0];
+    if(blockEl) blockEl.textContent="#"+latest.blockNumber;
+
+    const rows=transfersData.result.slice(0,10).map((tx)=>`
+      <div class="transfer-row">
+        <a href="https://etherscan.io/tx/${tx.hash}" target="_blank" rel="noopener" title="${tx.hash}">${enteleShort(tx.hash)}</a>
+        <span title="${tx.from} to ${tx.to}">${enteleShort(tx.from)} → ${enteleShort(tx.to)}</span>
+        <span class="amount-pill">${enteleFormatAmount(tx.value,tx.tokenDecimal,4)} ${tx.tokenSymbol||"ENK"}</span>
+        <span title="${enteleTime(tx.timeStamp)}">#${tx.blockNumber}</span>
+      </div>
+    `).join("");
+
+    transfersEl.innerHTML=`
+      <div class="transfer-row header">
+        <span>Transaction</span>
+        <span>Route</span>
+        <span>Amount</span>
+        <span>Block</span>
+      </div>
+      ${rows}
+    `;
+  }catch(error){
+    console.error("EnteleSCAN explorer error:",error);
+    supplyEl.textContent="Unable to load";
+    transfersEl.innerHTML='<div class="loading-line">Unable to load ENK transfers. Please try again shortly.</div>';
+    if(blockEl) blockEl.textContent="—";
+  }
+}
+
+const refreshExplorerButton=document.querySelector("[data-refresh-explorer]");
+if(refreshExplorerButton){
+  refreshExplorerButton.addEventListener("click",loadEnteleScanExplorer);
+}
+
+loadEnteleScanExplorer();
+
+</script>
+</body>
+</html>
