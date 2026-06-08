@@ -1,4 +1,5 @@
 const ENK_CONTRACT = "0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6";
+const KNOWN_CONTRACTS = new Set([ENK_CONTRACT.toLowerCase()]);
 const CHAIN_ID = 1;
 const ETHERSCAN_BASE = "https://api.etherscan.io/v2/api";
 const ETHERSCAN_WEB = "https://etherscan.io";
@@ -107,6 +108,14 @@ async function recognizeTransaction(apiKey, query) {
 }
 
 async function recognizeAddress(apiKey, query) {
+  if (KNOWN_CONTRACTS.has(query.toLowerCase())) {
+    return {
+      ...baseRecognition("contract", query, "known-contract"),
+      status: "recognized",
+      message: "EnteleKRON contract recognized from EnteleSCAN's verified ecosystem registry.",
+    };
+  }
+
   const fallback = {
     ...baseRecognition("wallet", query),
     status: "recognized",
