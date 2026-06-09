@@ -360,7 +360,7 @@ async function loadEnteleScanExplorer(){
   transfersEl.innerHTML='<div class="loading-line">Loading latest ENK transfers...</div>';
 
   try{
-    const supplyResponse=await fetch("/api/enk?action=supply");
+    const supplyResponse=await fetch("/api/enk/?action=supply");
     const supplyData=await supplyResponse.json();
 
     if(supplyData&&supplyData.status==="1"&&supplyData.result){
@@ -369,7 +369,7 @@ async function loadEnteleScanExplorer(){
       supplyEl.textContent="Unavailable";
     }
 
-    const transfersResponse=await fetch("/api/enk?action=transfers");
+    const transfersResponse=await fetch("/api/enk/?action=transfers");
     const transfersData=await transfersResponse.json();
 
     if(!transfersData||!Array.isArray(transfersData.result)||transfersData.result.length===0){
@@ -420,7 +420,7 @@ async function loadEnteleScanStats(){
   const statRecognitionEl=document.getElementById("statRecognition");
 
   try{
-    const response=await fetch("/api/search?action=stats");
+    const response=await fetch("/api/search/?action=stats");
     const stats=await response.json();
     if(!response.ok) throw new Error(stats.error||"Unable to load network statistics");
 
@@ -460,7 +460,7 @@ async function runEnteleScanSearch(){
   }
   if(result) result.textContent="Scanning EnteleSCAN v3 recognition API...";
   try{
-    const response=await fetch(`/api/search?q=${encodeURIComponent(value)}`);
+    const response=await fetch(`/api/search/?q=${encodeURIComponent(value)}`);
     const data=await response.json();
     if(!response.ok){
       throw new Error(data.error||"Unsupported search format");

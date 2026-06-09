@@ -27,6 +27,12 @@ Create `/workspace/.env` (gitignored) with:
 ETHERSCAN_API_KEY=your_etherscan_api_key
 ```
 
+In Cursor Cloud, the secret is injected as `ETHERSCAN_API_KEY` — write it to `.env` before starting the dev server:
+
+```bash
+printf 'ETHERSCAN_API_KEY=%s\n' "$ETHERSCAN_API_KEY" > .env
+```
+
 - **Required** for `/api/enk` (supply + transfers). Without it, the Live Console ENK feed shows "Unavailable".
 - **Recommended** for `/api/search` live stats, gas oracle, and block height. Without it, search still works in limited/pattern mode (wallet/contract/tx recognition).
 
@@ -34,9 +40,9 @@ Get a free key at https://etherscan.io/myapikey
 
 ### Trailing-slash redirect gotcha
 
-`vercel.json` sets `"trailingSlash": true`. Requests to `/api/search?...` (no trailing slash) receive a **308 redirect to `/api/search/`** and **drop the query string**, which breaks browser `fetch()` calls from `index.html`.
+`vercel.json` sets `"trailingSlash": true`. Requests to `/api/search?...` (no trailing slash) receive a **308 redirect to `/api/search/`** and **drop the query string**, which breaks browser `fetch()` calls.
 
-When testing APIs manually, always use trailing slashes:
+`index.html` uses trailing slashes in all `fetch()` URLs (e.g. `/api/enk/?action=supply`). When testing APIs manually, also use trailing slashes:
 
 ```bash
 curl -sL "http://localhost:3000/api/search/?action=stats"
