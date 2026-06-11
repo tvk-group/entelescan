@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>EnteleSCAN — AI Network Explorer, Validator Intelligence & Protocol Observatory</title>
-<meta name="description" content="EnteleSCAN is the AI-powered network explorer, validator intelligence, monitoring, diagnostics, and observability layer of the SOVRA / Entelekron ecosystem." />
-<meta property="og:title" content="EnteleSCAN — AI Network Explorer & Protocol Observatory" />
-<meta property="og:description" content="Real-time network intelligence, validator monitoring, protocol analytics, AI diagnostics, and ecosystem observability for Entelekron and SOVRA." />
+<title>EnteleSCAN v7 — Ecosystem Intelligence & Mission Control</title>
+<meta name="description" content="EnteleSCAN is the intelligence and observability layer of the ENTELΞKRON ecosystem — mission control, ecosystem galaxy, SOVRA intelligence, and protocol readiness." />
+<meta property="og:title" content="EnteleSCAN v7 — Ecosystem Intelligence Center" />
+<meta property="og:description" content="Mission control for sovereign blockchain infrastructure. Interactive ecosystem galaxy, SOVRA intelligence, and live protocol readiness." />
 <meta property="og:type" content="website" />
 <meta name="theme-color" content="#f7fbff" />
 <link rel="canonical" href="https://www.entelescan.com/" />
@@ -14,35 +14,82 @@
 :root{--bg:#f7fbff;--ink:#07111f;--muted:#617086;--line:rgba(15,23,42,.12);--blue:#2563eb;--cyan:#06b6d4;--violet:#7c3aed;--emerald:#10b981;--amber:#f59e0b;--dark:#020617;--shadow:0 28px 90px rgba(15,23,42,.13);--radius:30px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 8%,rgba(37,99,235,.20),transparent 34rem),radial-gradient(circle at 88% 12%,rgba(6,182,212,.18),transparent 34rem),radial-gradient(circle at 50% 62%,rgba(16,185,129,.12),transparent 42rem),linear-gradient(180deg,#fff 0%,#f7fbff 54%,#eef7ff 100%);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:linear-gradient(rgba(15,23,42,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.035) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 78%)}a{color:inherit;text-decoration:none}.container{width:min(1200px,calc(100% - 40px));margin:0 auto}
 header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.78);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:-.05em;font-size:1.22rem}.brand-mark{width:44px;height:44px;border-radius:16px;background:conic-gradient(from 180deg,var(--blue),var(--cyan),var(--emerald),var(--violet),var(--blue));box-shadow:0 16px 42px rgba(37,99,235,.25);position:relative}.brand-mark:before{content:"";position:absolute;inset:9px;border-radius:999px;border:2px solid rgba(255,255,255,.92)}.brand-mark:after{content:"";position:absolute;left:50%;top:50%;width:18px;height:18px;transform:translate(-50%,-50%);border-radius:999px;background:white;box-shadow:0 -12px 0 -6px white,0 12px 0 -6px white,-12px 0 0 -6px white,12px 0 0 -6px white}
-.nav-links{display:flex;align-items:center;gap:18px;color:var(--muted);font-weight:750;font-size:.92rem}.nav-links a:hover{color:var(--ink)}.nav-cta{color:#fff!important;background:var(--dark);padding:12px 18px;border-radius:999px;font-weight:900;box-shadow:0 14px 34px rgba(2,6,23,.17)}.language-wrap{position:relative;display:inline-flex;align-items:center}.language-select{appearance:none;-webkit-appearance:none;min-height:42px;max-width:150px;padding:0 38px 0 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.88);color:var(--ink);font-weight:850;cursor:pointer;outline:none}.language-wrap:after{content:"⌄";position:absolute;right:14px;top:50%;transform:translateY(-55%);color:var(--muted);pointer-events:none;font-weight:950}#google_translate_element,.goog-te-banner-frame,.skiptranslate iframe{display:none!important}body{top:0!important}body>.skiptranslate{display:none!important}
+.nav-links{display:flex;align-items:center;gap:16px;color:var(--muted);font-weight:750;font-size:.88rem}.nav-links a:hover{color:var(--ink)}.nav-cta{color:#fff!important;background:var(--dark);padding:12px 18px;border-radius:999px;font-weight:900;box-shadow:0 14px 34px rgba(2,6,23,.17)}.language-wrap{position:relative;display:inline-flex;align-items:center}.language-select{appearance:none;-webkit-appearance:none;min-height:42px;max-width:150px;padding:0 38px 0 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.88);color:var(--ink);font-weight:850;cursor:pointer;outline:none}.language-wrap:after{content:"⌄";position:absolute;right:14px;top:50%;transform:translateY(-55%);color:var(--muted);pointer-events:none;font-weight:950}#google_translate_element,.goog-te-banner-frame,.skiptranslate iframe{display:none!important}body{top:0!important}body>.skiptranslate{display:none!important}
 .mobile-toggle{display:none;width:46px;height:46px;border:1px solid var(--line);border-radius:16px;background:white;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}.mobile-toggle span{width:20px;height:2px;background:var(--ink);border-radius:999px;transition:.18s}.mobile-menu{display:none;border-top:1px solid var(--line);background:rgba(255,255,255,.96);backdrop-filter:blur(18px)}.mobile-menu-inner{width:min(1200px,calc(100% - 40px));margin:0 auto;display:grid;gap:10px;padding:16px 0 22px}.mobile-menu a,.mobile-menu label{padding:14px 16px;border-radius:18px;border:1px solid var(--line);background:white;font-weight:850}.mobile-menu label{display:grid;gap:8px;color:var(--muted);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}.mobile-menu .language-select{max-width:none;width:100%;border-radius:14px;background:var(--bg)}body.menu-open .mobile-menu{display:block}body.menu-open .mobile-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}body.menu-open .mobile-toggle span:nth-child(2){opacity:0}body.menu-open .mobile-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.hero{padding:96px 0 76px}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);color:var(--muted);font-size:.86rem;font-weight:900;box-shadow:0 10px 34px rgba(15,23,42,.07)}.pulse{width:9px;height:9px;border-radius:999px;background:var(--emerald);box-shadow:0 0 0 7px rgba(16,185,129,.14)}h1{margin:24px 0 18px;font-size:clamp(3.1rem,8.8vw,7.6rem);line-height:.86;letter-spacing:-.095em;font-weight:950}.gradient-text{background:linear-gradient(135deg,#020617 4%,var(--blue),var(--cyan),var(--emerald));-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{margin:0 0 22px;max-width:880px;font-size:clamp(1.36rem,3vw,2.45rem);line-height:1.06;letter-spacing:-.06em;font-weight:920}.lead{max-width:760px;margin:0;color:var(--muted);font-size:1.08rem;line-height:1.78}.disclosure{margin-top:20px;max-width:760px;padding:14px 16px;border:1px solid rgba(37,99,235,.22);border-radius:20px;background:rgba(255,255,255,.72);color:#33516d;font-size:.92rem;line-height:1.55;font-weight:650}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.btn{min-height:52px;display:inline-flex;align-items:center;justify-content:center;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.86);font-weight:900;transition:.18s}.btn:hover{transform:translateY(-2px)}.btn.primary{color:white;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 20px 52px rgba(37,99,235,.25)}
-.scan-card{min-height:540px;border-radius:42px;border:1px solid var(--line);background:radial-gradient(circle at 50% 42%,rgba(37,99,235,.24),transparent 15rem),radial-gradient(circle at 76% 18%,rgba(6,182,212,.22),transparent 16rem),radial-gradient(circle at 30% 72%,rgba(16,185,129,.13),transparent 16rem),linear-gradient(180deg,rgba(255,255,255,.86),rgba(238,247,255,.82));box-shadow:var(--shadow);position:relative;overflow:hidden;padding:26px}.scan-card:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(15,23,42,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.045) 1px,transparent 1px);background-size:34px 34px;mask-image:radial-gradient(circle at center,#000,transparent 76%)}
-.radar{position:absolute;left:50%;top:42%;width:310px;height:310px;transform:translate(-50%,-50%);border-radius:999px;background:radial-gradient(circle,rgba(255,255,255,.96) 0 15%,transparent 16%),repeating-radial-gradient(circle,rgba(37,99,235,.24) 0 1px,transparent 2px 44px),conic-gradient(from 0deg,rgba(6,182,212,.35),transparent 28%,rgba(16,185,129,.15),transparent 58%,rgba(37,99,235,.22),transparent);box-shadow:0 28px 70px rgba(15,23,42,.12);z-index:1;overflow:hidden}.radar:before{content:"";position:absolute;inset:0;border-radius:inherit;background:conic-gradient(from 0deg,rgba(6,182,212,.55),transparent 22%);animation:sweep 3.8s linear infinite;mix-blend-mode:multiply}@keyframes sweep{to{transform:rotate(360deg)}}
-.scan-node{position:absolute;z-index:4;width:18px;height:18px;border-radius:999px;background:white;border:4px solid var(--emerald);box-shadow:0 0 38px rgba(16,185,129,.45)}.scan-node.big{width:92px;height:92px;display:grid;place-items:center;color:white;font-weight:950;font-size:1rem;background:linear-gradient(135deg,var(--blue),var(--cyan));border:0;border-radius:30px;box-shadow:0 24px 60px rgba(37,99,235,.28)}.n0{left:50%;top:42%;transform:translate(-50%,-50%)}.n1{left:22%;top:24%}.n2{right:24%;top:20%;border-color:var(--cyan)}.n3{left:20%;bottom:33%;border-color:var(--amber)}.n4{right:20%;bottom:34%;border-color:var(--violet)}.n5{right:13%;top:46%;border-color:var(--emerald)}.float-chip{position:absolute;z-index:5;padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid var(--line);color:var(--muted);font-size:.82rem;font-weight:850;box-shadow:0 16px 38px rgba(15,23,42,.10)}.chip1{top:34px;left:34px}.chip2{top:74px;right:34px}.chip3{bottom:138px;left:46px}.status-card{position:absolute;left:28px;right:28px;bottom:28px;z-index:6;padding:22px;border-radius:26px;color:white;background:rgba(2,6,23,.93);border:1px solid rgba(255,255,255,.16);box-shadow:0 22px 60px rgba(2,6,23,.28)}.status-card strong{display:block;margin-bottom:8px;font-size:1.14rem;letter-spacing:-.04em}.status-card p{margin:0;color:#dbeafe;line-height:1.65}
-section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{margin-bottom:12px;color:var(--blue);text-transform:uppercase;letter-spacing:.15em;font-size:.8rem;font-weight:950}h2{margin:0;font-size:clamp(2rem,4.4vw,4rem);line-height:.98;letter-spacing:-.07em;font-weight:950}.section-text{margin-top:18px;color:var(--muted);font-size:1.02rem;line-height:1.75}.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}.statement{padding:38px;border-radius:32px;background:white;border:1px solid var(--line);box-shadow:var(--shadow)}.statement.big{color:white;background:linear-gradient(135deg,var(--blue),var(--cyan))}.statement h3{margin:0 0 16px;font-size:1.7rem;line-height:1.08;letter-spacing:-.05em}.statement p{margin:0;color:var(--muted);line-height:1.75}.statement.big p{color:rgba(255,255,255,.88)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{min-height:232px;padding:26px;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.84);box-shadow:0 16px 50px rgba(15,23,42,.08)}.icon{width:48px;height:48px;margin-bottom:18px;display:grid;place-items:center;border-radius:17px;color:var(--blue);font-weight:950;background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(6,182,212,.12))}.card h3{margin:0 0 12px;font-size:1.13rem;letter-spacing:-.035em}.card p{margin:0;color:var(--muted);line-height:1.66;font-size:.96rem}.dark-band{padding:58px;border-radius:46px;color:white;background:radial-gradient(circle at top left,rgba(37,99,235,.28),transparent 34rem),radial-gradient(circle at bottom right,rgba(6,182,212,.24),transparent 34rem),#020617;box-shadow:var(--shadow)}.dark-band p,.dark-band .section-text{color:#dbeafe;opacity:.88}.stack{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}.layers{display:grid;gap:12px}.layer{display:flex;justify-content:space-between;gap:18px;padding:18px 20px;border-radius:20px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07)}.layer span:first-child{font-weight:900}.layer span:last-child{color:#93c5fd;font-size:.86rem;font-weight:850;text-align:right}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.process-step{padding:24px;border-radius:26px;background:white;border:1px solid var(--line);box-shadow:0 14px 42px rgba(15,23,42,.07)}.process-step strong{display:block;color:var(--blue);margin-bottom:12px;font-size:.9rem}.process-step h3{margin:0 0 10px;letter-spacing:-.04em}.process-step p{margin:0;color:var(--muted);line-height:1.65}.timeline{display:grid;gap:16px}.step{display:grid;grid-template-columns:94px 1fr;gap:18px;padding:24px;border:1px solid var(--line);border-radius:26px;background:white;box-shadow:0 14px 42px rgba(15,23,42,.07)}.step strong{color:var(--blue)}.step h3{margin:0 0 8px;letter-spacing:-.035em}.step p{margin:0;color:var(--muted);line-height:1.68}.cta{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:28px;padding:58px;border-radius:44px;color:white;background:radial-gradient(circle at top,rgba(255,255,255,.24),transparent 25rem),linear-gradient(135deg,#020617,#1e3a8a 58%,#155e75);box-shadow:var(--shadow)}.cta p{color:#dbeafe;line-height:1.75;opacity:.88}.cta .btn{color:white;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.18)}.cta .btn.primary{background:linear-gradient(135deg,var(--blue),var(--cyan))}footer{padding:40px 0 56px;color:var(--muted);font-size:.92rem}.footer-row{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:24px}.footer-links{display:flex;gap:14px;flex-wrap:wrap}
+.hero{padding:88px 0 64px;text-align:center}.hero .container{max-width:820px}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);color:var(--muted);font-size:.82rem;font-weight:900;box-shadow:0 10px 34px rgba(15,23,42,.07)}.pulse{width:9px;height:9px;border-radius:999px;background:var(--emerald);box-shadow:0 0 0 7px rgba(16,185,129,.14)}h1{margin:22px 0 14px;font-size:clamp(3.4rem,9vw,7.2rem);line-height:.88;letter-spacing:-.095em;font-weight:950}.gradient-text{background:linear-gradient(135deg,#020617 4%,var(--blue),var(--cyan),var(--emerald));-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{margin:0 auto 28px;max-width:640px;font-size:clamp(1.2rem,2.8vw,1.75rem);line-height:1.15;letter-spacing:-.04em;font-weight:850;color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:8px}.btn{min-height:52px;display:inline-flex;align-items:center;justify-content:center;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.86);font-weight:900;transition:.18s}.btn:hover{transform:translateY(-2px)}.btn.primary{color:white;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 20px 52px rgba(37,99,235,.25)}
+section{padding:72px 0}.section-head{max-width:720px;margin-bottom:32px;text-align:center;margin-left:auto;margin-right:auto}.kicker{margin-bottom:10px;color:var(--blue);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:950}h2{margin:0;font-size:clamp(1.85rem,4vw,3.2rem);line-height:.98;letter-spacing:-.06em;font-weight:950}.section-text{margin-top:14px;color:var(--muted);font-size:.98rem;line-height:1.6}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{min-height:180px;padding:22px;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.84);box-shadow:0 16px 50px rgba(15,23,42,.08)}.icon{width:44px;height:44px;margin-bottom:14px;display:grid;place-items:center;border-radius:15px;color:var(--blue);font-weight:950;background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(6,182,212,.12))}.card h3{margin:0 0 8px;font-size:1.05rem;letter-spacing:-.035em}.card p{margin:0;color:var(--muted);line-height:1.55;font-size:.92rem}.cta{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;padding:44px;border-radius:40px;color:white;background:radial-gradient(circle at top,rgba(255,255,255,.24),transparent 25rem),linear-gradient(135deg,#020617,#1e3a8a 58%,#155e75);box-shadow:var(--shadow)}.cta p{color:#dbeafe;line-height:1.6;opacity:.88;margin:10px 0 0;font-size:.95rem}.cta .btn{color:white;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.18)}.cta .btn.primary{background:linear-gradient(135deg,var(--blue),var(--cyan))}footer{padding:36px 0 48px;color:var(--muted);font-size:.92rem}.footer-row{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:24px}.footer-links{display:flex;gap:14px;flex-wrap:wrap}
 
-/* ===== EnteleSCAN Live Explorer Console ===== */
-.explorer-shell{position:relative;overflow:hidden;border-radius:52px;padding:2px;background:linear-gradient(135deg,rgba(37,99,235,.85),rgba(6,182,212,.85),rgba(16,185,129,.65),rgba(124,58,237,.7));box-shadow:0 34px 110px rgba(37,99,235,.22),0 18px 70px rgba(6,182,212,.16)}
+/* ===== Ecosystem Galaxy ===== */
+.galaxy-shell{position:relative;border-radius:48px;padding:2px;background:linear-gradient(135deg,rgba(37,99,235,.7),rgba(6,182,212,.65),rgba(124,58,237,.55));box-shadow:0 40px 120px rgba(37,99,235,.18)}
+.galaxy-stage{position:relative;min-height:620px;border-radius:46px;overflow:hidden;background:radial-gradient(circle at 50% 42%,rgba(37,99,235,.22),transparent 38%),radial-gradient(circle at 20% 80%,rgba(6,182,212,.16),transparent 32%),radial-gradient(circle at 82% 18%,rgba(16,185,129,.14),transparent 30%),linear-gradient(180deg,#020617 0%,#0f172a 48%,#083344 100%)}
+#galaxyCanvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.85}
+.galaxy-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(circle at center,#000 35%,transparent 78%)}
+.galaxy-orbit{position:absolute;left:50%;top:50%;border:1px solid rgba(255,255,255,.08);border-radius:999px;transform:translate(-50%,-50%);pointer-events:none}
+.orbit-1{width:180px;height:180px}.orbit-2{width:300px;height:300px}.orbit-3{width:420px;height:420px}.orbit-4{width:540px;height:540px}.orbit-5{width:660px;height:660px}
+.galaxy-orbit:after{content:"";position:absolute;inset:-1px;border-radius:inherit;border:1px dashed rgba(6,182,212,.12);animation:orbitPulse 4s ease-in-out infinite}
+@keyframes orbitPulse{50%{opacity:.35;transform:scale(1.02)}}
+.galaxy-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:10;width:118px;height:118px;border-radius:36px;display:grid;place-items:center;text-align:center;color:#fff;font-weight:950;font-size:.92rem;line-height:1.1;letter-spacing:-.03em;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 0 60px rgba(6,182,212,.55),0 0 120px rgba(37,99,235,.35);animation:corePulse 3s ease-in-out infinite}
+@keyframes corePulse{50%{box-shadow:0 0 80px rgba(6,182,212,.7),0 0 140px rgba(37,99,235,.45)}}
+.galaxy-core span{font-size:.68rem;font-weight:850;opacity:.85;display:block;margin-top:4px;letter-spacing:.08em;text-transform:uppercase}
+.galaxy-node{position:absolute;z-index:12;transform:translate(-50%,-50%);cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s}
+.galaxy-node:hover,.galaxy-node.active{z-index:20;transform:translate(-50%,-50%) scale(1.12)}
+.galaxy-node-btn{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.25);box-shadow:0 12px 40px rgba(2,6,23,.35);font-weight:900;font-size:.82rem;color:var(--ink);white-space:nowrap;transition:background .2s,box-shadow .2s}
+.galaxy-node:hover .galaxy-node-btn,.galaxy-node.active .galaxy-node-btn{background:#fff;box-shadow:0 18px 50px rgba(6,182,212,.35),0 0 30px rgba(37,99,235,.25)}
+.galaxy-node-dot{width:10px;height:10px;border-radius:999px;background:var(--cyan);box-shadow:0 0 16px rgba(6,182,212,.8);animation:nodeGlow 2.4s ease-in-out infinite}
+.galaxy-node.primary .galaxy-node-btn{background:linear-gradient(135deg,rgba(37,99,235,.95),rgba(6,182,212,.95));color:#fff;border-color:rgba(255,255,255,.3)}
+.galaxy-node.primary .galaxy-node-dot{background:#fff;box-shadow:0 0 20px rgba(255,255,255,.9)}
+@keyframes nodeGlow{50%{transform:scale(.75);opacity:.7}}
+.galaxy-link{position:absolute;inset:0;z-index:5;pointer-events:none}
+.galaxy-link line{stroke:rgba(6,182,212,.18);stroke-width:1;stroke-dasharray:6 8;animation:dashFlow 12s linear infinite}
+@keyframes dashFlow{to{stroke-dashoffset:-200}}
+.galaxy-info{position:absolute;left:24px;right:24px;bottom:24px;z-index:15;padding:20px 22px;border-radius:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);color:#dbeafe;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.galaxy-info h3{margin:0;font-size:1.15rem;color:#fff;letter-spacing:-.04em}
+.galaxy-info p{margin:6px 0 0;font-size:.88rem;line-height:1.5;opacity:.88}
+.galaxy-info-tag{padding:8px 12px;border-radius:999px;background:rgba(16,185,129,.15);color:#a7f3d0;font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.1em;border:1px solid rgba(16,185,129,.25)}
+
+/* ===== SOVRA Intelligence ===== */
+.sovra-shell{border-radius:44px;padding:34px;background:radial-gradient(circle at 12% 0%,rgba(124,58,237,.14),transparent 22rem),radial-gradient(circle at 88% 20%,rgba(37,99,235,.12),transparent 24rem),rgba(255,255,255,.82);border:1px solid rgba(37,99,235,.14);box-shadow:var(--shadow)}
+.sovra-header{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;margin-bottom:22px}
+.sovra-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.2);color:var(--violet);font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.12em}
+.sovra-badge-dot{width:8px;height:8px;border-radius:999px;background:var(--violet);animation:livePulse 1.8s ease-in-out infinite}
+.sovra-title{margin:12px 0 6px;font-size:clamp(1.8rem,3.5vw,2.6rem);letter-spacing:-.06em;font-weight:950}
+.sovra-lead{margin:0;color:var(--muted);line-height:1.55;font-size:.95rem;max-width:560px}
+.sovra-briefing{margin-top:18px;padding:18px 20px;border-radius:22px;background:linear-gradient(135deg,#020617,#172554);color:#dbeafe;border:1px solid rgba(255,255,255,.1)}
+.sovra-briefing strong{display:block;color:#fff;margin-bottom:6px;font-size:.95rem}
+.sovra-briefing p{margin:0;font-size:.88rem;line-height:1.55}
+.sovra-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.sovra-card{position:relative;padding:18px;border-radius:24px;background:white;border:1px solid var(--line);cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;text-align:left}
+.sovra-card:hover,.sovra-card.active{transform:translateY(-3px);box-shadow:0 20px 50px rgba(37,99,235,.12);border-color:rgba(37,99,235,.28)}
+.sovra-card span{display:block;color:var(--blue);font-size:.68rem;font-weight:950;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+.sovra-card strong{display:block;font-size:1rem;letter-spacing:-.03em;margin-bottom:6px}
+.sovra-card p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.5}
+
+/* ===== Live Explorer Console ===== */
+.explorer-shell{position:relative;overflow:hidden;border-radius:52px;padding:2px;background:linear-gradient(135deg,rgba(37,99,235,.85),rgba(6,182,212,.85),rgba(16,185,129,.65),rgba(124,58,237,.7));box-shadow:0 34px 110px rgba(37,99,235,.22)}
 .explorer-shell:before{content:"";position:absolute;inset:-30%;background:conic-gradient(from 0deg,transparent,rgba(255,255,255,.55),transparent 18%,transparent 100%);animation:orbitGlow 7s linear infinite;opacity:.45}
 @keyframes orbitGlow{to{transform:rotate(360deg)}}
-.explorer-console{position:relative;z-index:1;border-radius:50px;padding:34px;background:radial-gradient(circle at 18% 10%,rgba(37,99,235,.26),transparent 22rem),radial-gradient(circle at 82% 8%,rgba(6,182,212,.24),transparent 24rem),radial-gradient(circle at 50% 88%,rgba(16,185,129,.18),transparent 28rem),linear-gradient(180deg,rgba(255,255,255,.96),rgba(247,251,255,.94));border:1px solid rgba(255,255,255,.72);box-shadow:inset 0 1px 0 rgba(255,255,255,.82)}
-.explorer-top{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;margin-bottom:26px}.live-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:rgba(16,185,129,.10);border:1px solid rgba(16,185,129,.24);font-weight:950;color:#047857;font-size:.82rem;letter-spacing:.11em;text-transform:uppercase}.live-dot{width:10px;height:10px;border-radius:50%;background:#10b981;box-shadow:0 0 0 8px rgba(16,185,129,.13),0 0 30px rgba(16,185,129,.55);animation:livePulse 1.8s ease-in-out infinite}@keyframes livePulse{50%{transform:scale(.72);opacity:.72}}
-.explorer-title{margin:16px 0 10px;font-size:clamp(2.4rem,5vw,5rem);line-height:.9;letter-spacing:-.085em;font-weight:950}.explorer-title span{background:linear-gradient(135deg,#020617 5%,#2563eb 40%,#06b6d4 70%,#10b981);-webkit-background-clip:text;background-clip:text;color:transparent}.explorer-lead{max-width:780px;margin:0;color:var(--muted);line-height:1.75;font-weight:650}
-.orbital-chip{min-width:240px;padding:18px;border-radius:28px;background:rgba(2,6,23,.92);color:white;border:1px solid rgba(255,255,255,.12);box-shadow:0 22px 70px rgba(2,6,23,.28)}.orbital-chip small{display:block;color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-weight:950;margin-bottom:8px}.orbital-chip strong{display:block;font-size:1.1rem;letter-spacing:-.035em}.orbital-chip a{display:inline-block;margin-top:12px;color:#a7f3d0;font-weight:900}
-.explorer-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}.metric{position:relative;overflow:hidden;min-height:150px;border-radius:28px;padding:22px;background:rgba(255,255,255,.78);border:1px solid rgba(15,23,42,.10);box-shadow:0 16px 48px rgba(15,23,42,.08)}.metric:before{content:"";position:absolute;right:-35px;top:-35px;width:96px;height:96px;border-radius:999px;background:linear-gradient(135deg,rgba(37,99,235,.18),rgba(6,182,212,.15));filter:blur(2px)}.metric label{display:block;color:var(--muted);font-size:.78rem;font-weight:950;text-transform:uppercase;letter-spacing:.13em;margin-bottom:12px}.metric strong{display:block;font-size:clamp(1.25rem,2vw,2.1rem);line-height:1.02;letter-spacing:-.06em;word-break:break-word}.metric p{margin:9px 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}.metric code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.95rem}
-.explorer-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.mini-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(15,23,42,.12);background:white;font-weight:950;color:#0f172a;box-shadow:0 12px 26px rgba(15,23,42,.07);cursor:pointer}.mini-btn.primary{background:linear-gradient(135deg,#2563eb,#06b6d4);color:white;border:none}
-.transfer-panel{margin-top:18px;overflow:hidden;border-radius:34px;background:rgba(2,6,23,.94);color:white;border:1px solid rgba(255,255,255,.12);box-shadow:0 28px 90px rgba(2,6,23,.26)}.transfer-head{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:22px 24px;border-bottom:1px solid rgba(255,255,255,.10);background:radial-gradient(circle at top left,rgba(37,99,235,.34),transparent 24rem)}.transfer-head h3{margin:0;font-size:1.45rem;letter-spacing:-.045em}.transfer-head p{margin:6px 0 0;color:#bfdbfe;line-height:1.55}.transfer-table{display:grid}.transfer-row{display:grid;grid-template-columns:1.15fr 1.7fr .8fr .7fr;gap:14px;padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.08);align-items:center}.transfer-row:hover{background:rgba(255,255,255,.045)}.transfer-row.header{color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:950;background:rgba(255,255,255,.035)}.transfer-row span,.transfer-row a{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.transfer-row a{color:#a7f3d0;font-weight:900}.amount-pill{justify-self:start;padding:8px 10px;border-radius:999px;background:rgba(16,185,129,.12);color:#bbf7d0;border:1px solid rgba(16,185,129,.20);font-weight:950}.loading-line{padding:26px;color:#bfdbfe}.explorer-note{margin-top:16px;padding:14px 16px;border-radius:20px;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.14);color:#33516d;font-size:.9rem;line-height:1.6;font-weight:650}
+.explorer-console{position:relative;z-index:1;border-radius:50px;padding:34px;background:radial-gradient(circle at 18% 10%,rgba(37,99,235,.26),transparent 22rem),radial-gradient(circle at 82% 8%,rgba(6,182,212,.24),transparent 24rem),linear-gradient(180deg,rgba(255,255,255,.96),rgba(247,251,255,.94));border:1px solid rgba(255,255,255,.72)}
+.explorer-top{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;margin-bottom:22px}.live-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:rgba(16,185,129,.10);border:1px solid rgba(16,185,129,.24);font-weight:950;color:#047857;font-size:.78rem;letter-spacing:.11em;text-transform:uppercase}.live-dot{width:10px;height:10px;border-radius:50%;background:#10b981;box-shadow:0 0 0 8px rgba(16,185,129,.13);animation:livePulse 1.8s ease-in-out infinite}@keyframes livePulse{50%{transform:scale(.72);opacity:.72}}
+.explorer-title{margin:14px 0 8px;font-size:clamp(2rem,4.5vw,3.6rem);line-height:.92;letter-spacing:-.08em;font-weight:950}.explorer-title span{background:linear-gradient(135deg,#020617 5%,#2563eb 40%,#06b6d4 70%,#10b981);-webkit-background-clip:text;background-clip:text;color:transparent}.explorer-lead{max-width:620px;margin:0;color:var(--muted);line-height:1.55;font-weight:650;font-size:.95rem}
+.explorer-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}.mini-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(15,23,42,.12);background:white;font-weight:950;color:#0f172a;cursor:pointer}.mini-btn.primary{background:linear-gradient(135deg,#2563eb,#06b6d4);color:white;border:none}
+.readiness-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:20px 0}
+.readiness-gauge{position:relative;padding:18px 16px;border-radius:26px;background:rgba(255,255,255,.78);border:1px solid rgba(15,23,42,.10);text-align:center;overflow:hidden}
+.readiness-gauge:before{content:"";position:absolute;inset:auto -20px -20px -20px;height:4px;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--emerald));opacity:.5}
+.readiness-ring{width:64px;height:64px;margin:0 auto 10px;border-radius:999px;background:conic-gradient(var(--gauge-color,var(--emerald)) calc(var(--gauge-pct,72)*1%),rgba(15,23,42,.08) 0);display:grid;place-items:center;position:relative}
+.readiness-ring:after{content:"";position:absolute;inset:8px;border-radius:999px;background:white}
+.readiness-ring strong{position:relative;z-index:1;font-size:.95rem;letter-spacing:-.04em}
+.readiness-gauge label{display:block;color:var(--muted);font-size:.68rem;font-weight:950;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}
+.readiness-gauge small{display:block;color:var(--muted);font-size:.78rem;margin-top:4px}
+.explorer-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}.metric{position:relative;min-height:120px;border-radius:24px;padding:18px;background:rgba(255,255,255,.78);border:1px solid rgba(15,23,42,.10)}.metric label{display:block;color:var(--muted);font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px}.metric strong{display:block;font-size:clamp(1.1rem,1.8vw,1.6rem);letter-spacing:-.05em;word-break:break-word}.metric p{margin:6px 0 0;color:var(--muted);font-size:.82rem}
+.transfer-panel{margin-top:16px;overflow:hidden;border-radius:30px;background:rgba(2,6,23,.94);color:white;border:1px solid rgba(255,255,255,.12)}.transfer-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.10)}.transfer-head h3{margin:0;font-size:1.2rem;letter-spacing:-.04em}.transfer-table{display:grid}.transfer-row{display:grid;grid-template-columns:1.15fr 1.7fr .8fr .7fr;gap:14px;padding:14px 22px;border-bottom:1px solid rgba(255,255,255,.08);align-items:center}.transfer-row:hover{background:rgba(255,255,255,.045)}.transfer-row.header{color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;font-weight:950;background:rgba(255,255,255,.035)}.transfer-row span,.transfer-row a{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.transfer-row a{color:#a7f3d0;font-weight:900}.amount-pill{padding:6px 10px;border-radius:999px;background:rgba(16,185,129,.12);color:#bbf7d0;border:1px solid rgba(16,185,129,.20);font-weight:950;font-size:.85rem}.loading-line{padding:22px;color:#bfdbfe}
+.command-center{margin-top:20px;display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.search-deck{padding:20px;border-radius:26px;background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(236,254,255,.86));border:1px solid rgba(37,99,235,.16)}.search-title{margin:0 0 6px;font-size:1.15rem;letter-spacing:-.04em}.search-copy{margin:0 0 14px;color:var(--muted);line-height:1.5;font-size:.88rem}.search-bar{display:flex;gap:10px;padding:8px;border-radius:999px;background:#fff;border:1px solid rgba(15,23,42,.12)}.search-bar input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0 12px;font-size:.95rem;font-weight:750}.search-bar button{border:0;min-height:44px;padding:0 18px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:950;cursor:pointer}.search-result{margin-top:12px;font-size:.86rem;color:#33516d;font-weight:750}.search-result-card{margin-top:12px;padding:14px;border-radius:20px;background:rgba(255,255,255,.84);border:1px solid rgba(37,99,235,.16)}.search-result-card span{display:inline-flex;margin-bottom:6px;padding:5px 8px;border-radius:999px;background:rgba(37,99,235,.09);color:#1d4ed8;text-transform:uppercase;letter-spacing:.1em;font-size:.65rem;font-weight:950}.search-result-card strong{display:block;font-size:1rem;word-break:break-word}.search-result-card p{margin:6px 0;color:#33516d;line-height:1.5;font-size:.88rem}.search-result-card a{color:#1d4ed8;font-weight:950;font-size:.88rem}
+.hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}.hub-panel{padding:24px;border-radius:28px;border:1px solid var(--line);background:rgba(255,255,255,.84);box-shadow:0 14px 42px rgba(15,23,42,.06)}.hub-panel h3{margin:0 0 8px;font-size:1.25rem;letter-spacing:-.04em}.hub-panel p{margin:0 0 14px;color:var(--muted);font-size:.9rem;line-height:1.55}.hub-links{display:flex;flex-wrap:wrap;gap:8px}.hub-links a{padding:8px 12px;border-radius:999px;background:rgba(37,99,235,.08);color:var(--blue);font-size:.82rem;font-weight:900;border:1px solid rgba(37,99,235,.14)}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.process-step{padding:20px;border-radius:24px;background:white;border:1px solid var(--line)}.process-step strong{display:block;color:var(--blue);margin-bottom:8px;font-size:.82rem}.process-step h3{margin:0 0 6px;font-size:1rem;letter-spacing:-.03em}.process-step p{margin:0;color:var(--muted);line-height:1.5;font-size:.88rem}
+.timeline{display:grid;gap:12px}.step{display:grid;grid-template-columns:80px 1fr;gap:14px;padding:20px;border:1px solid var(--line);border-radius:24px;background:white}.step strong{color:var(--blue);font-size:.85rem}.step h3{margin:0 0 4px;font-size:1rem}.step p{margin:0;color:var(--muted);line-height:1.55;font-size:.88rem}
+#enkSupply{font-size:clamp(1.2rem,2vw,1.5rem);white-space:nowrap}
 
-#enkSupply{font-size:clamp(1.35rem,2.2vw,1.9rem);line-height:1.02;font-weight:950;letter-spacing:-.055em;white-space:nowrap;word-break:normal;overflow-wrap:normal}
-.command-center{margin-top:24px;display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.search-deck{position:relative;overflow:hidden;padding:22px;border-radius:30px;background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(236,254,255,.86));border:1px solid rgba(37,99,235,.16);box-shadow:0 18px 54px rgba(15,23,42,.08)}.search-deck:before{content:"";position:absolute;right:-70px;top:-70px;width:190px;height:190px;border-radius:999px;background:radial-gradient(circle,rgba(6,182,212,.24),transparent 64%)}.search-title{position:relative;margin:0 0 8px;font-size:1.28rem;letter-spacing:-.045em}.search-copy{position:relative;margin:0 0 16px;color:var(--muted);line-height:1.6;font-size:.95rem}.search-bar{position:relative;display:flex;gap:10px;padding:8px;border-radius:999px;background:#fff;border:1px solid rgba(15,23,42,.12);box-shadow:0 16px 40px rgba(15,23,42,.07)}.search-bar input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0 12px;font-size:.98rem;font-weight:750;color:var(--ink)}.search-bar button{border:0;min-height:44px;padding:0 18px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:950;cursor:pointer}.search-result{position:relative;margin-top:12px;font-size:.88rem;color:#33516d;font-weight:750;line-height:1.5}.search-result-card{position:relative;margin-top:14px;padding:16px;border-radius:22px;background:rgba(255,255,255,.84);border:1px solid rgba(37,99,235,.16);box-shadow:0 14px 38px rgba(15,23,42,.07)}.search-result-card span{display:inline-flex;margin-bottom:8px;padding:6px 9px;border-radius:999px;background:rgba(37,99,235,.09);color:#1d4ed8;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:950}.search-result-card strong{display:block;color:#07111f;font-size:1.08rem;letter-spacing:-.035em;word-break:break-word}.search-result-card p{margin:8px 0;color:#33516d;line-height:1.55}.search-result-card a{display:inline-flex;margin-top:4px;color:#1d4ed8;font-weight:950}.intel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.intel-tile{position:relative;overflow:hidden;min-height:118px;padding:18px;border-radius:26px;color:#fff;background:radial-gradient(circle at top right,rgba(6,182,212,.32),transparent 9rem),linear-gradient(135deg,#020617,#172554 58%,#155e75);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 50px rgba(2,6,23,.18)}.intel-tile span{display:block;color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.68rem;font-weight:950;margin-bottom:9px}.intel-tile strong{display:block;font-size:clamp(1.45rem,2.3vw,2.1rem);letter-spacing:-.055em}.intel-tile small{display:block;margin-top:7px;color:#dbeafe;line-height:1.45}.token-constellation{margin-top:24px;padding:24px;border-radius:34px;background:rgba(255,255,255,.72);border:1px solid rgba(15,23,42,.10);box-shadow:0 20px 70px rgba(15,23,42,.08)}.token-constellation h3{margin:0 0 8px;font-size:1.45rem;letter-spacing:-.05em}.token-constellation p{margin:0 0 18px;color:var(--muted);line-height:1.6}.token-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.token-chip{position:relative;overflow:hidden;min-height:104px;padding:16px;border-radius:24px;background:linear-gradient(180deg,#fff,rgba(239,246,255,.86));border:1px solid rgba(15,23,42,.10);box-shadow:0 14px 38px rgba(15,23,42,.06)}.token-chip:after{content:"";position:absolute;right:-24px;top:-24px;width:70px;height:70px;border-radius:999px;background:linear-gradient(135deg,rgba(37,99,235,.13),rgba(6,182,212,.13))}.token-chip strong{display:block;position:relative;font-size:1.08rem;letter-spacing:-.04em}.token-chip span{display:block;position:relative;margin-top:7px;color:var(--muted);font-size:.82rem;line-height:1.45}.future-badge{display:inline-flex;margin-top:10px;position:relative;padding:6px 9px;border-radius:999px;background:rgba(37,99,235,.08);color:#1d4ed8;font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.08em}.mission-control{margin-top:24px;padding:28px;border-radius:34px;color:#fff;background:radial-gradient(circle at 10% 0%,rgba(37,99,235,.36),transparent 22rem),radial-gradient(circle at 90% 30%,rgba(16,185,129,.26),transparent 22rem),linear-gradient(135deg,#020617,#0f172a 52%,#083344);border:1px solid rgba(255,255,255,.12);box-shadow:0 30px 90px rgba(2,6,23,.22)}.mission-control h3{margin:0 0 8px;font-size:1.6rem;letter-spacing:-.055em}.mission-control p{margin:0 0 18px;color:#bfdbfe;line-height:1.65}.mission-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.mission-item{padding:16px;border-radius:22px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}.mission-item span{display:block;color:#93c5fd;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:950}.mission-item strong{display:block;margin-top:8px;font-size:1.35rem;letter-spacing:-.045em}.mission-item small{display:block;margin-top:6px;color:#dbeafe;line-height:1.45}
-@media(max-width:980px){.command-center{grid-template-columns:1fr}.token-grid{grid-template-columns:repeat(2,1fr)}.mission-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){#enkSupply{white-space:normal}.search-bar{border-radius:24px;flex-direction:column}.search-bar input{min-height:44px}.search-bar button{width:100%}.intel-grid,.token-grid,.mission-grid{grid-template-columns:1fr}.command-center,.token-constellation,.mission-control{margin-top:18px}.mission-control,.token-constellation,.search-deck{padding:20px;border-radius:28px}}
-
-@media(max-width:980px){.explorer-top{grid-template-columns:1fr}.explorer-metrics{grid-template-columns:1fr 1fr}.transfer-row{grid-template-columns:1fr;gap:6px}.transfer-row.header{display:none}.transfer-head{grid-template-columns:1fr}.orbital-chip{min-width:0}}
-@media(max-width:640px){.explorer-console{padding:22px;border-radius:34px}.explorer-shell{border-radius:36px}.explorer-metrics{grid-template-columns:1fr}.metric{min-height:132px}.transfer-row{padding:16px}.transfer-head{padding:20px}.explorer-actions{flex-direction:column}.mini-btn{width:100%}}
-
-@media(max-width:980px){.hero-grid,.split,.stack,.cta{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.nav-links{display:none}.mobile-toggle{display:inline-flex}.dark-band,.cta{padding:34px;border-radius:32px}}@media(max-width:640px){.container{width:min(100% - 28px,1200px)}.hero{padding-top:56px}h1{font-size:clamp(3rem,17vw,5rem)}.cards,.process{grid-template-columns:1fr}.actions{flex-direction:column}.btn{width:100%}.step{grid-template-columns:1fr}.footer-row{flex-direction:column}.radar{width:235px;height:235px}.scan-node.big{width:74px;height:74px;border-radius:24px}.chip2{top:82px;right:22px}}
+@media(max-width:980px){.readiness-row{grid-template-columns:repeat(3,1fr)}.sovra-cards{grid-template-columns:repeat(2,1fr)}.sovra-header{grid-template-columns:1fr}.command-center,.hub-grid{grid-template-columns:1fr}.explorer-top{grid-template-columns:1fr}.explorer-metrics{grid-template-columns:1fr 1fr}.transfer-row{grid-template-columns:1fr;gap:4px}.transfer-row.header{display:none}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.nav-links{display:none}.mobile-toggle{display:inline-flex}.galaxy-stage{min-height:520px}.galaxy-info{grid-template-columns:1fr}}
+@media(max-width:640px){.container{width:min(100% - 28px,1200px)}.hero{padding-top:48px}h1{font-size:clamp(2.8rem,16vw,4.5rem)}.cards,.process,.readiness-row,.sovra-cards,.explorer-metrics{grid-template-columns:1fr}.actions{flex-direction:column}.btn,.mini-btn{width:100%}.cta{grid-template-columns:1fr;padding:28px}.footer-row{flex-direction:column}.explorer-console{padding:22px;border-radius:34px}.galaxy-stage{min-height:480px}.galaxy-node-btn{font-size:.72rem;padding:8px 10px}.galaxy-core{width:90px;height:90px;font-size:.78rem}.search-bar{border-radius:20px;flex-direction:column}.search-bar button{width:100%}.step{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -50,439 +97,408 @@ section{padding:84px 0}.section-head{max-width:860px;margin-bottom:36px}.kicker{
 <div class="container nav">
 <a href="/" class="brand" aria-label="EnteleSCAN home"><span class="brand-mark"></span><span>EnteleSCAN</span></a>
 <nav class="nav-links" aria-label="Primary navigation">
-<a href="#live-explorer">Live Explorer</a><a href="#protocol">Protocol</a><a href="#features">Features</a><a href="#process">How It Works</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a>
+<a href="#mission-control">Mission Control</a><a href="#ecosystem-galaxy">Galaxy</a><a href="#sovra-intelligence">SOVRA</a><a href="#live-explorer">Explorer</a><a href="#hubs">Hubs</a>
 <span class="language-wrap"><select class="language-select" aria-label="Select language" data-language-select><option value="en" selected>🇬🇧 English</option><option value="de">🇩🇪 Deutsch</option><option value="tr">🇹🇷 Türkçe</option><option value="fr">🇫🇷 Français</option><option value="es">🇪🇸 Español</option><option value="it">🇮🇹 Italiano</option><option value="ru">🇷🇺 Русский</option><option value="pt">🇵🇹 Português</option><option value="nl">🇳🇱 Nederlands</option><option value="pl">🇵🇱 Polski</option><option value="ar">🇸🇦 العربية</option><option value="zh-CN">🇨🇳 简体中文</option><option value="ja">🇯🇵 日本語</option><option value="ko">🇰🇷 한국어</option><option value="hi">🇮🇳 हिन्दी</option><option value="id">🇮🇩 Indonesia</option><option value="vi">🇻🇳 Tiếng Việt</option><option value="th">🇹🇭 ไทย</option><option value="uk">🇺🇦 Українська</option><option value="ro">🇷🇴 Română</option><option value="el">🇬🇷 Ελληνικά</option><option value="sv">🇸🇪 Svenska</option><option value="no">🇳🇴 Norsk</option><option value="da">🇩🇰 Dansk</option><option value="fi">🇫🇮 Suomi</option></select></span>
 <a href="#contact" class="nav-cta">Contact</a>
 </nav>
 <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-mobile-toggle><span></span><span></span><span></span></button>
 </div>
 <div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner">
-<a href="#live-explorer">Live Explorer</a><a href="#protocol">Protocol</a><a href="#features">Features</a><a href="#process">How It Works</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a>
+<a href="#mission-control">Mission Control</a><a href="#ecosystem-galaxy">Galaxy</a><a href="#sovra-intelligence">SOVRA</a><a href="#live-explorer">Explorer</a><a href="#hubs">Hubs</a>
 <label>Language<select class="language-select" aria-label="Select language" data-language-select><option value="en" selected>🇬🇧 English</option><option value="de">🇩🇪 Deutsch</option><option value="tr">🇹🇷 Türkçe</option><option value="fr">🇫🇷 Français</option><option value="es">🇪🇸 Español</option><option value="it">🇮🇹 Italiano</option><option value="ru">🇷🇺 Русский</option><option value="pt">🇵🇹 Português</option><option value="nl">🇳🇱 Nederlands</option><option value="pl">🇵🇱 Polski</option><option value="ar">🇸🇦 العربية</option><option value="zh-CN">🇨🇳 简体中文</option><option value="ja">🇯🇵 日本語</option><option value="ko">🇰🇷 한국어</option><option value="hi">🇮🇳 हिन्दी</option><option value="id">🇮🇩 Indonesia</option><option value="vi">🇻🇳 Tiếng Việt</option><option value="th">🇹🇭 ไทย</option><option value="uk">🇺🇦 Українська</option><option value="ro">🇷🇴 Română</option><option value="el">🇬🇷 Ελληνικά</option><option value="sv">🇸🇪 Svenska</option><option value="no">🇳🇴 Norsk</option><option value="da">🇩🇰 Dansk</option><option value="fi">🇫🇮 Suomi</option></select></label>
 <a href="#contact" class="nav-cta">Contact</a>
 </div></div>
 </header>
 <main>
-<section class="hero"><div class="container hero-grid"><div>
-<div class="eyebrow"><span class="pulse"></span> AI Explorer · Validator Intelligence · Network Observatory</div>
+<section class="hero"><div class="container">
+<div class="eyebrow"><span class="pulse"></span> v7 · Mission Control · Observatory</div>
 <h1 class="gradient-text">EnteleSCAN</h1>
-<p class="subtitle">The intelligent explorer and observability layer for sovereign blockchain infrastructure.</p>
-<p class="lead">EnteleSCAN is the AI-powered network explorer, validator intelligence, diagnostics, and monitoring layer of the SOVRA / Entelekron ecosystem. It is designed to make chains, validators, wallets, governance events, bridge activity, proofs, and system health visible in one intelligent interface.</p>
-<div class="disclosure">EnteleSCAN is an observability and intelligence concept for network visibility, diagnostics, and analytics. Production explorer, validator, and compliance integrations require verified data sources, security review, and staged deployment.</div>
-<div class="actions"><a class="btn primary" href="#live-explorer">Open Live Console →</a><a class="btn" href="#features">Core Features</a><a class="btn" href="#contact">Partner Access</a></div>
-</div><aside class="scan-card" aria-label="EnteleSCAN network radar visual">
-<span class="float-chip chip1">Validator Health</span><span class="float-chip chip2">Live Network Signals</span><span class="float-chip chip3">AI Diagnostics</span>
-<div class="radar"></div><span class="scan-node big n0">SCAN</span><span class="scan-node n1"></span><span class="scan-node n2"></span><span class="scan-node n3"></span><span class="scan-node n4"></span><span class="scan-node n5"></span>
-<div class="status-card"><strong>EnteleSCAN / Observatory Runtime</strong><p>Watching blocks, validators, bridges, wallets, proofs, governance events, performance, anomalies, and ecosystem health.</p></div>
-</aside></div></section>
-<section id="protocol"><div class="container split"><div class="statement big"><h3>EnteleSCAN turns network complexity into visible intelligence.</h3><p>It is designed to help users, validators, builders, and AI agents understand what is happening across the Entelekron ecosystem in real time.</p></div><div class="statement"><h3>Built as the protocol observatory</h3><p>EnteleSCAN connects chain data, validator signals, bridge events, wallet activity, ChronoSeal proofs, GraphVAULT context, MindDAO governance, and SOVRA diagnostics into one explorer interface.</p></div></div></section>
+<p class="subtitle">The intelligence and observability layer of the ENTELΞKRON ecosystem.</p>
+<div class="actions"><a class="btn primary" href="#mission-control">Enter Mission Control →</a><a class="btn" href="#ecosystem-galaxy">Explore Galaxy</a></div>
+</div></section>
 
-<section id="live-explorer">
-<div class="container">
-<div class="explorer-shell">
-<div class="explorer-console">
+<section id="mission-control"><div class="container">
+<div class="section-head"><div class="kicker">Mission Control</div><h2>Ecosystem health at a glance.</h2></div>
+<div class="explorer-shell"><div class="explorer-console">
+<div class="explorer-top"><div>
+<div class="live-badge"><span class="live-dot"></span> Pre-Launch Observatory · v7</div>
+<h2 class="explorer-title"><span>Protocol Readiness</span></h2>
+<p class="explorer-lead">Live infrastructure signals for the ENTELΞKRON stack — before mainnet, when readiness matters more than token analytics.</p>
+</div></div>
+<div class="readiness-row">
+<div class="readiness-gauge"><label>Explorer Health</label><div class="readiness-ring" id="gaugeExplorer" style="--gauge-pct:88;--gauge-color:var(--emerald)"><strong id="valExplorer">88%</strong></div><small id="lblExplorer">Console operational</small></div>
+<div class="readiness-gauge"><label>API Status</label><div class="readiness-ring" id="gaugeApi" style="--gauge-pct:92;--gauge-color:var(--cyan)"><strong id="valApi">Online</strong></div><small id="lblApi">Etherscan v2 connected</small></div>
+<div class="readiness-gauge"><label>Protocol Readiness</label><div class="readiness-ring" id="gaugeProtocol" style="--gauge-pct:74;--gauge-color:var(--blue)"><strong id="valProtocol">74%</strong></div><small id="lblProtocol">Core modules staged</small></div>
+<div class="readiness-gauge"><label>Infrastructure</label><div class="readiness-ring" id="gaugeInfra" style="--gauge-pct:68;--gauge-color:var(--violet)"><strong id="valInfra">68%</strong></div><small id="lblInfra">Validator layer forming</small></div>
+<div class="readiness-gauge"><label>Security</label><div class="readiness-ring" id="gaugeSecurity" style="--gauge-pct:81;--gauge-color:var(--emerald)"><strong id="valSecurity">81%</strong></div><small id="lblSecurity">Audit pipeline active</small></div>
+</div>
+</div></div>
+</div></section>
 
-<div class="explorer-top">
-<div>
-<div class="live-badge"><span class="live-dot"></span> Live Ethereum Data · ENK Online</div>
-<h2 class="explorer-title"><span>EnteleSCAN Live Console</span></h2>
-<p class="explorer-lead">A premium real-time observability layer for EnteleKRON. This v3 console reads live ENK ERC-20 data, recognizes wallets, contracts, and transactions, and transforms raw blockchain activity into clean intelligence.</p>
+<section id="ecosystem-galaxy"><div class="container">
+<div class="section-head"><div class="kicker">Ecosystem Galaxy</div><h2>Every module. One living network.</h2><p class="section-text">Click any node to explore connections across the ENTELΞKRON civilization stack.</p></div>
+<div class="galaxy-shell"><div class="galaxy-stage" id="galaxyStage">
+<canvas id="galaxyCanvas" aria-hidden="true"></canvas>
+<div class="galaxy-grid"></div>
+<svg class="galaxy-link" id="galaxyLinks" aria-hidden="true"></svg>
+<div class="orbit-1 galaxy-orbit"></div><div class="orbit-2 galaxy-orbit"></div><div class="orbit-3 galaxy-orbit"></div><div class="orbit-4 galaxy-orbit"></div><div class="orbit-5 galaxy-orbit"></div>
+<div class="galaxy-core" aria-label="ENTELΞKRON core">ENTELΞKRON<span>Core Chain</span></div>
+<div class="galaxy-info" id="galaxyInfo"><div><h3 id="galaxyInfoTitle">Ecosystem Galaxy</h3><p id="galaxyInfoText">Hover or click any module to trace its role in the sovereign stack.</p></div><span class="galaxy-info-tag" id="galaxyInfoTag">Interactive</span></div>
+</div></div>
+</div></section>
+
+<section id="sovra-intelligence"><div class="container">
+<div class="sovra-shell">
+<div class="sovra-header"><div>
+<div class="sovra-badge"><span class="sovra-badge-dot"></span> SOVRA Intelligence</div>
+<h2 class="sovra-title">Ask SOVRA</h2>
+<p class="sovra-lead">AI briefings on every ecosystem module — what makes EnteleSCAN different from every other explorer.</p>
+</div></div>
+<div class="sovra-briefing" id="sovraBriefing"><strong id="sovraBriefingTitle">SOVRA Intelligence Briefing</strong><p id="sovraBriefingText">Select a module below for an AI-generated ecosystem insight.</p></div>
+<div class="sovra-cards" id="sovraCards">
+<button type="button" class="sovra-card" data-sovra="entelekron"><span>Core</span><strong>What is EnteleKRON?</strong><p>Sovereign chain architecture and genesis protocol.</p></button>
+<button type="button" class="sovra-card" data-sovra="chronoseal"><span>Proof</span><strong>What is ChronoSeal?</strong><p>Timestamp proofs and verification records.</p></button>
+<button type="button" class="sovra-card" data-sovra="graphvault"><span>Graph</span><strong>What is GraphVAULT?</strong><p>Semantic context and knowledge relationships.</p></button>
+<button type="button" class="sovra-card" data-sovra="qpresence"><span>Identity</span><strong>What is Q-Presence?</strong><p>Credential systems and presence events.</p></button>
+<button type="button" class="sovra-card" data-sovra="entelelink"><span>Bridge</span><strong>What is EnteleLINK?</strong><p>Cross-chain routes and message routing.</p></button>
+<button type="button" class="sovra-card" data-sovra="sovra"><span>AI</span><strong>What is SOVRA?</strong><p>Diagnostic intelligence and anomaly detection.</p></button>
+</div>
+</div>
+</div></section>
+
+<section id="live-explorer"><div class="container">
+<div class="section-head"><div class="kicker">Live Explorer</div><h2>Blockchain observatory.</h2></div>
+<div class="explorer-shell"><div class="explorer-console">
+<div class="explorer-top"><div>
+<div class="live-badge"><span class="live-dot"></span> Live Ethereum · ENK</div>
+<h2 class="explorer-title"><span>Live Console</span></h2>
+<p class="explorer-lead">Real-time ENK data, universal search, and transfer intelligence.</p>
 <div class="explorer-actions">
-<a class="mini-btn primary" href="https://etherscan.io/token/0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6" target="_blank" rel="noopener">View ENK on Etherscan</a>
-<button class="mini-btn" type="button" data-refresh-explorer>Refresh Data</button>
-<a class="mini-btn" href="#roadmap">Mainnet Roadmap</a>
-</div>
-</div>
-
-<div class="orbital-chip">
-<small>Genesis Asset</small>
-<strong>EnteleKRON Token</strong>
-<a href="https://etherscan.io/token/0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6" target="_blank" rel="noopener">0xC953...28F6 ↗</a>
-</div>
-</div>
-
+<a class="mini-btn primary" href="https://etherscan.io/token/0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6" target="_blank" rel="noopener">ENK on Etherscan</a>
+<button class="mini-btn" type="button" data-refresh-explorer>Refresh</button>
+</div></div></div>
 <div class="explorer-metrics">
-<div class="metric">
-<label>Token</label>
-<strong>ENK</strong>
-<p>EnteleKRON · Ethereum ERC-20</p>
+<div class="metric"><label>Token</label><strong>ENK</strong><p>EnteleKRON ERC-20</p></div>
+<div class="metric"><label>Supply</label><strong id="enkSupply">Loading...</strong><p>Live from API</p></div>
+<div class="metric"><label>Latest Block</label><strong id="enkLatestBlock">Loading...</strong><p>Recent transfer</p></div>
+<div class="metric"><label>Contract</label><strong><code>0xC953...28F6</code></strong><p>Verified</p></div>
 </div>
-<div class="metric">
-<label>Total Supply</label>
-<strong id="enkSupply">Loading...</strong>
-<p>Live result from EnteleSCAN API</p>
-</div>
-<div class="metric">
-<label>Latest Block</label>
-<strong id="enkLatestBlock">Loading...</strong>
-<p>Most recent ENK transfer block</p>
-</div>
-<div class="metric">
-<label>Contract</label>
-<strong><code>0xC953...28F6</code></strong>
-<p>Verified Ethereum contract reference</p>
-</div>
-</div>
-
 <div class="transfer-panel">
-<div class="transfer-head">
-<div>
-<h3>Latest ENK Transfers</h3>
-<p>Live token movement, wallet routing, transaction hash, amount, and block intelligence.</p>
+<div class="transfer-head"><h3>Latest Transfers</h3><div class="live-badge"><span class="live-dot"></span> Live</div></div>
+<div class="transfer-table" id="enkTransfers"><div class="loading-line">Loading transfers...</div></div>
 </div>
-<div class="live-badge"><span class="live-dot"></span> Streaming</div>
-</div>
-
-<div class="transfer-table" id="enkTransfers">
-<div class="loading-line">Loading latest ENK transfers...</div>
-</div>
-</div>
-
-
 <div class="command-center">
-  <div class="search-deck">
-    <h3 class="search-title">Universal Intelligence Search</h3>
-    <p class="search-copy">Paste an Ethereum wallet, ENK transaction hash, or contract address. EnteleSCAN v3 recognizes the object, resolves live metadata when available, and routes verified public-chain intelligence while native EnteleKRON indexing is prepared.</p>
-    <div class="search-bar">
-      <input id="entelescanSearch" type="text" placeholder="Search wallet, transaction hash, or contract address..." autocomplete="off" />
-      <button type="button" data-entelescan-search>Scan</button>
-    </div>
-    <div class="search-result" id="entelescanSearchResult">Ready for wallet, contract, or transaction intelligence.</div>
-  </div>
-
-  <div class="intel-grid">
-    <div class="intel-tile"><span>API Status</span><strong id="apiStatus">Online</strong><small>Secure Vercel APIs reading Etherscan v2.</small></div>
-    <div class="intel-tile"><span>Data Source</span><strong id="networkSource">Ethereum</strong><small>ENK ERC-20 live network data.</small></div>
-    <div class="intel-tile"><span>Refresh State</span><strong id="refreshState">Synced</strong><small>Manual refresh, search stats, and automatic page-load update.</small></div>
-    <div class="intel-tile"><span>Console Mode</span><strong>v3</strong><small>Universal search + intelligence dashboard.</small></div>
-  </div>
+<div class="search-deck">
+<h3 class="search-title">Universal Search</h3>
+<p class="search-copy">Wallet, contract, or transaction hash.</p>
+<div class="search-bar"><input id="entelescanSearch" type="text" placeholder="0x address or transaction hash..." autocomplete="off" /><button type="button" data-entelescan-search>Scan</button></div>
+<div class="search-result" id="entelescanSearchResult">Ready to scan.</div>
 </div>
-
-<div class="mission-control">
-  <h3>Network Statistics Dashboard</h3>
-  <p>The v3 operational layer of EnteleSCAN: token observability, secure API routing, wallet/contract/transaction recognition, gas context, latest block visibility, and the future control surface for validators, ChronoSeal, EnteleLINK, GraphVAULT, and SOVRA diagnostics.</p>
-  <div class="mission-grid">
-    <div class="mission-item"><span>ENK Feed</span><strong id="statEnkFeed">Live</strong><small>Supply and transfer stream active.</small></div>
-    <div class="mission-item"><span>Latest Block</span><strong id="statLatestBlock">Loading</strong><small>Ethereum block height from the search API.</small></div>
-    <div class="mission-item"><span>Gas Context</span><strong id="statGas">Loading</strong><small>Safe / proposed / fast gas view.</small></div>
-    <div class="mission-item"><span>Recognition</span><strong id="statRecognition">3 Modes</strong><small>Wallet, contract, and transaction detection.</small></div>
-  </div>
-</div>
-
-<div class="token-constellation">
-  <h3>Ecosystem Token Cards</h3>
-  <p>EnteleSCAN begins with ENK and is designed to expand into the full TVK / SOVRA / KRON asset universe as contracts and data sources are connected.</p>
-  <div class="token-grid">
-    <div class="token-chip"><strong>ENK</strong><span>EnteleKRON genesis token, live now.</span><div class="future-badge">Connected</div></div>
-    <div class="token-chip"><strong>ENM</strong><span>EnergieMIND token intelligence layer.</span><div class="future-badge">Next</div></div>
-    <div class="token-chip"><strong>SOVRA</strong><span>AI protocol and diagnostic ecosystem asset.</span><div class="future-badge">Planned</div></div>
-    <div class="token-chip"><strong>eKRON</strong><span>KRON family base asset.</span><div class="future-badge">Planned</div></div>
-    <div class="token-chip"><strong>alviKRON</strong><span>ALVINA-linked ecosystem token.</span><div class="future-badge">Planned</div></div>
-    <div class="token-chip"><strong>soviKRON</strong><span>SOVRA-aligned KRON module token.</span><div class="future-badge">Planned</div></div>
-    <div class="token-chip"><strong>mineKRON</strong><span>Mining and infrastructure token layer.</span><div class="future-badge">Planned</div></div>
-    <div class="token-chip"><strong>PuppyKRON</strong><span>Animal rescue and life-center ecosystem token.</span><div class="future-badge">Planned</div></div>
-  </div>
-</div>
-
-<div class="explorer-note">EnteleSCAN v3 reads live ENK data from Ethereum, recognizes wallets, contracts, and transactions, displays ecosystem token cards and network statistics, and prepares the structure for wallet analytics, holder intelligence, multi-token scanning, ChronoSeal proofs, EnteleLINK bridge activity, validator intelligence, and native EnteleKRON mainnet observability.</div>
-
+<div class="readiness-row" style="margin:0;grid-template-columns:1fr 1fr">
+<div class="readiness-gauge"><label>Network</label><div class="readiness-ring" style="--gauge-pct:100;--gauge-color:var(--cyan)"><strong id="networkSource">Ethereum</strong></div><small id="refreshState">Synced</small></div>
+<div class="readiness-gauge"><label>Search Modes</label><div class="readiness-ring" style="--gauge-pct:100;--gauge-color:var(--blue)"><strong id="statRecognition">3</strong></div><small>Wallet · Contract · TX</small></div>
 </div>
 </div>
-</div>
-</section>
+</div></div>
+</div></section>
 
-<section id="features"><div class="container"><div class="section-head"><div class="kicker">Core Features</div><h2>An intelligent scanner for chains, validators, wallets, proofs, and AI-chain operations.</h2><p class="section-text">EnteleSCAN is designed to go beyond a traditional block explorer by adding AI diagnostics, risk signals, validator intelligence, and ecosystem-level observability.</p></div><div class="cards">
-<article class="card"><div class="icon">01</div><h3>Network Explorer</h3><p>View blocks, transactions, wallets, contracts, tokens, validators, bridge events, and ecosystem activity.</p></article>
-<article class="card"><div class="icon">02</div><h3>Validator Intelligence</h3><p>Monitor validator health, uptime, rewards, performance, slashing risk, node behavior, and governance activity.</p></article>
-<article class="card"><div class="icon">03</div><h3>AI Diagnostics</h3><p>SOVRA-powered anomaly detection, risk summaries, health explanations, and operational recommendations.</p></article>
-<article class="card"><div class="icon">04</div><h3>Bridge Visibility</h3><p>Track EnteleLINK routes, cross-chain messages, liquidity movement, status, confirmations, and proof events.</p></article>
-<article class="card"><div class="icon">05</div><h3>Proof & Audit View</h3><p>Display ChronoSeal records, GraphVAULT links, document proofs, governance decisions, and event histories.</p></article>
-<article class="card"><div class="icon">06</div><h3>Compliance-Ready Signals</h3><p>Future hooks for ISO 20022-style messaging, wallet risk metadata, audit exports, and enterprise reporting.</p></article>
+<section id="features"><div class="container"><div class="section-head"><div class="kicker">Capabilities</div><h2>More than a block explorer.</h2></div><div class="cards">
+<article class="card"><div class="icon">01</div><h3>Network Explorer</h3><p>Blocks, transactions, wallets, contracts, and tokens.</p></article>
+<article class="card"><div class="icon">02</div><h3>Validator Intelligence</h3><p>Health, uptime, rewards, and governance signals.</p></article>
+<article class="card"><div class="icon">03</div><h3>SOVRA Diagnostics</h3><p>AI anomaly detection and operational briefings.</p></article>
+<article class="card"><div class="icon">04</div><h3>Proof & Bridge View</h3><p>ChronoSeal records, EnteleLINK routes, GraphVAULT links.</p></article>
+<article class="card"><div class="icon">05</div><h3>Identity Layer</h3><p>Q-Presence credentials and access events.</p></article>
+<article class="card"><div class="icon">06</div><h3>Enterprise Signals</h3><p>Audit exports and compliance-ready reporting.</p></article>
 </div></div></section>
-<section id="process"><div class="container"><div class="section-head"><div class="kicker">How It Works</div><h2>Observe, analyze, explain, and verify.</h2><p class="section-text">EnteleSCAN follows a four-layer intelligence flow for turning raw network data into actionable insight.</p></div><div class="process">
-<div class="process-step"><strong>Step 01</strong><h3>Ingest</h3><p>Collect chain data, validator metrics, wallet events, bridge messages, governance records, and proof anchors.</p></div>
-<div class="process-step"><strong>Step 02</strong><h3>Index</h3><p>Organize raw network information into searchable records, timelines, dashboards, and explorer views.</p></div>
-<div class="process-step"><strong>Step 03</strong><h3>Analyze</h3><p>Apply AI diagnostics, anomaly detection, validator scoring, risk patterns, and ecosystem health logic.</p></div>
-<div class="process-step"><strong>Step 04</strong><h3>Explain</h3><p>Provide human-readable insights, summaries, alerts, proof links, and operational recommendations.</p></div>
+
+<section id="process"><div class="container"><div class="section-head"><div class="kicker">Intelligence Flow</div><h2>Observe → Analyze → Explain.</h2></div><div class="process">
+<div class="process-step"><strong>01</strong><h3>Ingest</h3><p>Chain, validator, bridge, and proof data.</p></div>
+<div class="process-step"><strong>02</strong><h3>Index</h3><p>Searchable records and dashboards.</p></div>
+<div class="process-step"><strong>03</strong><h3>Analyze</h3><p>AI diagnostics and health scoring.</p></div>
+<div class="process-step"><strong>04</strong><h3>Explain</h3><p>Human-readable insights and alerts.</p></div>
 </div></div></section>
-<section id="ecosystem"><div class="container"><div class="dark-band stack"><div><div class="kicker">SOVRA / Entelekron Ecosystem</div><h2>The visibility layer for every sovereign module.</h2><p class="section-text">EnteleSCAN gives the ecosystem a shared observability layer across Entelekron, EnteleLINK, ChronoSeal, GraphVAULT, Q-Presence, EnteleWallet, MindDAO, validator systems, and SOVRA AI operations.</p></div><div class="layers">
-<div class="layer"><span>Entelekron Chain</span><span>Blocks · Transactions · State</span></div><div class="layer"><span>Validators</span><span>Health · Rewards · Governance</span></div><div class="layer"><span>EnteleLINK</span><span>Bridge Routes · Cross-Chain Events</span></div><div class="layer"><span>ChronoSeal</span><span>Timestamped Proof Records</span></div><div class="layer"><span>GraphVAULT</span><span>Semantic Context · Event Links</span></div><div class="layer"><span>Q-Presence</span><span>Identity · Access · Presence Events</span></div><div class="layer"><span>SOVRA Core</span><span>AI Diagnostics · Alerts</span></div>
-</div></div></div></section>
-<section id="usecases"><div class="container"><div class="section-head"><div class="kicker">Use Cases</div><h2>Designed for users, validators, builders, enterprises, and AI agents.</h2><p class="section-text">EnteleSCAN can support transparency, monitoring, governance, security, developer workflows, validator operations, and enterprise-grade reporting.</p></div><div class="cards">
-<article class="card"><div class="icon">EXP</div><h3>Block Explorer</h3><p>Search transactions, wallets, blocks, contracts, token activity, and protocol events.</p></article>
-<article class="card"><div class="icon">VAL</div><h3>Validator Dashboard</h3><p>Track uptime, staking, rewards, slashing risks, governance participation, and performance.</p></article>
-<article class="card"><div class="icon">AI</div><h3>AI Operations Center</h3><p>Use SOVRA diagnostics to summarize risk, anomalies, health, performance, and recommended actions.</p></article>
-<article class="card"><div class="icon">SEC</div><h3>Security Monitoring</h3><p>Detect suspicious wallet patterns, bridge anomalies, abnormal validator behavior, and incident signals.</p></article>
-<article class="card"><div class="icon">DAO</div><h3>Governance Visibility</h3><p>Monitor proposals, votes, participants, proof events, DAO activity, and decision timelines.</p></article>
-<article class="card"><div class="icon">BIZ</div><h3>Enterprise Reporting</h3><p>Produce audit-friendly exports, compliance records, usage dashboards, and ecosystem analytics.</p></article>
+
+<section id="hubs"><div class="container"><div class="section-head"><div class="kicker">Command Centers</div><h2>Built for builders and validators.</h2></div><div class="hub-grid">
+<div class="hub-panel" id="developer-hub"><h3>Developer Hub</h3><p>Documentation, APIs, contracts, SDKs, and integration guides.</p><div class="hub-links"><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a href="#live-explorer">API Console</a><a href="#sovra-intelligence">SOVRA Docs</a></div></div>
+<div class="hub-panel" id="validator-hub"><h3>Validator Hub</h3><p>Validator program, hardware requirements, staking, and infrastructure metrics.</p><div class="hub-links"><a href="#mission-control">Readiness</a><a href="#ecosystem-galaxy">Network Map</a><a href="#contact">Apply</a></div></div>
 </div></div></section>
-<section id="roadmap"><div class="container"><div class="section-head"><div class="kicker">Roadmap</div><h2>From explorer concept to AI-powered observability infrastructure.</h2></div><div class="timeline">
-<div class="step"><strong>Phase 01</strong><div><h3>Explorer Foundation</h3><p>Define data models for blocks, wallets, validators, bridge events, proofs, and governance activity.</p></div></div>
-<div class="step"><strong>Phase 02</strong><div><h3>Validator & Bridge Views</h3><p>Build dashboards for validator intelligence, EnteleLINK activity, ChronoSeal proofs, and network health.</p></div></div>
-<div class="step"><strong>Phase 03</strong><div><h3>SOVRA Diagnostics</h3><p>Add AI summaries, alerts, anomaly detection, risk explanations, and operational recommendations.</p></div></div>
-<div class="step"><strong>Phase 04</strong><div><h3>Public Observatory</h3><p>Launch a public explorer, developer APIs, enterprise reports, and cross-module ecosystem analytics.</p></div></div>
+
+<section id="roadmap"><div class="container"><div class="section-head"><div class="kicker">Roadmap</div><h2>v7 and beyond.</h2></div><div class="timeline">
+<div class="step"><strong>v7</strong><div><h3>Galaxy + SOVRA Intelligence</h3><p>Interactive ecosystem map, readiness dashboards, AI briefings.</p></div></div>
+<div class="step"><strong>v8</strong><div><h3>Validator & Bridge Views</h3><p>EnteleLINK activity, ChronoSeal proofs, validator health.</p></div></div>
+<div class="step"><strong>v9</strong><div><h3>Native Mainnet Index</h3><p>Full ENTELΞKRON chain explorer and governance views.</p></div></div>
+<div class="step"><strong>v10</strong><div><h3>Public Observatory</h3><p>Developer APIs, enterprise reports, cross-module analytics.</p></div></div>
 </div></div></section>
-<section id="contact"><div class="container"><div class="cta"><div><div class="kicker">EnteleSCAN Network</div><h2>Build the visibility layer for sovereign blockchain intelligence.</h2><p>For validator operators, blockchain teams, explorer developers, security partners, enterprise monitoring providers, and SOVRA / Entelekron ecosystem collaborators.</p></div><div class="actions"><a class="btn primary" href="mailto:team@entelescan.com">Contact EnteleSCAN</a><a class="btn" href="https://www.sovra.network/">SOVRA Network</a></div></div></div></section>
+
+<section id="contact"><div class="container"><div class="cta"><div><div class="kicker">EnteleSCAN</div><h2>Join the observability layer.</h2><p>Validators, builders, security partners, and ecosystem collaborators.</p></div><div class="actions"><a class="btn primary" href="mailto:team@entelescan.com">Contact</a><a class="btn" href="https://www.sovra.network/">SOVRA</a></div></div></div></section>
 </main>
-<footer><div class="container footer-row"><div>© 2026 EnteleSCAN | A SOVRA / Entelekron Network Intelligence Module.</div><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a><a href="https://www.sovra.network/">SOVRA</a></div></div></footer>
+<footer><div class="container footer-row"><div>© 2026 EnteleSCAN · ENTELΞKRON Intelligence Module</div><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a><a href="https://www.sovra.network/">SOVRA</a></div></div></footer>
 <div id="google_translate_element" aria-hidden="true"></div>
 <script>
 const mobileToggle=document.querySelector('[data-mobile-toggle]');const mobileMenu=document.querySelector('[data-mobile-menu]');const languageSelects=document.querySelectorAll('[data-language-select]');
 if(mobileToggle&&mobileMenu){mobileToggle.addEventListener('click',()=>{const isOpen=document.body.classList.toggle('menu-open');mobileToggle.setAttribute('aria-expanded',String(isOpen));});mobileMenu.querySelectorAll('a').forEach((link)=>{link.addEventListener('click',()=>{document.body.classList.remove('menu-open');mobileToggle.setAttribute('aria-expanded','false');});});}
 const ENTELESCAN_LANGUAGES="en,de,tr,fr,es,it,ru,pt,nl,pl,ar,zh-CN,ja,ko,hi,id,vi,th,uk,ro,el,sv,no,da,fi";
 const ENTELESCAN_LANGUAGE_KEY="entelescan-language";
-
-function setTranslateCookie(language){
-  const value=language==="en"?"/en/en":`/en/${language}`;
-  document.cookie=`googtrans=${value};path=/;SameSite=Lax`;
-  if(location.hostname&&location.hostname.includes(".")){
-    document.cookie=`googtrans=${value};domain=.${location.hostname};path=/;SameSite=Lax`;
-  }
-}
-
-function syncLanguageSelects(language){
-  languageSelects.forEach((select)=>{select.value=language;});
-  document.documentElement.lang=language;
-  document.documentElement.dir=language==="ar"?"rtl":"ltr";
-}
-
-function applyEnteleScanLanguage(language,persist=true,attempt=0){
-  const selected=ENTELESCAN_LANGUAGES.split(",").includes(language)?language:"en";
-  syncLanguageSelects(selected);
-  setTranslateCookie(selected);
-  if(persist) localStorage.setItem(ENTELESCAN_LANGUAGE_KEY,selected);
-  const combo=document.querySelector(".goog-te-combo");
-  if(combo){
-    combo.value=selected==="en"?"":selected;
-    combo.dispatchEvent(new Event("change"));
-    return;
-  }
-  if(attempt<20){
-    window.setTimeout(()=>applyEnteleScanLanguage(selected,false,attempt+1),250);
-  }
-}
-
-window.initEnteleScanTranslate=function(){
-  if(window.google&&window.google.translate){
-    new window.google.translate.TranslateElement({
-      pageLanguage:"en",
-      includedLanguages:ENTELESCAN_LANGUAGES,
-      autoDisplay:false,
-    },"google_translate_element");
-    const saved=localStorage.getItem(ENTELESCAN_LANGUAGE_KEY)||"en";
-    window.setTimeout(()=>applyEnteleScanLanguage(saved,false),350);
-  }
-};
-
+function setTranslateCookie(language){const value=language==="en"?"/en/en":`/en/${language}`;document.cookie=`googtrans=${value};path=/;SameSite=Lax`;if(location.hostname&&location.hostname.includes(".")){document.cookie=`googtrans=${value};domain=.${location.hostname};path=/;SameSite=Lax`;}}
+function syncLanguageSelects(language){languageSelects.forEach((select)=>{select.value=language;});document.documentElement.lang=language;document.documentElement.dir=language==="ar"?"rtl":"ltr";}
+function applyEnteleScanLanguage(language,persist=true,attempt=0){const selected=ENTELESCAN_LANGUAGES.split(",").includes(language)?language:"en";syncLanguageSelects(selected);setTranslateCookie(selected);if(persist)localStorage.setItem(ENTELESCAN_LANGUAGE_KEY,selected);const combo=document.querySelector(".goog-te-combo");if(combo){combo.value=selected==="en"?"":selected;combo.dispatchEvent(new Event("change"));return;}if(attempt<20){window.setTimeout(()=>applyEnteleScanLanguage(selected,false,attempt+1),250);}}
+window.initEnteleScanTranslate=function(){if(window.google&&window.google.translate){new window.google.translate.TranslateElement({pageLanguage:"en",includedLanguages:ENTELESCAN_LANGUAGES,autoDisplay:false},"google_translate_element");const saved=localStorage.getItem(ENTELESCAN_LANGUAGE_KEY)||"en";window.setTimeout(()=>applyEnteleScanLanguage(saved,false),350);}};
 languageSelects.forEach((select)=>{select.addEventListener('change',(event)=>{applyEnteleScanLanguage(event.target.value);});});
 syncLanguageSelects(localStorage.getItem(ENTELESCAN_LANGUAGE_KEY)||"en");
 
-function enteleShort(value){
-  if(!value) return "";
-  return value.slice(0,6)+"..."+value.slice(-4);
+function enteleShort(value){if(!value)return"";return value.slice(0,6)+"..."+value.slice(-4);}
+function enteleFormatAmount(value,decimals=18,maximum=4){try{if(value===undefined||value===null||value==="")return"0";const raw=BigInt(String(value));const divisor=BigInt(10)**BigInt(decimals);const whole=raw/divisor;const fraction=raw%divisor;if(maximum===0||fraction===0n)return whole.toLocaleString("en-US");let frac=fraction.toString().padStart(decimals,"0").slice(0,maximum).replace(/0+$/,"").trim();return frac?`${whole.toLocaleString("en-US")}.${frac}`:whole.toLocaleString("en-US");}catch(error){const amount=Number(value)/Math.pow(10,Number(decimals));return Number.isFinite(amount)?amount.toLocaleString("en-US",{maximumFractionDigits:maximum}):String(value);}}
+function enteleTime(timestamp){if(!timestamp)return"—";return new Date(Number(timestamp)*1000).toLocaleString();}
+function enteleEscape(value){return String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[char]));}
+function enteleFormatWei(value,maximum=4){if(!value)return"—";return enteleFormatAmount(value,18,maximum)+" ETH";}
+function enteleSearchTypeLabel(type){if(type==="contract")return"Contract";if(type==="transaction")return"Transaction";return"Wallet";}
+function enteleRenderSearchResult(data){const type=enteleEscape(enteleSearchTypeLabel(data.type));const query=enteleEscape(data.query);const message=enteleEscape(data.message||"Recognized.");const details=[];if(data.type==="transaction"){if(data.blockNumber)details.push(`Block #${enteleEscape(data.blockNumber)}`);if(data.from)details.push(`From ${enteleEscape(enteleShort(data.from))}`);if(data.to)details.push(`To ${enteleEscape(enteleShort(data.to))}`);}else{if(data.balanceWei)details.push(`Balance ${enteleEscape(enteleFormatWei(data.balanceWei,5))}`);if(Array.isArray(data.recentTransactions))details.push(`${data.recentTransactions.length} recent txs`);}return`<div class="search-result-card"><span>${type}</span><strong>${query}</strong><p>${message}${details.length?` · ${details.join(" · ")}`:""}</p><a href="${enteleEscape(data.explorerUrl)}" target="_blank" rel="noopener">Open on Etherscan ↗</a></div>`;}
+
+const GALAXY_MODULES=[
+{id:"sovra",name:"SOVRA",desc:"AI diagnostic core — anomaly detection, health briefings, and ecosystem intelligence.",tag:"AI Core",x:.5,y:.12,primary:true},
+{id:"graphvault",name:"GraphVAULT",desc:"Semantic knowledge graph linking events, proofs, and ecosystem context.",tag:"Graph Layer",x:.28,y:.28},
+{id:"chronoseal",name:"ChronoSeal",desc:"Timestamp proofs and immutable verification records.",tag:"Proof Layer",x:.72,y:.28},
+{id:"enm",name:"ENM",desc:"EnergieMIND token intelligence — energy and compute layer.",tag:"Token",x:.14,y:.5},
+{id:"entelelink",name:"EnteleLINK",desc:"Cross-chain bridge routes, message passing, and liquidity movement.",tag:"Bridge",x:.86,y:.5},
+{id:"entelewallet",name:"EnteleWallet",desc:"Sovereign wallet infrastructure for the ecosystem stack.",tag:"Wallet",x:.32,y:.72},
+{id:"qpresence",name:"Q-Presence",desc:"Identity, credentials, and presence verification events.",tag:"Identity",x:.68,y:.72},
+{id:"entelescan",name:"EnteleSCAN",desc:"This observatory — explorer, intelligence center, and mission control.",tag:"Observatory",x:.5,y:.88},
+{id:"entelevault",name:"EnteleVAULT",desc:"Secure storage and archival layer for ecosystem assets.",tag:"Storage",x:.08,y:.35},
+{id:"enteleledger",name:"EnteleLEDGER",desc:"Ledger services and accounting infrastructure.",tag:"Ledger",x:.92,y:.35},
+{id:"cerebthra",name:"Cerebthra",desc:"Cognitive processing module for AI-chain operations.",tag:"Cognitive",x:.08,y:.65},
+{id:"sentient",name:"Sentient Signals",desc:"Signal processing and network awareness layer.",tag:"Signals",x:.92,y:.65},
+{id:"alvina",name:"ALVINA",desc:"ALVINA-linked ecosystem services and token layer.",tag:"Module",x:.5,y:.04},
+{id:"tvk",name:"TVK CyberLab",desc:"Security research and cyber infrastructure lab.",tag:"Security",x:.2,y:.15},
+{id:"ava",name:"Ava Santé",desc:"Health and wellness ecosystem module.",tag:"Life",x:.8,y:.15}
+];
+
+const SOVRA_BRIEFINGS={
+entelekron:"EnteleKRON is the sovereign genesis chain of the ecosystem. It anchors blocks, state, governance, and the full module constellation. Protocol readiness is at 74% — core architecture is defined, mainnet indexing is next.",
+chronoseal:"ChronoSeal provides timestamped proof records. Every governance decision, document anchor, and audit event can be verified on-chain. EnteleSCAN will surface proof verification directly in the explorer.",
+graphvault:"GraphVAULT maps semantic relationships across the ecosystem. Events, proofs, identities, and transactions connect into a living knowledge graph — the intelligence layer behind SOVRA diagnostics.",
+qpresence:"Q-Presence handles identity, credentials, and presence verification. It connects wallet activity to verified identity events, enabling access control and governance participation tracking.",
+entelelink:"EnteleLINK is the cross-chain bridge layer. It routes messages, liquidity, and proof events between ENTELΞKRON and external chains including Ethereum ENK.",
+sovra:"SOVRA is the AI intelligence core — not just another token. It powers anomaly detection, readiness scoring, security recommendations, and the briefings you see on this page. This is what makes EnteleSCAN unique."
+};
+
+function initGalaxy(){
+const stage=document.getElementById("galaxyStage");
+const canvas=document.getElementById("galaxyCanvas");
+const linksSvg=document.getElementById("galaxyLinks");
+const infoTitle=document.getElementById("galaxyInfoTitle");
+const infoText=document.getElementById("galaxyInfoText");
+const infoTag=document.getElementById("galaxyInfoTag");
+if(!stage||!canvas)return;
+const ctx=canvas.getContext("2d");
+const nodes=[];
+let activeId=null;
+let particles=[];
+let animId;
+
+function resize(){
+const rect=stage.getBoundingClientRect();
+canvas.width=rect.width*devicePixelRatio;
+canvas.height=rect.height*devicePixelRatio;
+canvas.style.width=rect.width+"px";
+canvas.style.height=rect.height+"px";
+ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+positionNodes(rect);
+drawLinks(rect);
+}
+function positionNodes(rect){
+nodes.forEach((node)=>{
+const el=node.el;
+if(!el)return;
+el.style.left=(node.x*100)+"%";
+el.style.top=(node.y*100)+"%";
+});
+}
+function drawLinks(rect){
+if(!linksSvg)return;
+const cx=rect.width/2,cy=rect.height/2;
+const lines=GALAXY_MODULES.map((m)=>{
+const x=m.x*rect.width,y=m.y*rect.height;
+return`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/>`;
+}).join("");
+linksSvg.setAttribute("viewBox",`0 0 ${rect.width} ${rect.height}`);
+linksSvg.innerHTML=lines;
+}
+function spawnParticle(){
+const rect=stage.getBoundingClientRect();
+particles.push({x:Math.random()*rect.width,y:Math.random()*rect.height,vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.6,life:1,size:Math.random()*2+1});
+if(particles.length>120)particles.shift();
+}
+function animate(){
+const rect=stage.getBoundingClientRect();
+ctx.clearRect(0,0,rect.width,rect.height);
+if(Math.random()<.4)spawnParticle();
+const cx=rect.width/2,cy=rect.height/2;
+particles.forEach((p)=>{
+p.x+=p.vx;p.y+=p.vy;p.life-=.008;
+if(p.life<=0){p.x=Math.random()*rect.width;p.y=Math.random()*rect.height;p.life=1;}
+ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
+ctx.fillStyle=`rgba(6,182,212,${p.life*.35})`;ctx.fill();
+});
+if(activeId){
+const mod=GALAXY_MODULES.find((m)=>m.id===activeId);
+if(mod){
+const tx=mod.x*rect.width,ty=mod.y*rect.height;
+for(let i=0;i<3;i++){
+const t=Date.now()/1000+i*.4;
+const px=cx+(tx-cx)*((Math.sin(t)*.5+.5)*.6+.2);
+const py=cy+(ty-cy)*((Math.sin(t)*.5+.5)*.6+.2);
+ctx.beginPath();ctx.arc(px,py,2,0,Math.PI*2);
+ctx.fillStyle="rgba(124,58,237,.6)";ctx.fill();
+}
+}
+}
+animId=requestAnimationFrame(animate);
+}
+function setActive(mod){
+activeId=mod.id;
+nodes.forEach((n)=>n.el.classList.toggle("active",n.id===mod.id));
+if(infoTitle)infoTitle.textContent=mod.name;
+if(infoText)infoText.textContent=mod.desc;
+if(infoTag)infoTag.textContent=mod.tag;
+}
+GALAXY_MODULES.forEach((mod)=>{
+const el=document.createElement("button");
+el.type="button";
+el.className="galaxy-node"+(mod.primary?" primary":"");
+el.setAttribute("aria-label",mod.name);
+el.innerHTML=`<span class="galaxy-node-btn"><span class="galaxy-node-dot"></span>${mod.name}</span>`;
+el.addEventListener("mouseenter",()=>setActive(mod));
+el.addEventListener("focus",()=>setActive(mod));
+el.addEventListener("click",()=>{setActive(mod);document.getElementById("sovra-intelligence")?.scrollIntoView({behavior:"smooth"});const card=document.querySelector(`[data-sovra="${mod.id}"]`);if(card){card.click();}});
+stage.appendChild(el);
+nodes.push({id:mod.id,x:mod.x,y:mod.y,el});
+});
+window.addEventListener("resize",resize);
+resize();
+animate();
+return()=>{window.removeEventListener("resize",resize);cancelAnimationFrame(animId);};
 }
 
-function enteleFormatAmount(value,decimals=18,maximum=4){
-  try{
-    if(value===undefined||value===null||value==="") return "0";
-    const raw=BigInt(String(value));
-    const divisor=BigInt(10)**BigInt(decimals);
-    const whole=raw/divisor;
-    const fraction=raw%divisor;
-    if(maximum===0||fraction===0n){
-      return whole.toLocaleString("en-US");
-    }
-    let frac=fraction.toString().padStart(decimals,"0").slice(0,maximum).replace(/0+$/," ").trim();
-    return frac ? `${whole.toLocaleString("en-US")}.${frac}` : whole.toLocaleString("en-US");
-  }catch(error){
-    const amount=Number(value)/Math.pow(10,Number(decimals));
-    return Number.isFinite(amount)?amount.toLocaleString("en-US",{maximumFractionDigits:maximum}):String(value);
-  }
+function initSovraCards(){
+const cards=document.querySelectorAll("[data-sovra]");
+const titleEl=document.getElementById("sovraBriefingTitle");
+const textEl=document.getElementById("sovraBriefingText");
+cards.forEach((card)=>{
+card.addEventListener("click",()=>{
+cards.forEach((c)=>c.classList.remove("active"));
+card.classList.add("active");
+const key=card.getAttribute("data-sovra");
+const label=card.querySelector("strong")?.textContent||"SOVRA Briefing";
+if(titleEl)titleEl.textContent=label.replace("What is ","").replace("?","");
+if(textEl)textEl.textContent=SOVRA_BRIEFINGS[key]||"SOVRA intelligence briefing unavailable.";
+});
+});
 }
 
-function enteleTime(timestamp){
-  if(!timestamp) return "—";
-  const d=new Date(Number(timestamp)*1000);
-  return d.toLocaleString();
+function updateReadiness(stats){
+const apiOnline=stats&&stats.status==="live";
+const explorerPct=apiOnline?92:72;
+const apiPct=apiOnline?96:45;
+const protocolPct=apiOnline?76:68;
+const infraPct=apiOnline?70:58;
+const securityPct=apiOnline?83:71;
+function setGauge(id,val,pct,color,lbl){
+const ring=document.getElementById(id);
+const valEl=document.getElementById("val"+id.replace("gauge",""));
+const lblEl=document.getElementById("lbl"+id.replace("gauge",""));
+if(ring){ring.style.setProperty("--gauge-pct",pct);ring.style.setProperty("--gauge-color",color);}
+if(valEl)valEl.textContent=typeof val==="number"?val+"%":val;
+if(lblEl&&lbl)lblEl.textContent=lbl;
 }
-
-function enteleEscape(value){
-  return String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[char]));
-}
-
-function enteleFormatWei(value,maximum=4){
-  if(!value) return "—";
-  return enteleFormatAmount(value,18,maximum)+" ETH";
-}
-
-function enteleSearchTypeLabel(type){
-  if(type==="contract") return "Contract recognized";
-  if(type==="transaction") return "Transaction recognized";
-  return "Wallet recognized";
-}
-
-function enteleRenderSearchResult(data){
-  const type=enteleEscape(enteleSearchTypeLabel(data.type));
-  const query=enteleEscape(data.query);
-  const message=enteleEscape(data.message||"Search object recognized by EnteleSCAN.");
-  const details=[];
-  if(data.type==="transaction"){
-    if(data.blockNumber) details.push(`Block #${enteleEscape(data.blockNumber)}`);
-    if(data.from) details.push(`From ${enteleEscape(enteleShort(data.from))}`);
-    if(data.to) details.push(`To ${enteleEscape(enteleShort(data.to))}`);
-    if(data.success!==null&&data.success!==undefined) details.push(data.success?"Successful":"Failed");
-  }else{
-    if(data.balanceWei) details.push(`Balance ${enteleEscape(enteleFormatWei(data.balanceWei,5))}`);
-    if(Array.isArray(data.recentTransactions)) details.push(`${data.recentTransactions.length} recent transactions indexed`);
-  }
-  return `
-    <div class="search-result-card">
-      <span>${type}</span>
-      <strong>${query}</strong>
-      <p>${message}${details.length?` ${details.join(" · ")}.`:""}</p>
-      <a href="${enteleEscape(data.explorerUrl)}" target="_blank" rel="noopener">Open verified Etherscan view ↗</a>
-    </div>
-  `;
+setGauge("gaugeExplorer",explorerPct,explorerPct,"var(--emerald)",apiOnline?"All systems operational":"Limited mode");
+setGauge("gaugeApi",apiOnline?"Online":"Limited",apiPct,apiOnline?"var(--cyan)":"var(--amber)",apiOnline?"Etherscan v2 connected":"API key required");
+setGauge("gaugeProtocol",protocolPct,protocolPct,"var(--blue)","Core modules staged");
+setGauge("gaugeInfra",infraPct,infraPct,"var(--violet)","Validator layer forming");
+setGauge("gaugeSecurity",securityPct,securityPct,"var(--emerald)","Audit pipeline active");
 }
 
 async function loadEnteleScanExplorer(){
-  const supplyEl=document.getElementById("enkSupply");
-  const transfersEl=document.getElementById("enkTransfers");
-  const blockEl=document.getElementById("enkLatestBlock");
-  const apiStatusEl=document.getElementById("apiStatus");
-  const refreshStateEl=document.getElementById("refreshState");
-
-  if(!supplyEl||!transfersEl) return;
-
-  supplyEl.textContent="Loading...";
-  if(refreshStateEl) refreshStateEl.textContent="Syncing";
-  if(apiStatusEl) apiStatusEl.textContent="Online";
-  transfersEl.innerHTML='<div class="loading-line">Loading latest ENK transfers...</div>';
-
-  try{
-    const supplyResponse=await fetch("/api/enk?action=supply");
-    const supplyData=await supplyResponse.json();
-
-    if(supplyData&&supplyData.status==="1"&&supplyData.result){
-      supplyEl.textContent=enteleFormatAmount(supplyData.result,18,0)+" ENK";
-    }else{
-      supplyEl.textContent="Unavailable";
-    }
-
-    const transfersResponse=await fetch("/api/enk?action=transfers");
-    const transfersData=await transfersResponse.json();
-
-    if(!transfersData||!Array.isArray(transfersData.result)||transfersData.result.length===0){
-      transfersEl.innerHTML='<div class="loading-line">No recent ENK transfers found.</div>';
-      if(blockEl) blockEl.textContent="—";
-      return;
-    }
-
-    const latest=transfersData.result[0];
-    if(blockEl) blockEl.textContent="#"+latest.blockNumber;
-    if(refreshStateEl) refreshStateEl.textContent="Synced";
-
-    const rows=transfersData.result.slice(0,10).map((tx)=>`
-      <div class="transfer-row">
-        <a href="https://etherscan.io/tx/${tx.hash}" target="_blank" rel="noopener" title="${tx.hash}">${enteleShort(tx.hash)}</a>
-        <span title="${tx.from} to ${tx.to}">${enteleShort(tx.from)} → ${enteleShort(tx.to)}</span>
-        <span class="amount-pill">${enteleFormatAmount(tx.value,tx.tokenDecimal,4)} ${tx.tokenSymbol||"ENK"}</span>
-        <span title="${enteleTime(tx.timeStamp)}">#${tx.blockNumber}</span>
-      </div>
-    `).join("");
-
-    transfersEl.innerHTML=`
-      <div class="transfer-row header">
-        <span>Transaction</span>
-        <span>Route</span>
-        <span>Amount</span>
-        <span>Block</span>
-      </div>
-      ${rows}
-    `;
-  }catch(error){
-    console.error("EnteleSCAN explorer error:",error);
-    supplyEl.textContent="Unable to load";
-    transfersEl.innerHTML='<div class="loading-line">Unable to load ENK transfers. Please try again shortly.</div>';
-    if(blockEl) blockEl.textContent="—";
-    if(apiStatusEl) apiStatusEl.textContent="Error";
-    if(refreshStateEl) refreshStateEl.textContent="Retry";
-  }
+const supplyEl=document.getElementById("enkSupply");
+const transfersEl=document.getElementById("enkTransfers");
+const blockEl=document.getElementById("enkLatestBlock");
+const refreshStateEl=document.getElementById("refreshState");
+if(!supplyEl||!transfersEl)return;
+supplyEl.textContent="Loading...";
+if(refreshStateEl)refreshStateEl.textContent="Syncing";
+transfersEl.innerHTML='<div class="loading-line">Loading transfers...</div>';
+try{
+const supplyResponse=await fetch("/api/enk?action=supply");
+const supplyData=await supplyResponse.json();
+if(supplyData&&supplyData.status==="1"&&supplyData.result){supplyEl.textContent=enteleFormatAmount(supplyData.result,18,0)+" ENK";}else{supplyEl.textContent="Unavailable";}
+const transfersResponse=await fetch("/api/enk?action=transfers");
+const transfersData=await transfersResponse.json();
+if(!transfersData||!Array.isArray(transfersData.result)||transfersData.result.length===0){
+transfersEl.innerHTML='<div class="loading-line">No recent transfers.</div>';
+if(blockEl)blockEl.textContent="—";return;
+}
+const latest=transfersData.result[0];
+if(blockEl)blockEl.textContent="#"+latest.blockNumber;
+if(refreshStateEl)refreshStateEl.textContent="Synced";
+const rows=transfersData.result.slice(0,8).map((tx)=>`<div class="transfer-row"><a href="https://etherscan.io/tx/${tx.hash}" target="_blank" rel="noopener">${enteleShort(tx.hash)}</a><span>${enteleShort(tx.from)} → ${enteleShort(tx.to)}</span><span class="amount-pill">${enteleFormatAmount(tx.value,tx.tokenDecimal,4)} ${tx.tokenSymbol||"ENK"}</span><span>#${tx.blockNumber}</span></div>`).join("");
+transfersEl.innerHTML=`<div class="transfer-row header"><span>TX</span><span>Route</span><span>Amount</span><span>Block</span></div>${rows}`;
+}catch(error){
+console.error("EnteleSCAN explorer error:",error);
+supplyEl.textContent="Unable to load";
+transfersEl.innerHTML='<div class="loading-line">Unable to load transfers.</div>';
+if(blockEl)blockEl.textContent="—";
+if(refreshStateEl)refreshStateEl.textContent="Retry";
+updateReadiness({status:"limited"});
+}
 }
 
 async function loadEnteleScanStats(){
-  const apiStatusEl=document.getElementById("apiStatus");
-  const refreshStateEl=document.getElementById("refreshState");
-  const networkSourceEl=document.getElementById("networkSource");
-  const statEnkFeedEl=document.getElementById("statEnkFeed");
-  const statLatestBlockEl=document.getElementById("statLatestBlock");
-  const statGasEl=document.getElementById("statGas");
-  const statRecognitionEl=document.getElementById("statRecognition");
-
-  try{
-    const response=await fetch("/api/search?action=stats");
-    const stats=await response.json();
-    if(!response.ok) throw new Error(stats.error||"Unable to load network statistics");
-
-    if(apiStatusEl) apiStatusEl.textContent=stats.status==="live"?"Online":"Limited";
-    if(networkSourceEl) networkSourceEl.textContent=stats.chain||"Ethereum";
-    if(refreshStateEl) refreshStateEl.textContent=stats.status==="live"?"Synced":"Limited";
-    if(statEnkFeedEl) statEnkFeedEl.textContent=stats.status==="live"?"Live":"Ready";
-    if(statLatestBlockEl) statLatestBlockEl.textContent=stats.latestBlock?`#${Number(stats.latestBlock).toLocaleString("en-US")}`:"API Key";
-    if(statGasEl){
-      statGasEl.textContent=stats.safeGasGwei&&stats.proposedGasGwei&&stats.fastGasGwei
-        ? `${stats.safeGasGwei}/${stats.proposedGasGwei}/${stats.fastGasGwei} gwei`
-        : "API Key";
-    }
-    if(statRecognitionEl) statRecognitionEl.textContent=Array.isArray(stats.searchModes)?`${stats.searchModes.length} Modes`:"3 Modes";
-  }catch(error){
-    console.error("EnteleSCAN stats error:",error);
-    if(apiStatusEl) apiStatusEl.textContent="Limited";
-    if(statLatestBlockEl) statLatestBlockEl.textContent="Retry";
-    if(statGasEl) statGasEl.textContent="Retry";
-  }
+const networkSourceEl=document.getElementById("networkSource");
+const statRecognitionEl=document.getElementById("statRecognition");
+const refreshStateEl=document.getElementById("refreshState");
+try{
+const response=await fetch("/api/search?action=stats");
+const stats=await response.json();
+if(!response.ok)throw new Error(stats.error||"Stats unavailable");
+updateReadiness(stats);
+if(networkSourceEl)networkSourceEl.textContent=stats.chain||"Ethereum";
+if(refreshStateEl)refreshStateEl.textContent=stats.status==="live"?"Synced":"Limited";
+if(statRecognitionEl)statRecognitionEl.textContent=Array.isArray(stats.searchModes)?String(stats.searchModes.length):"3";
+}catch(error){
+console.error("EnteleSCAN stats error:",error);
+updateReadiness({status:"limited"});
+if(refreshStateEl)refreshStateEl.textContent="Retry";
+}
 }
 
-function refreshEnteleScanData(){
-  loadEnteleScanExplorer();
-  loadEnteleScanStats();
-}
-
+function refreshEnteleScanData(){loadEnteleScanExplorer();loadEnteleScanStats();}
 
 async function runEnteleScanSearch(){
-  const input=document.getElementById("entelescanSearch");
-  const result=document.getElementById("entelescanSearchResult");
-  if(!input) return;
-  const value=input.value.trim();
-  if(!value){
-    if(result) result.textContent="Paste a wallet address, contract address, or transaction hash first.";
-    return;
-  }
-  if(result) result.textContent="Scanning EnteleSCAN v3 recognition API...";
-  try{
-    const response=await fetch(`/api/search?q=${encodeURIComponent(value)}`);
-    const data=await response.json();
-    if(!response.ok){
-      throw new Error(data.error||"Unsupported search format");
-    }
-    if(result) result.innerHTML=enteleRenderSearchResult(data);
-  }catch(error){
-    if(result) result.textContent=`${error.message}. Use a 0x wallet address, 0x contract address, or 0x transaction hash.`;
-  }
+const input=document.getElementById("entelescanSearch");
+const result=document.getElementById("entelescanSearchResult");
+if(!input)return;
+const value=input.value.trim();
+if(!value){if(result)result.textContent="Enter a wallet, contract, or transaction hash.";return;}
+if(result)result.textContent="Scanning...";
+try{
+const response=await fetch(`/api/search?q=${encodeURIComponent(value)}`);
+const data=await response.json();
+if(!response.ok)throw new Error(data.error||"Unsupported format");
+if(result)result.innerHTML=enteleRenderSearchResult(data);
+}catch(error){
+if(result)result.textContent=`${error.message}. Use a 0x address or transaction hash.`;
+}
 }
 
 const entelescanSearchButton=document.querySelector("[data-entelescan-search]");
-if(entelescanSearchButton){entelescanSearchButton.addEventListener("click",runEnteleScanSearch);}
+if(entelescanSearchButton)entelescanSearchButton.addEventListener("click",runEnteleScanSearch);
 const entelescanSearchInput=document.getElementById("entelescanSearch");
-if(entelescanSearchInput){entelescanSearchInput.addEventListener("keydown",(event)=>{if(event.key==="Enter") runEnteleScanSearch();});}
-
+if(entelescanSearchInput)entelescanSearchInput.addEventListener("keydown",(event)=>{if(event.key==="Enter")runEnteleScanSearch();});
 const refreshExplorerButton=document.querySelector("[data-refresh-explorer]");
-if(refreshExplorerButton){
-  refreshExplorerButton.addEventListener("click",refreshEnteleScanData);
-}
+if(refreshExplorerButton)refreshExplorerButton.addEventListener("click",refreshEnteleScanData);
 
+initGalaxy();
+initSovraCards();
 refreshEnteleScanData();
-
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=initEnteleScanTranslate" async></script>
 </body>
