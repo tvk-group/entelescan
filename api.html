@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>API Reference — EnteleSCAN</title>
+<meta name="description" content="EnteleSCAN REST API reference for ENK data and Ethereum search." />
+<meta name="theme-color" content="#f7fbff" />
+<link rel="canonical" href="https://www.entelescan.com/api.html" />
+<link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body>
+<div class="stage-banner"><div class="container"><strong>API Console</strong> — REST endpoints for ENK data and Ethereum search.</div></div>
+<header>
+<div class="container nav">
+<a href="/" class="brand"><span class="brand-mark"></span><span>EnteleSCAN</span></a>
+<nav class="nav-links"><a href="/docs.html">Docs</a><a href="/token.html">ENK Token</a><a href="/#live-explorer">Live Explorer</a><a href="/" class="nav-cta">Home</a></nav>
+<button class="mobile-toggle" type="button" aria-label="Open menu" data-mobile-toggle><span></span><span></span><span></span></button>
+</div>
+<div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner"><a href="/">Home</a><a href="/docs.html">Docs</a></div></div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><div class="kicker">API Reference</div><h1>EnteleSCAN API</h1><p class="subtitle">Serverless REST endpoints proxying Etherscan v2 for ENK and Ethereum data.</p></div></section>
+<section><div class="container doc-shell">
+<div class="doc-nav">
+<a href="/docs.html">Docs</a>
+<a href="/api.html" class="active">API</a>
+<a href="/token.html">ENK Token</a>
+</div>
+<div class="doc-body">
+<p>All endpoints accept <code>GET</code> requests. Base URL: <code>https://www.entelescan.com/api/</code></p>
+
+<div class="api-endpoint">
+<h3>ENK Token Supply</h3>
+<code>GET /api/enk?action=supply</code>
+<p>Returns total on-chain ENK supply for contract <code>0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6</code> on Ethereum mainnet.</p>
+<p><strong>Response:</strong> Etherscan-compatible JSON with <code>status</code>, <code>message</code>, and <code>result</code> (supply in wei).</p>
+</div>
+
+<div class="api-endpoint">
+<h3>ENK Recent Transfers</h3>
+<code>GET /api/enk?action=transfers</code>
+<p>Returns the 10 most recent ENK token transfers, sorted descending by block.</p>
+</div>
+
+<div class="api-endpoint">
+<h3>Network Statistics</h3>
+<code>GET /api/search?action=stats</code>
+<p>Returns live network statistics: chain info, ENK supply, latest block, gas prices, search modes, and API status.</p>
+<p><strong>Fields:</strong> <code>status</code>, <code>chain</code>, <code>chainId</code>, <code>latestBlock</code>, <code>safeGasGwei</code>, <code>enkSupply</code>, <code>searchModes</code></p>
+</div>
+
+<div class="api-endpoint">
+<h3>Universal Search</h3>
+<code>GET /api/search?q={address_or_hash}</code>
+<p>Recognizes and resolves Ethereum wallet addresses, contract addresses, and transaction hashes.</p>
+<p><strong>Transaction hash:</strong> 66-character <code>0x</code> hex string — returns block, from/to, value, gas, success status.</p>
+<p><strong>ENK contract:</strong> Recognized from ecosystem registry without additional calls.</p>
+<p><strong>Other addresses:</strong> Returns wallet/contract type, ETH balance, and recent transactions.</p>
+</div>
+
+<h2>ENK Contract Reference</h2>
+<table class="spec-table">
+<tr><th>Parameter</th><th>Value</th></tr>
+<tr><td>Contract</td><td><code>0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6</code></td></tr>
+<tr><td>Chain ID</td><td>1 (Ethereum)</td></tr>
+<tr><td>Decimals</td><td>18</td></tr>
+<tr><td>Max Supply</td><td>100,000,000,000 ENK</td></tr>
+</table>
+
+<h2>Environment</h2>
+<p>API routes require <code>ETHERSCAN_API_KEY</code> configured in the Vercel deployment environment. Without a valid key, endpoints return a 500 error.</p>
+
+<h2>Rate limits</h2>
+<p>Requests are subject to Etherscan API rate limits. For production integrations, contact <a href="mailto:team@entelescan.com">team@entelescan.com</a>.</p>
+</div>
+</div></section>
+</main>
+<footer><div class="container footer-row"><div>© 2026 EnteleSCAN · T.V.K. Labs & Technologies LTD</div><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div></footer>
+<script src="/assets/js/site.js"></script>
+</body>
+</html>

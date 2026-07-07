@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ENK Token — EnteleSCAN</title>
+<meta name="description" content="EnteleKRON (ENK) token contract, supply, and on-chain transparency data." />
+<meta name="theme-color" content="#f7fbff" />
+<link rel="canonical" href="https://www.entelescan.com/token.html" />
+<link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body>
+<div class="stage-banner"><div class="container"><strong>On-Chain Transparency</strong> — ENK token contract on Ethereum mainnet.</div></div>
+<header>
+<div class="container nav">
+<a href="/" class="brand"><span class="brand-mark"></span><span>EnteleSCAN</span></a>
+<nav class="nav-links"><a href="/docs.html">Docs</a><a href="/api.html">API</a><a href="/#live-explorer">Live Explorer</a><a href="/" class="nav-cta">Home</a></nav>
+<button class="mobile-toggle" type="button" aria-label="Open menu" data-mobile-toggle><span></span><span></span><span></span></button>
+</div>
+<div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner"><a href="/">Home</a><a href="/api.html">API</a><a href="/docs.html">Docs</a></div></div>
+</header>
+<main>
+<section class="page-hero"><div class="container">
+<div class="kicker">ENK · EnteleKRON</div>
+<h1>Token Transparency</h1>
+<p class="subtitle">Official ENK ERC-20 contract on Ethereum mainnet — the coordination asset of the ENTELΞKRON ecosystem.</p>
+</div></section>
+<section><div class="container doc-shell">
+<div class="doc-nav">
+<a href="/token.html" class="active">Token</a>
+<a href="/docs.html">Docs</a>
+<a href="/api.html">API</a>
+<a href="https://www.entelekron.io/" target="_blank" rel="noopener">EnteleKRON →</a>
+</div>
+<table class="spec-table">
+<tr><th>Property</th><th>Value</th></tr>
+<tr><td>Name</td><td>EnteleKRON</td></tr>
+<tr><td>Symbol</td><td>ENK</td></tr>
+<tr><td>Network</td><td>Ethereum Mainnet (Chain ID 1)</td></tr>
+<tr><td>Standard</td><td>ERC-20 (Verified)</td></tr>
+<tr><td>Decimals</td><td>18</td></tr>
+<tr><td>Max Supply</td><td>100,000,000,000 ENK</td></tr>
+<tr><td>Contract</td><td><code>0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6</code></td></tr>
+<tr><td>Genesis Vault</td><td><code>0x9c70957b7eae5b56c231e3cd61b067715692c477</code></td></tr>
+<tr><td>On-Chain Supply</td><td id="liveSupply">Loading...</td></tr>
+<tr><td>Transfer Status</td><td>Locked until EnteleKRON mainnet launch (on-chain restriction)</td></tr>
+<tr><td>Planned Launch Reference</td><td>$0.8844884488448845 ENK (not a listing guarantee)</td></tr>
+</table>
+<div class="actions" style="justify-content:flex-start;margin:24px 0">
+<a class="btn primary" href="https://etherscan.io/token/0xC95343B3f8A5af57a9b3B1acFf3D2a7654Fa28F6" target="_blank" rel="noopener">View on Etherscan</a>
+<a class="btn" href="/#live-explorer">Live Explorer</a>
+<a class="btn" href="https://www.entelekron.io/" target="_blank" rel="noopener">Investor Portal</a>
+</div>
+<div class="doc-body">
+<h2>Token utility</h2>
+<p>ENK is the coordination, access, governance, and ecosystem utility asset of the EnteleKRON network across AI, blockchain, identity, energy, and infrastructure modules. It is not a simple payment token.</p>
+<h2>Utility pillars</h2>
+<ul>
+<li>Governance and treasury signaling across ecosystem modules</li>
+<li>Infrastructure and module access (validators, premium services)</li>
+<li>TVK ID and sovereign attestation utility flows</li>
+<li>SOVRA-based AI services, diagnostics, and automation</li>
+<li>Cross-ecosystem service coordination as modules go live</li>
+</ul>
+<h2>Transparency</h2>
+<p>EnteleKRON uses a controlled treasury transparency model. Official ecosystem treasury, vesting, and governance addresses are published through the <a href="https://www.entelekron.io/" target="_blank" rel="noopener">EnteleKRON Transparency Center</a>. Always verify addresses through entelekron.io, entelekron.app, and official announcements.</p>
+<p>EnteleSCAN displays on-chain supply and transfer data for observability. This does not constitute investment advice. See the <a href="/disclaimer.html">Legal Disclaimer</a> and <a href="https://www.entelekron.io/disclaimer.html" target="_blank" rel="noopener">EnteleKRON investor disclaimer</a>.</p>
+</div>
+</div></section>
+</main>
+<footer><div class="container footer-row"><div>© 2026 EnteleSCAN · T.V.K. Labs & Technologies LTD</div><div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div></footer>
+<script src="/assets/js/site.js"></script>
+<script>
+fetch("/api/enk?action=supply").then(r=>r.json()).then(d=>{
+  const el=document.getElementById("liveSupply");
+  if(el&&d?.status==="1"&&d.result) el.textContent=ENTELESCAN.formatAmount(d.result,18,0)+" ENK (on-chain)";
+  else if(el) el.textContent="Unavailable";
+}).catch(()=>{const el=document.getElementById("liveSupply");if(el)el.textContent="Unavailable";});
+</script>
+</body>
+</html>
