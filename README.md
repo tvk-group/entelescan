@@ -6,7 +6,7 @@ EnteleSCAN is the AI-powered network explorer, validator intelligence, monitorin
 
 | Page | Path | Description |
 |------|------|-------------|
-| Homepage | `/` | Mission control, ecosystem galaxy, SOVRA briefings, live ENK explorer |
+| Homepage | `/` | Mission control, ecosystem animation, SOVRA briefings, live ENK explorer |
 | ENK Token | `/token.html` | Contract, supply, utility, and transparency data |
 | Documentation | `/docs.html` | Architecture and integration overview |
 | API Reference | `/api.html` | REST endpoint documentation |
@@ -20,7 +20,8 @@ EnteleSCAN is the AI-powered network explorer, validator intelligence, monitorin
 
 - `assets/css/site.css` — Shared TVK Labs design system
 - `assets/js/site.js` — Navigation, i18n, shared utilities
-- `assets/js/app.js` — Homepage galaxy, SOVRA briefings, live explorer
+- `assets/js/ecosystem-animation.js` — Shared cyber-coin ecosystem animation (28 modules)
+- `ecosystem-animation/` — Portable animation bundle (embed.html, CSS, brand assets)
 
 ## API routes
 
