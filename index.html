@@ -4,13 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>EnteleSCAN v7 — Ecosystem Intelligence & Mission Control</title>
-<meta name="description" content="EnteleSCAN is the intelligence and observability layer of the ENTELΞKRON ecosystem — mission control, ecosystem galaxy, SOVRA intelligence, and live ENK explorer." />
+<meta name="description" content="EnteleSCAN is the intelligence and observability layer of the ENTELΞKRON ecosystem — mission control, ecosystem animation, SOVRA intelligence, and live ENK explorer." />
 <meta property="og:title" content="EnteleSCAN v7 — Ecosystem Intelligence Center" />
-<meta property="og:description" content="Mission control for sovereign blockchain infrastructure. Interactive ecosystem galaxy, SOVRA intelligence, live ENK data, and research-phase observatory status." />
+<meta property="og:description" content="Mission control for sovereign blockchain infrastructure. Official ecosystem animation, SOVRA intelligence, live ENK data, and research-phase observatory status." />
 <meta property="og:type" content="website" />
 <meta name="theme-color" content="#f7fbff" />
 <link rel="canonical" href="https://www.entelescan.com/" />
 <link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="stylesheet" href="/ecosystem-animation/ecosystem-cyber-coin.css" />
 </head>
 <body>
 <div class="stage-banner"><div class="container"><strong>Development Stage</strong> — EnteleSCAN is in research, architecture formation and prototype runtime preparation within the ENTELΞKRON ecosystem.</div></div>
@@ -19,7 +20,7 @@
 <a href="/" class="brand" aria-label="EnteleSCAN home"><span class="brand-mark"></span><span>EnteleSCAN</span></a>
 <nav class="nav-links" aria-label="Primary navigation">
 <a href="/#mission-control">Mission Control</a>
-<a href="/#ecosystem-galaxy">Galaxy</a>
+<a href="/#ecosystem">Ecosystem</a>
 <a href="/#live-explorer">Explorer</a>
 <a href="/token.html">ENK Token</a>
 <a href="/docs.html">Docs</a>
@@ -30,7 +31,7 @@
 <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-mobile-toggle><span></span><span></span><span></span></button>
 </div>
 <div class="mobile-menu" data-mobile-menu><div class="mobile-menu-inner">
-<a href="/#mission-control">Mission Control</a><a href="/#ecosystem-galaxy">Galaxy</a><a href="/#live-explorer">Explorer</a>
+<a href="/#mission-control">Mission Control</a><a href="/#ecosystem">Ecosystem</a><a href="/#live-explorer">Explorer</a>
 <a href="/token.html">ENK Token</a><a href="/docs.html">Docs</a><a href="/api.html">API</a><a href="/faq.html">FAQ</a>
 <a href="/#contact" class="nav-cta">Contact</a>
 </div></div>
@@ -42,7 +43,7 @@
 <p class="subtitle">The intelligence and observability layer of the ENTELΞKRON ecosystem — network explorer, validator intelligence, and SOVRA-powered diagnostics.</p>
 <div class="actions">
 <a class="btn primary" href="#mission-control">Enter Mission Control →</a>
-<a class="btn" href="#ecosystem-galaxy">Explore Galaxy</a>
+<a class="btn" href="#ecosystem">Explore Ecosystem</a>
 <a class="btn" href="/token.html">ENK Token</a>
 </div>
 </div></section>
@@ -66,16 +67,11 @@
 </div></div>
 </div></section>
 
-<section id="ecosystem-galaxy"><div class="container">
-<div class="section-head"><div class="kicker">Ecosystem Galaxy</div><h2>Every module. One living network.</h2><p class="section-text">Click any node to explore connections across the ENTELΞKRON civilization stack.</p></div>
-<div class="galaxy-shell"><div class="galaxy-stage" id="galaxyStage">
-<canvas id="galaxyCanvas" aria-hidden="true"></canvas>
-<div class="galaxy-grid"></div>
-<svg class="galaxy-link" id="galaxyLinks" aria-hidden="true"></svg>
-<div class="orbit-1 galaxy-orbit"></div><div class="orbit-2 galaxy-orbit"></div><div class="orbit-3 galaxy-orbit"></div><div class="orbit-4 galaxy-orbit"></div><div class="orbit-5 galaxy-orbit"></div>
-<div class="galaxy-core" aria-label="ENTELΞKRON core">ENTELΞKRON<span>Core Chain</span></div>
-<div class="galaxy-info" id="galaxyInfo"><div><h3 id="galaxyInfoTitle">Ecosystem Galaxy</h3><p id="galaxyInfoText">Hover or click any module to trace its role in the sovereign stack.</p></div><span class="galaxy-info-tag" id="galaxyInfoTag">Interactive</span></div>
-</div></div>
+<section id="ecosystem"><div class="container">
+<div class="section-head"><div class="kicker">Ecosystem</div><h2>28 modules. One coordination layer.</h2><p class="section-text">Official ENTELΞKRON ecosystem animation — shared across TVK Group properties. Click any module chip for a SOVRA briefing.</p></div>
+<div class="ecosystem-embed-shell">
+<div id="ecosystemAnimationRoot" aria-label="EnteleKRON ecosystem modules animation"></div>
+</div>
 </div></section>
 
 <section id="sovra-intelligence"><div class="container">
@@ -148,7 +144,7 @@
 </div></div>
 </div></section>
 
-<section id="ecosystem"><div class="container">
+<section id="ecosystem-links"><div class="container">
 <div class="section-head"><div class="kicker">TVK Ecosystem</div><h2>Connected infrastructure modules.</h2><p class="section-text">EnteleSCAN is the observability layer connecting every module in the ENTELΞKRON civilization stack.</p></div>
 <div class="eco-grid">
 <article class="eco-card"><span class="tag">Core</span><h3>ENTELΞKRON</h3><p>Intelligent capital layer — sovereign genesis chain and ENK coordination.</p><a href="https://www.entelekron.io/" target="_blank" rel="noopener">entelekron.io →</a></article>
@@ -178,11 +174,11 @@
 
 <section id="hubs"><div class="container"><div class="section-head"><div class="kicker">Command Centers</div><h2>Built for builders and validators.</h2></div><div class="hub-grid">
 <div class="hub-panel"><h3>Developer Hub</h3><p>Documentation, APIs, contracts, and integration guides for the EnteleSCAN observatory layer.</p><div class="hub-links"><a href="https://github.com/tvk-group/entelescan" target="_blank" rel="noopener">GitHub</a><a href="/api.html">API Reference</a><a href="/docs.html">Documentation</a><a href="/token.html">ENK Contract</a></div></div>
-<div class="hub-panel"><h3>Validator Hub</h3><p>Validator program, hardware requirements, staking roadmap, and infrastructure guidance.</p><div class="hub-links"><a href="/validators.html">Validator Program</a><a href="/#mission-control">Readiness</a><a href="/#ecosystem-galaxy">Network Map</a><a href="/#contact">Apply</a></div></div>
+<div class="hub-panel"><h3>Validator Hub</h3><p>Validator program, hardware requirements, staking roadmap, and infrastructure guidance.</p><div class="hub-links"><a href="/validators.html">Validator Program</a><a href="/#mission-control">Readiness</a><a href="/#ecosystem">Ecosystem Map</a><a href="/#contact">Apply</a></div></div>
 </div></div></section>
 
 <section id="roadmap"><div class="container"><div class="section-head"><div class="kicker">Roadmap</div><h2>v7 and beyond.</h2></div><div class="timeline">
-<div class="step"><strong>v7</strong><div><h3>Galaxy + SOVRA Intelligence</h3><p>Interactive ecosystem map, research operations dashboard, module briefings, live ENK explorer.</p></div></div>
+<div class="step"><strong>v7</strong><div><h3>Ecosystem Animation + SOVRA Intelligence</h3><p>Official cyber-coin ecosystem animation, research operations dashboard, module briefings, live ENK explorer.</p></div></div>
 <div class="step"><strong>v8</strong><div><h3>Validator & Bridge Views</h3><p>EnteleLINK activity, ChronoSeal proofs, validator health monitoring.</p></div></div>
 <div class="step"><strong>v9</strong><div><h3>Native Mainnet Index</h3><p>Full ENTELΞKRON chain explorer and governance views.</p></div></div>
 <div class="step"><strong>v10</strong><div><h3>Public Observatory</h3><p>Developer APIs, enterprise reports, cross-module analytics.</p></div></div>
@@ -201,6 +197,7 @@
 </div></footer>
 <div id="google_translate_element" aria-hidden="true"></div>
 <script src="/assets/js/site.js"></script>
+<script src="/assets/js/ecosystem-animation.js"></script>
 <script src="/assets/js/app.js"></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=initEnteleScanTranslate" async></script>
 </body>
