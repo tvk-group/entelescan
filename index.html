@@ -6,7 +6,7 @@
 <title>EnteleSCAN v7 — Ecosystem Intelligence & Mission Control</title>
 <meta name="description" content="EnteleSCAN is the intelligence and observability layer of the ENTELΞKRON ecosystem — mission control, ecosystem galaxy, SOVRA intelligence, and protocol readiness." />
 <meta property="og:title" content="EnteleSCAN v7 — Ecosystem Intelligence Center" />
-<meta property="og:description" content="Mission control for sovereign blockchain infrastructure. Interactive ecosystem galaxy, SOVRA intelligence, and live protocol readiness." />
+<meta property="og:description" content="Mission control for sovereign blockchain infrastructure. Interactive ecosystem galaxy, SOVRA intelligence, and research-phase observatory status." />
 <meta property="og:type" content="website" />
 <meta name="theme-color" content="#f7fbff" />
 <link rel="canonical" href="https://www.entelescan.com/" />
@@ -80,6 +80,11 @@ section{padding:72px 0}.section-head{max-width:720px;margin-bottom:32px;text-ali
 .readiness-ring strong{position:relative;z-index:1;font-size:.95rem;letter-spacing:-.04em}
 .readiness-gauge label{display:block;color:var(--muted);font-size:.68rem;font-weight:950;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}
 .readiness-gauge small{display:block;color:var(--muted);font-size:.78rem;margin-top:4px}
+.readiness-gauge--phase .readiness-ring{background:none;border:3px solid color-mix(in srgb,var(--gauge-color,var(--blue)) 35%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gauge-color,var(--blue)) 12%,transparent)}
+.readiness-gauge--phase .readiness-ring:after{display:none}
+.readiness-gauge--phase .readiness-ring strong{font-size:.78rem;line-height:1.15;max-width:52px}
+.readiness-disclaimer{margin:16px 0 0;padding:14px 18px;border-radius:18px;background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.14);color:var(--muted);font-size:.84rem;line-height:1.55;text-align:center}
+.readiness-disclaimer strong{color:var(--ink);font-weight:850}
 .explorer-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}.metric{position:relative;min-height:120px;border-radius:24px;padding:18px;background:rgba(255,255,255,.78);border:1px solid rgba(15,23,42,.10)}.metric label{display:block;color:var(--muted);font-size:.72rem;font-weight:950;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px}.metric strong{display:block;font-size:clamp(1.1rem,1.8vw,1.6rem);letter-spacing:-.05em;word-break:break-word}.metric p{margin:6px 0 0;color:var(--muted);font-size:.82rem}
 .transfer-panel{margin-top:16px;overflow:hidden;border-radius:30px;background:rgba(2,6,23,.94);color:white;border:1px solid rgba(255,255,255,.12)}.transfer-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.10)}.transfer-head h3{margin:0;font-size:1.2rem;letter-spacing:-.04em}.transfer-table{display:grid}.transfer-row{display:grid;grid-template-columns:1.15fr 1.7fr .8fr .7fr;gap:14px;padding:14px 22px;border-bottom:1px solid rgba(255,255,255,.08);align-items:center}.transfer-row:hover{background:rgba(255,255,255,.045)}.transfer-row.header{color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;font-weight:950;background:rgba(255,255,255,.035)}.transfer-row span,.transfer-row a{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.transfer-row a{color:#a7f3d0;font-weight:900}.amount-pill{padding:6px 10px;border-radius:999px;background:rgba(16,185,129,.12);color:#bbf7d0;border:1px solid rgba(16,185,129,.20);font-weight:950;font-size:.85rem}.loading-line{padding:22px;color:#bfdbfe}
 .command-center{margin-top:20px;display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.search-deck{padding:20px;border-radius:26px;background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(236,254,255,.86));border:1px solid rgba(37,99,235,.16)}.search-title{margin:0 0 6px;font-size:1.15rem;letter-spacing:-.04em}.search-copy{margin:0 0 14px;color:var(--muted);line-height:1.5;font-size:.88rem}.search-bar{display:flex;gap:10px;padding:8px;border-radius:999px;background:#fff;border:1px solid rgba(15,23,42,.12)}.search-bar input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0 12px;font-size:.95rem;font-weight:750}.search-bar button{border:0;min-height:44px;padding:0 18px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:950;cursor:pointer}.search-result{margin-top:12px;font-size:.86rem;color:#33516d;font-weight:750}.search-result-card{margin-top:12px;padding:14px;border-radius:20px;background:rgba(255,255,255,.84);border:1px solid rgba(37,99,235,.16)}.search-result-card span{display:inline-flex;margin-bottom:6px;padding:5px 8px;border-radius:999px;background:rgba(37,99,235,.09);color:#1d4ed8;text-transform:uppercase;letter-spacing:.1em;font-size:.65rem;font-weight:950}.search-result-card strong{display:block;font-size:1rem;word-break:break-word}.search-result-card p{margin:6px 0;color:#33516d;line-height:1.5;font-size:.88rem}.search-result-card a{color:#1d4ed8;font-weight:950;font-size:.88rem}
@@ -122,16 +127,17 @@ section{padding:72px 0}.section-head{max-width:720px;margin-bottom:32px;text-ali
 <div class="explorer-shell"><div class="explorer-console">
 <div class="explorer-top"><div>
 <div class="live-badge"><span class="live-dot"></span> Pre-Launch Observatory · v7</div>
-<h2 class="explorer-title"><span>Protocol Readiness</span></h2>
-<p class="explorer-lead">Live infrastructure signals for the ENTELΞKRON stack — before mainnet, when readiness matters more than token analytics.</p>
+<h2 class="explorer-title"><span>Research Operations</span></h2>
+<p class="explorer-lead">Current research programs and development areas across the ENTELΞKRON stack — before mainnet, when roadmap clarity matters more than token analytics.</p>
 </div></div>
 <div class="readiness-row">
-<div class="readiness-gauge"><label>Explorer Health</label><div class="readiness-ring" id="gaugeExplorer" style="--gauge-pct:88;--gauge-color:var(--emerald)"><strong id="valExplorer">88%</strong></div><small id="lblExplorer">Console operational</small></div>
+<div class="readiness-gauge"><label>Explorer Health</label><div class="readiness-ring" id="gaugeExplorer" style="--gauge-pct:88;--gauge-color:var(--emerald)"><strong id="valExplorer">Operational</strong></div><small id="lblExplorer">Console operational</small></div>
 <div class="readiness-gauge"><label>API Status</label><div class="readiness-ring" id="gaugeApi" style="--gauge-pct:92;--gauge-color:var(--cyan)"><strong id="valApi">Online</strong></div><small id="lblApi">Etherscan v2 connected</small></div>
-<div class="readiness-gauge"><label>Protocol Readiness</label><div class="readiness-ring" id="gaugeProtocol" style="--gauge-pct:74;--gauge-color:var(--blue)"><strong id="valProtocol">74%</strong></div><small id="lblProtocol">Core modules staged</small></div>
-<div class="readiness-gauge"><label>Infrastructure</label><div class="readiness-ring" id="gaugeInfra" style="--gauge-pct:68;--gauge-color:var(--violet)"><strong id="valInfra">68%</strong></div><small id="lblInfra">Validator layer forming</small></div>
-<div class="readiness-gauge"><label>Security</label><div class="readiness-ring" id="gaugeSecurity" style="--gauge-pct:81;--gauge-color:var(--emerald)"><strong id="valSecurity">81%</strong></div><small id="lblSecurity">Audit pipeline active</small></div>
+<div class="readiness-gauge readiness-gauge--phase"><label>Protocol Readiness</label><div class="readiness-ring" id="gaugeProtocol" style="--gauge-color:var(--blue)"><strong id="valProtocol">In Progress</strong></div><small id="lblProtocol">Core modules staged</small></div>
+<div class="readiness-gauge readiness-gauge--phase"><label>Infrastructure</label><div class="readiness-ring" id="gaugeInfra" style="--gauge-color:var(--violet)"><strong id="valInfra">Forming</strong></div><small id="lblInfra">Validator layer forming</small></div>
+<div class="readiness-gauge readiness-gauge--phase"><label>Security</label><div class="readiness-ring" id="gaugeSecurity" style="--gauge-color:var(--emerald)"><strong id="valSecurity">Active</strong></div><small id="lblSecurity">Audit pipeline active</small></div>
 </div>
+<p class="readiness-disclaimer"><strong>Status reflects active research phase — not performance metrics.</strong> Qualitative labels above describe development progress across TVK Labs research programs, not measured operational capacity.</p>
 </div></div>
 </div></section>
 
@@ -273,7 +279,7 @@ const GALAXY_MODULES=[
 ];
 
 const SOVRA_BRIEFINGS={
-entelekron:"EnteleKRON is the sovereign genesis chain of the ecosystem. It anchors blocks, state, governance, and the full module constellation. Protocol readiness is at 74% — core architecture is defined, mainnet indexing is next.",
+entelekron:"EnteleKRON is the sovereign genesis chain of the ecosystem. It anchors blocks, state, governance, and the full module constellation. Protocol development is in progress — core architecture is defined, mainnet indexing is next.",
 chronoseal:"ChronoSeal provides timestamped proof records. Every governance decision, document anchor, and audit event can be verified on-chain. EnteleSCAN will surface proof verification directly in the explorer.",
 graphvault:"GraphVAULT maps semantic relationships across the ecosystem. Events, proofs, identities, and transactions connect into a living knowledge graph — the intelligence layer behind SOVRA diagnostics.",
 qpresence:"Q-Presence handles identity, credentials, and presence verification. It connects wallet activity to verified identity events, enabling access control and governance participation tracking.",
@@ -397,11 +403,8 @@ if(textEl)textEl.textContent=SOVRA_BRIEFINGS[key]||"SOVRA intelligence briefing 
 
 function updateReadiness(stats){
 const apiOnline=stats&&stats.status==="live";
-const explorerPct=apiOnline?92:72;
+const explorerPct=apiOnline?92:45;
 const apiPct=apiOnline?96:45;
-const protocolPct=apiOnline?76:68;
-const infraPct=apiOnline?70:58;
-const securityPct=apiOnline?83:71;
 function setGauge(id,val,pct,color,lbl){
 const ring=document.getElementById(id);
 const valEl=document.getElementById("val"+id.replace("gauge",""));
@@ -410,11 +413,8 @@ if(ring){ring.style.setProperty("--gauge-pct",pct);ring.style.setProperty("--gau
 if(valEl)valEl.textContent=typeof val==="number"?val+"%":val;
 if(lblEl&&lbl)lblEl.textContent=lbl;
 }
-setGauge("gaugeExplorer",explorerPct,explorerPct,"var(--emerald)",apiOnline?"All systems operational":"Limited mode");
+setGauge("gaugeExplorer",apiOnline?"Operational":"Limited",explorerPct,apiOnline?"var(--emerald)":"var(--amber)",apiOnline?"Console operational":"Limited mode");
 setGauge("gaugeApi",apiOnline?"Online":"Limited",apiPct,apiOnline?"var(--cyan)":"var(--amber)",apiOnline?"Etherscan v2 connected":"API key required");
-setGauge("gaugeProtocol",protocolPct,protocolPct,"var(--blue)","Core modules staged");
-setGauge("gaugeInfra",infraPct,infraPct,"var(--violet)","Validator layer forming");
-setGauge("gaugeSecurity",securityPct,securityPct,"var(--emerald)","Audit pipeline active");
 }
 
 async function loadEnteleScanExplorer(){
